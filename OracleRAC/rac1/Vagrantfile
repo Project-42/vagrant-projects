@@ -340,12 +340,12 @@ if (var_cdb == true)
   end
 end
 
-path = "./ORCL_software/" + var_gi_software
+path = "../ORCL_software/" + var_gi_software
 if ! File.exist?(path)
   puts "ERROR: gi_software does not exist"
   exit
 end
-path = "./ORCL_software/" + var_db_software
+path = "../ORCL_software/" + var_db_software
 if ! File.exist?(path)
   puts "ERROR: db_software does not exist"
   exit

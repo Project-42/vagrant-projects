@@ -44,15 +44,17 @@ done
   DISKS_STRING="${DISKS_STRING::-1}"
 
 ${GI_HOME}/bin/sqlplus / as sysasm <<EOF
-CREATE DISKGROUP RECO NORMAL REDUNDANCY 
- ${DISKS_STRING} 
+CREATE DISKGROUP RECO EXTERNAL REDUNDANCY 
+ ${DISKS_STRING}
  ATTRIBUTE 
-   'compatible.asm'='${GI_VERSION}', 
-   'compatible.rdbms'='${DB_VERSION}',
+   'compatible.asm'='11.2', 
+   'compatible.rdbms'='11.2',
    'sector_size'='512',
    'AU_SIZE'='4M',
    'content.type'='recovery';
 EOF
+
+
 #----------------------------------------------------------
 # EndOfFile
 #----------------------------------------------------------

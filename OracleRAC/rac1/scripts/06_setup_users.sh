@@ -85,7 +85,6 @@ echo -e "${INFO}`date +%F' '%T`: Create GI_HOME and DB_HOME directories"
 echo "-----------------------------------------------------------------"
 mkdir -p ${GRID_BASE}
 mkdir -p ${DB_BASE}
-mkdir -p ${DB2_BASE}
 mkdir -p ${GI_HOME}
 mkdir -p ${DB_HOME}
 mkdir -p ${DB2_HOME}
@@ -94,7 +93,6 @@ chown -R grid:oinstall ${GRID_BASE}
 chown -R grid:oinstall ${GI_HOME}
 chown -R oracle:oinstall ${DB_BASE}
 chown -R oracle:oinstall ${DB_HOME}
-chown -R oracle:oinstall ${DB2_BASE}
 chown -R oracle:oinstall ${DB2_HOME}
 chmod -R ug+rw /u01
 

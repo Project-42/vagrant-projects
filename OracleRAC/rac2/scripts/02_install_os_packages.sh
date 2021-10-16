@@ -81,6 +81,11 @@ yum install -y unixODBC
 yum install -y chrony
 yum install -y policycoreutils-python
 
+## P42 additional Packages ##
+yum install -y highlight
+yum install -y git
+yum install -y mlocate
+yum install -y bash-completion
 
 #echo "-----------------------------------------------------------------"
 #echo -e "${INFO}`date +%F' '%T`: Perform yum update"

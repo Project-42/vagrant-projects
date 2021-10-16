@@ -49,6 +49,8 @@ groupadd -g 1009 kmdba
 groupadd -g 1010 racdba
 useradd oracle -d /home/oracle -m -p $(echo "welcome1" | openssl passwd -1 -stdin) -g 1001 -G 1002,1003,1006,1007,1008,1009,1010
 useradd grid   -d /home/grid   -m -p $(echo "welcome1" | openssl passwd -1 -stdin) -g 1001 -G 1002,1003,1004,1005,1006
+# Add oracle to sudo
+echo "oracle        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
 
 echo "-----------------------------------------------------------------"
 echo -e "${INFO}`date +%F' '%T`: Set oracle and grid limits"

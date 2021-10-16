@@ -5,4 +5,6 @@ CVS
 .vagrant
 .zip
 *.swp
-config/setup.env
+rac1/config/setup.env
+rac2/config/setup.env
+

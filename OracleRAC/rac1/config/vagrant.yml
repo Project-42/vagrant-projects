@@ -57,7 +57,6 @@ env:
   pdb_name:        PDB211
   db_type:         RAC
   cdb:             true
-  
   db2_name:        CDB19
   pdb2_name:       PDB191
   db2_type:        RAC

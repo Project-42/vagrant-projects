@@ -286,10 +286,19 @@ then
 ${DB_HOME}/database/runInstaller -ignorePrereq -waitforcompletion -silent \\
         -responseFile ${DB_HOME}/database/response/db_install.rsp \\
 EOF
+  cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
+${DB2_HOME}/database/runInstaller -ignorePrereq -waitforcompletion -silent \\
+        -responseFile ${DB2_HOME}/database/response/db_install.rsp \\
+EOF
+
 else
   cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
 ${DB_HOME}/runInstaller -ignorePrereq -waitforcompletion -silent \\
         -responseFile ${DB_HOME}/install/response/db_install.rsp \\
+EOF
+  cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
+${DB2_HOME}/runInstaller -ignorePrereq -waitforcompletion -silent \\
+        -responseFile ${DB2_HOME}/install/response/db_install.rsp \\
 EOF
 fi
 
@@ -301,6 +310,22 @@ cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
         SELECTED_LANGUAGES=${ORA_LANGUAGES} \\
         ORACLE_HOME=${DB_HOME} \\
         ORACLE_BASE=${DB_BASE} \\
+        oracle.install.db.InstallEdition=EE \\
+        oracle.install.db.OSDBA_GROUP=dba \\
+        oracle.install.db.OSBACKUPDBA_GROUP=dba \\
+        oracle.install.db.OSDGDBA_GROUP=dba \\
+        oracle.install.db.OSKMDBA_GROUP=dba \\
+        oracle.install.db.OSRACDBA_GROUP=dba \\
+EOF
+
+cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
+        oracle.install.option=INSTALL_DB_SWONLY \\
+        ORACLE_HOSTNAME=${ORACLE_HOSTNAME} \\
+        UNIX_GROUP_NAME=oinstall \\
+        INVENTORY_LOCATION=${ORA_INVENTORY} \\
+        SELECTED_LANGUAGES=${ORA_LANGUAGES} \\
+        ORACLE_HOME=${DB2_HOME} \\
+        ORACLE_BASE=${DB2_BASE} \\
         oracle.install.db.InstallEdition=EE \\
         oracle.install.db.OSDBA_GROUP=dba \\
         oracle.install.db.OSBACKUPDBA_GROUP=dba \\
@@ -346,7 +371,7 @@ ${DB_HOME}/bin/dbca -silent -createDatabase \\
   -gdbname ${DB_NAME} \\
   -characterSet AL32UTF8 \\
   -sysPassword ${SYS_PASSWORD} \\
-  -systemPassword ${SYS_PASSWORD} \\
+  -systemPassword ${SYS_PASSWORD} \\ 
 EOF
 
 if [ "${CDB}" == "true" ]
@@ -414,6 +439,83 @@ cat >> /vagrant/scripts/14_create_database.sh <<EOF
   -recoveryGroupName +RECO \\
   -asmsnmpPassword ${SYS_PASSWORD}
 EOF
+
+cat >> /vagrant/scripts/14_create_database.sh <<EOF
+${DB2_HOME}/bin/dbca -silent -createDatabase \\
+  -templateName General_Purpose.dbc \\
+  -initParams db_recovery_file_dest_size=2G \\
+  -responseFile NO_VALUE \\
+  -gdbname ${DB2_NAME} \\
+  -characterSet AL32UTF8 \\
+  -sysPassword ${SYS_PASSWORD} \\
+  -systemPassword ${SYS_PASSWORD} \\ 
+EOF
+
+if [ "${CDB}" == "true" ]
+then
+cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -createAsContainerDatabase true \\
+  -numberOfPDBs 1 \\
+  -pdbName ${PDB2_NAME} \\
+  -pdbAdminPassword ${PDB2_PASSWORD} \\
+EOF
+fi
+
+cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -databaseType MULTIPURPOSE \\
+  -automaticMemoryManagement false \\
+  -totalMemory 2048 \\
+  -redoLogFileSize 50 \\
+  -emConfiguration NONE \\
+  -ignorePreReqs \\
+EOF
+
+if [ "${DB2_TYPE}" == "RAC" ]
+then
+    cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -databaseConfigType RAC \\
+EOF
+elif [ "${DB2_TYPE}" == "RACONE" ]
+then
+    cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -databaseConfigType RACONE \\
+  -RACOneNodeServiceName ${DB2_NAME}_srv \\
+EOF
+elif [ "${DB2_TYPE}" == "SINGLE" ]
+then
+    cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -databaseConfigType SINGLE \\
+EOF
+fi
+
+if [ "${DB2_TYPE}" == "RAC" ] || [ "${DB2_TYPE}" == "RACONE" ]
+then
+  if [ "${ORESTART}" == "false" ]
+  then
+    cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -nodelist ${NODE1_HOSTNAME},${NODE2_HOSTNAME} \\
+EOF
+  else
+    if [ `hostname` == ${NODE1_HOSTNAME} ]
+    then
+      cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -nodelist ${NODE1_HOSTNAME} \\
+EOF
+    elif [ `hostname` == ${NODE2_HOSTNAME} ]
+    then
+      cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -nodelist ${NODE2_HOSTNAME} \\
+EOF
+    fi
+  fi
+fi
+
+cat >> /vagrant/scripts/14_create_database.sh <<EOF
+  -storageType ASM \\
+  -diskGroupName +DATA \\
+  -recoveryGroupName +RECO \\
+  -asmsnmpPassword ${SYS_PASSWORD}
+EOF
 }
 
 # ---------------------------------------------------------------------
@@ -439,6 +541,15 @@ then
   DB_COMP=$(echo "${DB_SOFTWARE_VER}" | cut -c5)
   DB_VERSION=${DB_MAJOR}"."${DB_MAINTENANCE}"."${DB_APP}"."${DB_COMP}
   DB_HOME="/u01/app/oracle/product/"$DB_VERSION"/dbhome_1"
+
+  DB2_MAJOR=$(echo "${DB2_SOFTWARE_VER}" | cut -c1-2)
+  DB2_MAINTENANCE=$(echo "${DB2_SOFTWARE_VER}" | cut -c3)
+  DB2_APP=$(echo "${DB2_SOFTWARE_VER}" | cut -c4)
+  DB2_COMP=$(echo "${DB2_SOFTWARE_VER}" | cut -c5)
+  DB2_VERSION=${DB2_MAJOR}"."${DB2_MAINTENANCE}"."${DB2_APP}"."${DB2_COMP}
+  DB2_HOME="/u01/app/oracle/product/"$DB2_VERSION"/dbhome_1"
+
+
 
   node1_public_ipoct1=$(echo ${NODE1_PUBLIC_IP} | tr "." " " | awk '{ print $1 }')
   node1_public_ipoct2=$(echo ${NODE1_PUBLIC_IP} | tr "." " " | awk '{ print $2 }')
@@ -467,14 +578,17 @@ export PREFIX_NAME=$PREFIX_NAME
 #----------------------------------------------------------
 export GI_SOFTWARE=$GI_SOFTWARE
 export DB_SOFTWARE=$DB_SOFTWARE
+export DB2_SOFTWARE=$DB2_SOFTWARE
 #----------------------------------------------------------
 #----------------------------------------------------------
 export GI_VERSION=$GI_VERSION
 export DB_VERSION=$DB_VERSION
+export DB2_VERSION=$DB2_VERSION
 #----------------------------------------------------------
 #----------------------------------------------------------
 export SYS_PASSWORD=$SYS_PASSWORD
 export PDB_PASSWORD=$PDB_PASSWORD
+export PDB2_PASSWORD=$PDB2_PASSWORD
 #----------------------------------------------------------
 #----------------------------------------------------------
 export P1_RATIO=$P1_RATIO
@@ -532,10 +646,14 @@ export DB_BASE=/u01/app/oracle
 
 export GI_HOME=${GI_HOME}
 export DB_HOME=${DB_HOME}
+export DB2_HOME=${DB2_HOME}
 
 export DB_NAME=$DB_NAME
 export PDB_NAME=$PDB_NAME
+export DB2_NAME=$DB2_NAME
+export PDB2_NAME=$PDB2_NAME
 export DB_TYPE=$DB_TYPE
+export DB2_TYPE=$DB2_TYPE
 #----------------------------------------------------------
 #----------------------------------------------------------
 export NET_DEVICE1=${NET_DEVICE1}
@@ -602,7 +720,20 @@ then
   exit 1
 fi
 
+if [ "${DB2_TYPE}" != "SI" ] && [ "${DB2_TYPE}" != "RACONE" ] && [ "${DB2_TYPE}" != "RAC" ]
+then
+  echo -e "${ERROR}`date +%F' '%T`: Parameter 'db_type' must be 'SI' or 'RACONE' or 'RAC', exiting...";
+  exit 1
+fi
+
+
 if [[ "${ORESTART}" == "true" && ("${DB_TYPE}" == "RACONE" || "${DB_TYPE}" == "RAC" ) ]]
+then
+  echo -e "${ERROR}`date +%F' '%T`: Oracle Restart supports 'SI' only, exiting...";
+  exit 1
+fi
+
+if [[ "${ORESTART}" == "true" && ("${DB2_TYPE}" == "RACONE" || "${DB2_TYPE}" == "RAC" ) ]]
 then
   echo -e "${ERROR}`date +%F' '%T`: Oracle Restart supports 'SI' only, exiting...";
   exit 1
@@ -780,6 +911,14 @@ then
   unzip -oq /vagrant/ORCL_software/${DB_SOFTWARE}
   chown -R oracle:oinstall ${DB_HOME}
 
+  cd ${DB2_HOME}
+  unzip -oq /vagrant/ORCL_software/${DB2_SOFTWARE}
+  chown -R oracle:oinstall ${DB2_HOME}
+
+
+
+
+
   # Make 13_RDBMS_software_installation.sh
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: Make RDBMS software install command"
@@ -794,10 +933,19 @@ then
   sh ${DB_HOME}/root.sh
   ssh root@${NODE2_HOSTNAME} sh ${DB_HOME}/root.sh
 
+  sh ${DB2_HOME}/root.sh
+  ssh root@${NODE2_HOSTNAME} sh ${DB2_HOME}/root.sh  
+
   if [ "${DB_MAJOR}" == "12" ]
   then
     rm -fr ${DB_HOME}/database
   fi
+
+  if [ "${DB2_MAJOR}" == "12" ]
+  then
+    rm -fr ${DB2_HOME}/database
+  fi
+
 
   # Make 14_create_database.sh
   echo "-----------------------------------------------------------------"
@@ -874,6 +1022,11 @@ then
   unzip -oq /vagrant/ORCL_software/${DB_SOFTWARE}
   chown -R oracle:oinstall ${DB_HOME}
 
+  cd ${DB2_HOME}
+  unzip -oq /vagrant/ORCL_software/${DB2_SOFTWARE}
+  chown -R oracle:oinstall ${DB2_HOME}
+
+
   # Make 13_RDBMS_software_installation.sh
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: Make RDBMS software installation command"
@@ -886,10 +1039,16 @@ then
   echo "-----------------------------------------------------------------"
   su - oracle -c 'sh /vagrant/scripts/13_RDBMS_software_installation.sh'
   sh ${DB_HOME}/root.sh
+  sh ${DB2_HOME}/root.sh  
 
   if [ "${DB_MAJOR}" == "12" ]
   then
     rm -fr ${DB_HOME}/database
+  fi
+
+  if [ "${DB2_MAJOR}" == "12" ]
+  then
+    rm -fr ${DB2_HOME}/database
   fi
 
   # Make 14_create_database.sh

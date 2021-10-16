@@ -46,6 +46,7 @@ env:
   oracle_password: Welcome1
   sys_password:    Welcome1
   pdb_password:    Welcome1
+  pdb2_password:   Welcome1
   # ---------------------------------------------
   ora_languages:   en,en_GB
   # ---------------------------------------------

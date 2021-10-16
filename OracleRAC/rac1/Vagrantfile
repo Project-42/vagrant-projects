@@ -435,7 +435,8 @@ end
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = var_box
   #config.vm.box_url = var_url
-
+  config.vm.synced_folder "../ORCL_software/", "/vagrant/ORCL_software/",
+    type: 'nfs', mount_options: ["vers=4,tcp"]
   #if var_provider_name == 'virtualbox'
   #  config.vm.box_version = ">= 7.8.142"
   #end

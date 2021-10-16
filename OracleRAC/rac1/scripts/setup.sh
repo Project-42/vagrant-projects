@@ -486,7 +486,7 @@ ${DB2_HOME}/bin/dbca -silent -createDatabase \\
   -templateName General_Purpose.dbc \\
   -initParams db_recovery_file_dest_size=2G \\
   -responseFile NO_VALUE \\
-  -gdbname ${DB_NAME} \\
+  -gdbname ${DB2_NAME} \\
   -characterSet AL32UTF8 \\
   -sysPassword ${SYS_PASSWORD} \\
   -systemPassword ${SYS_PASSWORD} \\
@@ -1132,6 +1132,8 @@ then
   echo "-----------------------------------------------------------------"
   su - oracle -c 'sh /vagrant/scripts/15_Check_database.sh'
 fi
+
+su - oracle -c 'sh /vagrant/scripts/16_modify_oratab.sh'
 
 # run user-defined post-setup scripts
 run_user_scripts;

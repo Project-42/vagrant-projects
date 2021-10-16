@@ -86,6 +86,7 @@ yum install -y highlight
 yum install -y git
 yum install -y mlocate
 yum install -y bash-completion
+yum install -y nano
 
 #echo "-----------------------------------------------------------------"
 #echo -e "${INFO}`date +%F' '%T`: Perform yum update"

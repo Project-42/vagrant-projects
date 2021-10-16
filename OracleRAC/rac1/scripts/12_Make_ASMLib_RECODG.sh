@@ -43,15 +43,20 @@ do
   DISKS_STRING=${DISKS_STRING}"DISK '"${DEVICES}"' NAME "${DISK}" "
 done
 
+#echo $DISKS_STRING
+
+
+
 ${GI_HOME}/bin/sqlplus / as sysasm <<EOF
 CREATE DISKGROUP RECO EXTERNAL REDUNDANCY 
  ${DISKS_STRING}
  ATTRIBUTE 
-   'compatible.asm'='11.2', 
-   'compatible.rdbms'='11.2',
+   'compatible.asm'='11.2.0.2.0', 
+   'compatible.rdbms'='11.2.0.2.0',
+   'compatible.advm'='11.2.0.2.0',
    'sector_size'='512',
-   'AU_SIZE'='4M',
-   'content.type'='recovery';
+   'AU_SIZE'='4M';
+
 EOF
 #----------------------------------------------------------
 # EndOfFile

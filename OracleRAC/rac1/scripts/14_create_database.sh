@@ -3,14 +3,14 @@
   -templateName General_Purpose.dbc \
   -initParams db_recovery_file_dest_size=2G \
   -responseFile NO_VALUE \
-  -gdbname DB213H1 \
+  -gdbname CDB21 \
   -characterSet AL32UTF8 \
-  -sysPassword welcome1 \
-  -systemPassword welcome1 \
+  -sysPassword Welcome1 \
+  -systemPassword Welcome1 \
   -createAsContainerDatabase true \
   -numberOfPDBs 1 \
-  -pdbName PDB1 \
-  -pdbAdminPassword welcome1 \
+  -pdbName PDB211 \
+  -pdbAdminPassword Welcome1 \
   -databaseType MULTIPURPOSE \
   -automaticMemoryManagement false \
   -totalMemory 2048 \
@@ -18,8 +18,8 @@
   -emConfiguration NONE \
   -ignorePreReqs \
   -databaseConfigType RAC \
-  -nodelist node1,node2 \
+  -nodelist rac1-node1,rac1-node2 \
   -storageType ASM \
   -diskGroupName +DATA \
   -recoveryGroupName +RECO \
-  -asmsnmpPassword welcome1
+  -asmsnmpPassword Welcome1

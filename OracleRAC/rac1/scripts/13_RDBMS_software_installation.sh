@@ -14,7 +14,7 @@
         oracle.install.db.OSDGDBA_GROUP=dba \
         oracle.install.db.OSKMDBA_GROUP=dba \
         oracle.install.db.OSRACDBA_GROUP=dba \
-        oracle.install.db.CLUSTER_NODES=node1,node2 \
+        oracle.install.db.CLUSTER_NODES=rac1-node1,rac1-node2 \
         oracle.install.db.isRACOneInstall=false \
         oracle.install.db.rac.serverpoolCardinality=0 \
         oracle.install.db.config.starterdb.type=GENERAL_PURPOSE \

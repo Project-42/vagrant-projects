@@ -39,6 +39,7 @@ env:
   # ---------------------------------------------
   gi_software:     LINUX.X64_213000_grid_home.zip
   db_software:     LINUX.X64_213000_db_home.zip
+  db2_software:	   LINUX.X64_193000_db_home.zip
   # ---------------------------------------------
   root_password:   Welcome1
   grid_password:   Welcome1
@@ -54,5 +55,10 @@ env:
   db_name:         CDB21
   pdb_name:        PDB211
   db_type:         RAC
+  cdb:             true
+  
+  db2_name:        CDB19
+  pdb2_name:       PDB191
+  db2_type:        RAC
   cdb:             true
   # ---------------------------------------------

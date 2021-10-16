@@ -286,19 +286,10 @@ then
 ${DB_HOME}/database/runInstaller -ignorePrereq -waitforcompletion -silent \\
         -responseFile ${DB_HOME}/database/response/db_install.rsp \\
 EOF
-  cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
-${DB2_HOME}/database/runInstaller -ignorePrereq -waitforcompletion -silent \\
-        -responseFile ${DB2_HOME}/database/response/db_install.rsp \\
-EOF
-
 else
   cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
 ${DB_HOME}/runInstaller -ignorePrereq -waitforcompletion -silent \\
         -responseFile ${DB_HOME}/install/response/db_install.rsp \\
-EOF
-  cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
-${DB2_HOME}/runInstaller -ignorePrereq -waitforcompletion -silent \\
-        -responseFile ${DB2_HOME}/install/response/db_install.rsp \\
 EOF
 fi
 
@@ -310,22 +301,6 @@ cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
         SELECTED_LANGUAGES=${ORA_LANGUAGES} \\
         ORACLE_HOME=${DB_HOME} \\
         ORACLE_BASE=${DB_BASE} \\
-        oracle.install.db.InstallEdition=EE \\
-        oracle.install.db.OSDBA_GROUP=dba \\
-        oracle.install.db.OSBACKUPDBA_GROUP=dba \\
-        oracle.install.db.OSDGDBA_GROUP=dba \\
-        oracle.install.db.OSKMDBA_GROUP=dba \\
-        oracle.install.db.OSRACDBA_GROUP=dba \\
-EOF
-
-cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
-        oracle.install.option=INSTALL_DB_SWONLY \\
-        ORACLE_HOSTNAME=${ORACLE_HOSTNAME} \\
-        UNIX_GROUP_NAME=oinstall \\
-        INVENTORY_LOCATION=${ORA_INVENTORY} \\
-        SELECTED_LANGUAGES=${ORA_LANGUAGES} \\
-        ORACLE_HOME=${DB2_HOME} \\
-        ORACLE_BASE=${DB2_BASE} \\
         oracle.install.db.InstallEdition=EE \\
         oracle.install.db.OSDBA_GROUP=dba \\
         oracle.install.db.OSBACKUPDBA_GROUP=dba \\
@@ -359,7 +334,71 @@ cat >> /vagrant/scripts/13_RDBMS_software_installation.sh <<EOF
         SECURITY_UPDATES_VIA_MYORACLESUPPORT=false \\
         DECLINE_SECURITY_UPDATES=true
 EOF
+
+
+
+cat > /vagrant/scripts/13_RDBMS_software_installation2.sh <<EOF
+. /vagrant/config/setup.env
+EOF
+
+DB_MAJOR=$(echo "${DB2_SOFTWARE_VER}" | cut -c1-2)
+if [ "${DB_MAJOR}" == "12" ]
+then
+  cat >> /vagrant/scripts/13_RDBMS_software_installation2.sh <<EOF
+${DB_HOME}/database/runInstaller -ignorePrereq -waitforcompletion -silent \\
+        -responseFile ${DB2_HOME}/database/response/db_install.rsp \\
+EOF
+else
+  cat >> /vagrant/scripts/13_RDBMS_software_installation2.sh <<EOF
+${DB2_HOME}/runInstaller -ignorePrereq -waitforcompletion -silent \\
+        -responseFile ${DB2_HOME}/install/response/db_install.rsp \\
+EOF
+fi
+
+cat >> /vagrant/scripts/13_RDBMS_software_installation2.sh <<EOF
+        oracle.install.option=INSTALL_DB_SWONLY \\
+        ORACLE_HOSTNAME=${ORACLE_HOSTNAME} \\
+        UNIX_GROUP_NAME=oinstall \\
+        INVENTORY_LOCATION=${ORA_INVENTORY} \\
+        SELECTED_LANGUAGES=${ORA_LANGUAGES} \\
+        ORACLE_HOME=${DB2_HOME} \\
+        ORACLE_BASE=${DB_BASE} \\
+        oracle.install.db.InstallEdition=EE \\
+        oracle.install.db.OSDBA_GROUP=dba \\
+        oracle.install.db.OSBACKUPDBA_GROUP=dba \\
+        oracle.install.db.OSDGDBA_GROUP=dba \\
+        oracle.install.db.OSKMDBA_GROUP=dba \\
+        oracle.install.db.OSRACDBA_GROUP=dba \\
+EOF
+
+if [ "${ORESTART}" == "false" ]
+then
+  cat >> /vagrant/scripts/13_RDBMS_software_installation2.sh <<EOF
+        oracle.install.db.CLUSTER_NODES=${NODE1_HOSTNAME},${NODE2_HOSTNAME} \\
+EOF
+fi
+
+if [ "${DB_TYPE}" == "RACONE" ]
+then
+  cat >> /vagrant/scripts/13_RDBMS_software_installation2.sh <<EOF
+        oracle.install.db.isRACOneInstall=true \\
+EOF
+else
+  cat >> /vagrant/scripts/13_RDBMS_software_installation2.sh <<EOF
+        oracle.install.db.isRACOneInstall=false \\
+EOF
+fi
+
+cat >> /vagrant/scripts/13_RDBMS_software_installation2.sh <<EOF
+        oracle.install.db.rac.serverpoolCardinality=0 \\
+        oracle.install.db.config.starterdb.type=GENERAL_PURPOSE \\
+        oracle.install.db.ConfigureAsContainerDB=true \\
+        SECURITY_UPDATES_VIA_MYORACLESUPPORT=false \\
+        DECLINE_SECURITY_UPDATES=true
+EOF
+
 }
+
 
 make_14_create_database() {
 cat > /vagrant/scripts/14_create_database.sh <<EOF
@@ -371,7 +410,7 @@ ${DB_HOME}/bin/dbca -silent -createDatabase \\
   -gdbname ${DB_NAME} \\
   -characterSet AL32UTF8 \\
   -sysPassword ${SYS_PASSWORD} \\
-  -systemPassword ${SYS_PASSWORD} \\ 
+  -systemPassword ${SYS_PASSWORD} \\
 EOF
 
 if [ "${CDB}" == "true" ]
@@ -440,20 +479,22 @@ cat >> /vagrant/scripts/14_create_database.sh <<EOF
   -asmsnmpPassword ${SYS_PASSWORD}
 EOF
 
-cat >> /vagrant/scripts/14_create_database.sh <<EOF
+
+cat > /vagrant/scripts/14_create_database2.sh <<EOF
+. /vagrant/config/setup.env
 ${DB2_HOME}/bin/dbca -silent -createDatabase \\
   -templateName General_Purpose.dbc \\
   -initParams db_recovery_file_dest_size=2G \\
   -responseFile NO_VALUE \\
-  -gdbname ${DB2_NAME} \\
+  -gdbname ${DB_NAME} \\
   -characterSet AL32UTF8 \\
   -sysPassword ${SYS_PASSWORD} \\
-  -systemPassword ${SYS_PASSWORD} \\ 
+  -systemPassword ${SYS_PASSWORD} \\
 EOF
 
 if [ "${CDB}" == "true" ]
 then
-cat >> /vagrant/scripts/14_create_database.sh <<EOF
+cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -createAsContainerDatabase true \\
   -numberOfPDBs 1 \\
   -pdbName ${PDB2_NAME} \\
@@ -461,7 +502,7 @@ cat >> /vagrant/scripts/14_create_database.sh <<EOF
 EOF
 fi
 
-cat >> /vagrant/scripts/14_create_database.sh <<EOF
+cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -databaseType MULTIPURPOSE \\
   -automaticMemoryManagement false \\
   -totalMemory 2048 \\
@@ -472,18 +513,18 @@ EOF
 
 if [ "${DB2_TYPE}" == "RAC" ]
 then
-    cat >> /vagrant/scripts/14_create_database.sh <<EOF
+    cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -databaseConfigType RAC \\
 EOF
 elif [ "${DB2_TYPE}" == "RACONE" ]
 then
-    cat >> /vagrant/scripts/14_create_database.sh <<EOF
+    cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -databaseConfigType RACONE \\
-  -RACOneNodeServiceName ${DB2_NAME}_srv \\
+  -RACOneNodeServiceName ${DB_NAME}_srv \\
 EOF
 elif [ "${DB2_TYPE}" == "SINGLE" ]
 then
-    cat >> /vagrant/scripts/14_create_database.sh <<EOF
+    cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -databaseConfigType SINGLE \\
 EOF
 fi
@@ -492,31 +533,34 @@ if [ "${DB2_TYPE}" == "RAC" ] || [ "${DB2_TYPE}" == "RACONE" ]
 then
   if [ "${ORESTART}" == "false" ]
   then
-    cat >> /vagrant/scripts/14_create_database.sh <<EOF
+    cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -nodelist ${NODE1_HOSTNAME},${NODE2_HOSTNAME} \\
 EOF
   else
     if [ `hostname` == ${NODE1_HOSTNAME} ]
     then
-      cat >> /vagrant/scripts/14_create_database.sh <<EOF
+      cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -nodelist ${NODE1_HOSTNAME} \\
 EOF
     elif [ `hostname` == ${NODE2_HOSTNAME} ]
     then
-      cat >> /vagrant/scripts/14_create_database.sh <<EOF
+      cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -nodelist ${NODE2_HOSTNAME} \\
 EOF
     fi
   fi
 fi
 
-cat >> /vagrant/scripts/14_create_database.sh <<EOF
+cat >> /vagrant/scripts/14_create_database2.sh <<EOF
   -storageType ASM \\
   -diskGroupName +DATA \\
   -recoveryGroupName +RECO \\
   -asmsnmpPassword ${SYS_PASSWORD}
 EOF
+
 }
+
+
 
 # ---------------------------------------------------------------------
 # MAIN
@@ -907,10 +951,12 @@ then
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: Unzip RDBMS software"
   echo "-----------------------------------------------------------------"
+  echo "Unziping DB1 Home"
   cd ${DB_HOME}
   unzip -oq /vagrant/ORCL_software/${DB_SOFTWARE}
   chown -R oracle:oinstall ${DB_HOME}
 
+  echo "Unziping DB2 Home"
   cd ${DB2_HOME}
   unzip -oq /vagrant/ORCL_software/${DB2_SOFTWARE}
   chown -R oracle:oinstall ${DB2_HOME}
@@ -929,10 +975,13 @@ then
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: RDBMS software installation"
   echo "-----------------------------------------------------------------"
+  echo "Installing DB1 Software"
   su - oracle -c 'sh /vagrant/scripts/13_RDBMS_software_installation.sh'
   sh ${DB_HOME}/root.sh
   ssh root@${NODE2_HOSTNAME} sh ${DB_HOME}/root.sh
 
+  echo "Installing DB2 Software"
+  su - oracle -c 'sh /vagrant/scripts/13_RDBMS_software_installation2.sh'
   sh ${DB2_HOME}/root.sh
   ssh root@${NODE2_HOSTNAME} sh ${DB2_HOME}/root.sh  
 
@@ -957,7 +1006,11 @@ then
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: Create database"
   echo "-----------------------------------------------------------------"
+  echo Creating Database1
   su - oracle -c 'sh /vagrant/scripts/14_create_database.sh'
+  
+  echo Creating Database2
+  su - oracle -c 'sh /vagrant/scripts/14_create_database2.sh'
 
   # Check database 
   echo "-----------------------------------------------------------------"
@@ -1037,9 +1090,15 @@ then
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: RDBMS software installation"
   echo "-----------------------------------------------------------------"
+  echo "Installing DB1 Software"
   su - oracle -c 'sh /vagrant/scripts/13_RDBMS_software_installation.sh'
   sh ${DB_HOME}/root.sh
-  sh ${DB2_HOME}/root.sh  
+  ssh root@${NODE2_HOSTNAME} sh ${DB_HOME}/root.sh
+
+  echo "Installing DB2 Software"
+  su - oracle -c 'sh /vagrant/scripts/13_RDBMS_software_installation2.sh'
+  sh ${DB2_HOME}/root.sh
+  ssh root@${NODE2_HOSTNAME} sh ${DB2_HOME}/root.sh 
 
   if [ "${DB_MAJOR}" == "12" ]
   then
@@ -1061,7 +1120,11 @@ then
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: Create database"
   echo "-----------------------------------------------------------------"
+  echo Creating Database1
   su - oracle -c 'sh /vagrant/scripts/14_create_database.sh'
+  
+  echo Creating Database2
+  su - oracle -c 'sh /vagrant/scripts/14_create_database2.sh'
 
   # Check database 
   echo "-----------------------------------------------------------------"

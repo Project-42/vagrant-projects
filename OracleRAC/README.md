@@ -6,6 +6,16 @@ This directory contains Vagrant build files to provision automatically
 two Oracle RAC nodes (12.2, 18c, 19c, 21c), using Vagrant, Oracle Linux 7 and shell scripts.
 ![](images/OracleRAC.png)
 
+## PORJECT42 FORK MODIFICATIONS ##
+This is the list of modifications made to original project (https://github.com/oracle/vagrant-projects)
+ - Second rac cluster added (but need to be deployed independely) WIP
+ - ........
+
+
+
+
+
+
 ## Prerequisites
 
 1. Read the [prerequisites in the top level README](../README.md#prerequisites) to set up Vagrant with either VirtualBox or KVM

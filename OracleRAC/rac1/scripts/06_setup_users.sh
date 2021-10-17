@@ -106,8 +106,6 @@ export ORACLE_HOME=${GI_HOME}
 export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
 export ORACLE_SID=+ASM1
 echo ""
-echo "Current ORAENV => ${ORACLE_SID}"
-echo ""
 echo "PMON processes running"
 ps -ef |grep pmon |grep -v grep
 EOF
@@ -116,8 +114,6 @@ EOF
 export ORACLE_HOME=${DB_HOME}
 export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
 export ORACLE_SID=${DB_NAME}1
-echo ""
-echo "Current ORAENV => ${ORACLE_SID}"
 echo ""
 echo "PMON processes running"
 ps -ef |grep pmon |grep -v grep
@@ -131,8 +127,6 @@ export ORACLE_HOME=${GI_HOME}
 export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
 export ORACLE_SID=+ASM2
 echo ""
-echo "Current ORAENV => ${ORACLE_SID}"
-echo ""
 echo "PMON processes running"
 ps -ef |grep pmon |grep -v grep
 EOF
@@ -141,8 +135,6 @@ EOF
 export ORACLE_HOME=${DB_HOME}
 export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
 export ORACLE_SID=${DB_NAME}2
-echo ""
-echo "Current ORAENV => ${ORACLE_SID}"
 echo ""
 echo "PMON processes running"
 ps -ef |grep pmon |grep -v grep

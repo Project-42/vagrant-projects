@@ -1159,7 +1159,7 @@ then
   echo -e "${INFO}`date +%F' '%T`: Modify oratab file"
   echo "-----------------------------------------------------------------"
   su - root -c 'sh /vagrant/scripts/16_modify_oratab.sh'
-  ssh root@${NODE2_HOSTNAME} sh /vagrant/scripts/16_modify_oratab.sh'
+  ssh root@${NODE2_HOSTNAME} sh /vagrant/scripts/16_modify_oratab.sh
 
 fi
 

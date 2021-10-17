@@ -63,7 +63,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Key inserted! Disconnecting and reconnecting using new SSH key...
 ==> node2: Setting hostname...
 ==> node2: Configuring and enabling network interfaces...
-    node2: SSH address: 192.168.121.119:22
+    node2: SSH address: 192.168.121.89:22
     node2: SSH username: vagrant
     node2: SSH auth method: private key
 ==> node2: Configuring proxy environment variables...
@@ -74,24 +74,24 @@ Bringing machine 'node1' up with 'libvirt' provider...
 ==> node2: Running provisioner: shell...
     node2: Running: inline script
 ==> node2: Running provisioner: shell...
-    node2: Running: /tmp/vagrant-shell20211017-31005-iq63rw.sh
+    node2: Running: /tmp/vagrant-shell20211017-47535-7f3fef.sh
     node2: -----------------------------------------------------------------
-    node2: 2021-10-17 11:30:58: Make the setup.env
-    node2: -----------------------------------------------------------------
-    node2: -----------------------------------------------------------------
-    node2: 2021-10-17 11:30:59: Setup the environment variables
+    node2: 2021-10-17 14:53:26: Make the setup.env
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 11:30:59: Checking parameters
+    node2: 2021-10-17 14:53:26: Setup the environment variables
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 11:30:59: Fix locale warnings
+    node2: [0;34mINFO: [0m2021-10-17 14:53:26: Checking parameters
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 11:30:59: Set system time zone
+    node2: [0;34mINFO: [0m2021-10-17 14:53:26: Fix locale warnings
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:30:59: Setting-up /u01 disk
+    node2: [0;34mINFO: [0m2021-10-17 14:53:26: Set system time zone
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-10-17 15:53:27: Setting-up /u01 disk
     node2: -----------------------------------------------------------------
     node2:   Physical volume "/dev/vdb1" successfully created.
     node2:   Volume group "VolGroupU01" successfully created
@@ -109,7 +109,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Discarding blocks...
     node2: Done.
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:30:59: Install base packages
+    node2: [0;34mINFO: [0m2021-10-17 15:53:27: Install base packages
     node2: -----------------------------------------------------------------
     node2: Resolving Dependencies
     node2: --> Running transaction check
@@ -144,7 +144,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Installed size: 6.4 M
     node2: Downloading packages:
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              1.8 MB/s | 2.7 MB  00:01     
+    node2: Total                                              2.0 MB/s | 2.7 MB  00:01     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -365,7 +365,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Downloading packages:
     node2: No Presto metadata available for ol7_latest
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              2.8 MB/s |  35 MB  00:12     
+    node2: Total                                              2.7 MB/s |  35 MB  00:12     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -653,7 +653,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2:   oracleasm-support.x86_64 0:2.1.11-2.el7                                       
     node2: Complete!
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:32:43: Add extra OS packages
+    node2: [0;34mINFO: [0m2021-10-17 15:55:11: Add extra OS packages
     node2: -----------------------------------------------------------------
     node2: Package bc-1.06.95-13.el7.x86_64 already installed and latest version
     node2: Nothing to do
@@ -772,7 +772,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Downloading packages:
     node2: No Presto metadata available for ol7_latest
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              2.5 MB/s | 5.4 MB  00:02     
+    node2: Total                                              2.4 MB/s | 5.4 MB  00:02     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -883,7 +883,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Installed size: 9.4 M
     node2: Downloading packages:
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              1.9 MB/s | 2.6 MB  00:01     
+    node2: Total                                              2.1 MB/s | 2.6 MB  00:01     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -1106,7 +1106,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Installed size: 2.3 M
     node2: Downloading packages:
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              1.3 MB/s | 868 kB  00:00     
+    node2: Total                                              1.4 MB/s | 868 kB  00:00     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -1161,7 +1161,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Installed size: 151 k
     node2: Downloading packages:
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              218 kB/s |  78 kB  00:00     
+    node2: Total                                              150 kB/s |  78 kB  00:00     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -1364,7 +1364,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Installed size: 39 M
     node2: Downloading packages:
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              2.5 MB/s |  12 MB  00:04     
+    node2: Total                                              2.6 MB/s |  12 MB  00:04     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -1662,6 +1662,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Transaction Summary
     node2: ================================================================================
     node2: Upgrade  1 Package
+    node2: 
     node2: Total download size: 413 k
     node2: Downloading packages:
     node2: No Presto metadata available for ol7_latest
@@ -1773,7 +1774,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Installed size: 1.1 M
     node2: Downloading packages:
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              550 kB/s | 215 kB  00:00     
+    node2: Total                                              476 kB/s | 215 kB  00:00     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -1832,7 +1833,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Installed size: 684 k
     node2: Downloading packages:
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              513 kB/s | 229 kB  00:00     
+    node2: Total                                              495 kB/s | 229 kB  00:00     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -1881,7 +1882,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Installed size: 1.3 M
     node2: Downloading packages:
     node2: --------------------------------------------------------------------------------
-    node2: Total                                              829 kB/s | 461 kB  00:00     
+    node2: Total                                              921 kB/s | 461 kB  00:00     
     node2: Running transaction check
     node2: Running transaction test
     node2: Transaction test succeeded
@@ -2098,42 +2099,42 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2:   nano.x86_64 0:2.3.1-10.el7                                                    
     node2: Complete!
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:35:36: Setup /etc/hosts
+    node2: [0;34mINFO: [0m2021-10-17 15:58:05: Setup /etc/hosts
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:35:36: Setup SCAN on /etc/hosts
+    node2: [0;34mINFO: [0m2021-10-17 15:58:05: Setup SCAN on /etc/hosts
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:35:36: Setup /etc/resolv.conf
+    node2: [0;34mINFO: [0m2021-10-17 15:58:05: Setup /etc/resolv.conf
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:35:36: Setup chronyd service
+    node2: [0;34mINFO: [0m2021-10-17 15:58:05: Setup chronyd service
     node2: -----------------------------------------------------------------
     node2: 200 OK
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:35:36: Setting-up shared disks partions
+    node2: [0;34mINFO: [0m2021-10-17 15:58:05: Setting-up shared disks partions
     node2: -----------------------------------------------------------------
     node2: Error: Partition(s) 1 on /dev/vdc have been written, but we have been unable to inform the kernel of the change, probably because it/they are in use.  As a result, the old partition(s) will remain in use.  You should reboot now before making further changes.
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:35:36: Setting-up shared disks udev rules
+    node2: [0;34mINFO: [0m2021-10-17 15:58:05: Setting-up shared disks udev rules
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:35:36: Shared partprobe
+    node2: [0;34mINFO: [0m2021-10-17 15:58:06: Shared partprobe
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:36:07: Setup oracle and grid user
+    node2: [0;34mINFO: [0m2021-10-17 15:58:36: Setup oracle and grid user
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:36:08: Set oracle and grid limits
+    node2: [0;34mINFO: [0m2021-10-17 15:58:37: Set oracle and grid limits
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:36:08: Create GI_HOME and DB_HOME directories
+    node2: [0;34mINFO: [0m2021-10-17 15:58:37: Create GI_HOME and DB_HOME directories
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:36:08: Set user env
+    node2: [0;34mINFO: [0m2021-10-17 15:58:37: Set user env
     node2: -----------------------------------------------------------------
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:36:08: Installing bash-it
+    node2: [0;34mINFO: [0m2021-10-17 15:58:37: Installing bash-it
     node2: -----------------------------------------------------------------
     node2: Cloning into '/root/.bash_it'...
     node2: Installing bash-it
@@ -2155,8 +2156,6 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: To avoid issues and to keep your shell lean, please enable only features you really want to use.
     node2: Enabling everything can lead to issues.
     node2: 
-    node2: Current ORAENV =>
-    node2: 
     node2: PMON processes running
     node2: Cloning into '/home/oracle/.bash_it'...
     node2: Installing bash-it
@@ -2171,15 +2170,13 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: general enabled with priority 150.
     node2: [0;32mInstallation finished successfully! Enjoy bash-it![0m
     node2: [0;32mTo start using it, open a new tab or 'source ~/.bashrc'.[0m
-    node2: 
     node2: To show the available aliases/completions/plugins, type one of the following:
     node2:   bash-it show aliases
     node2:   bash-it show completions
     node2:   bash-it show plugins
+    node2: 
     node2: To avoid issues and to keep your shell lean, please enable only features you really want to use.
     node2: Enabling everything can lead to issues.
-    node2: 
-    node2: Current ORAENV =>
     node2: 
     node2: PMON processes running
     node2: Cloning into '/home/grid/.bash_it'...
@@ -2193,18 +2190,25 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: base enabled with priority 250.
     node2: alias-completion enabled with priority 365.
     node2: general enabled with priority 150.
-    node2: 
     node2: [0;32mInstallation finished successfully! Enjoy bash-it![0m
     node2: [0;32mTo start using it, open a new tab or 'source ~/.bashrc'.[0m
     node2: To show the available aliases/completions/plugins, type one of the following:
     node2:   bash-it show aliases
     node2:   bash-it show completions
     node2:   bash-it show plugins
-    node2: 
     node2: To avoid issues and to keep your shell lean, please enable only features you really want to use.
     node2: Enabling everything can lead to issues.
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:36:14: Set root, oracle and grid password
+    node2: [0;34mINFO: [0m2021-10-17 15:58:43: Installing Fred Denis oracle-scripts
+    node2: -----------------------------------------------------------------
+    node2: 
+    node2: PMON processes running
+    node2: Cloning into '/home/oracle/bin'...
+    node2: 
+    node2: PMON processes running
+    node2: Cloning into '/home/grid/bin'...
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-10-17 15:58:46: Set root, oracle and grid password
     node2: -----------------------------------------------------------------
     node2: Changing password for user root.
     node2: passwd: all authentication tokens updated successfully.
@@ -2213,7 +2217,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: Changing password for user oracle.
     node2: passwd: all authentication tokens updated successfully.
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:36:14: ASMLib disks label setup
+    node2: [0;34mINFO: [0m2021-10-17 15:58:46: ASMLib disks label setup
     node2: -----------------------------------------------------------------
     node2: Writing Oracle ASM library driver configuration: 
     node2: done
@@ -2286,7 +2290,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2: ORCL_DISK6_P1
     node2: ORCL_DISK6_P2
     node2: -----------------------------------------------------------------
-    node2: [0;34mINFO: [0m2021-10-17 12:36:16: Running user-defined post-setup scripts
+    node2: [0;34mINFO: [0m2021-10-17 15:58:48: Running user-defined post-setup scripts
     node2: -----------------------------------------------------------------
 ==> node2: Configuring proxy for Git...
 ==> node1: Creating image (snapshot of base box volume).
@@ -2337,7 +2341,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Key inserted! Disconnecting and reconnecting using new SSH key...
 ==> node1: Setting hostname...
 ==> node1: Configuring and enabling network interfaces...
-    node1: SSH address: 192.168.121.177:22
+    node1: SSH address: 192.168.121.2:22
     node1: SSH username: vagrant
     node1: SSH auth method: private key
 ==> node1: Configuring proxy environment variables...
@@ -2348,21 +2352,21 @@ Bringing machine 'node1' up with 'libvirt' provider...
 ==> node1: Running provisioner: shell...
     node1: Running: inline script
 ==> node1: Running provisioner: shell...
-    node1: Running: /tmp/vagrant-shell20211017-31005-n3x17o.sh
+    node1: Running: /tmp/vagrant-shell20211017-47535-1x76zeo.sh
     node1: -----------------------------------------------------------------
-    node1: 2021-10-17 11:37:30: Setup the environment variables
-    node1: -----------------------------------------------------------------
-    node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 11:37:30: Checking parameters
+    node1: 2021-10-17 15:00:01: Setup the environment variables
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 11:37:30: Fix locale warnings
+    node1: [0;34mINFO: [0m2021-10-17 15:00:01: Checking parameters
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 11:37:30: Set system time zone
+    node1: [0;34mINFO: [0m2021-10-17 15:00:01: Fix locale warnings
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:37:30: Setting-up /u01 disk
+    node1: [0;34mINFO: [0m2021-10-17 15:00:01: Set system time zone
+    node1: -----------------------------------------------------------------
+    node1: -----------------------------------------------------------------
+    node1: [0;34mINFO: [0m2021-10-17 16:00:01: Setting-up /u01 disk
     node1: -----------------------------------------------------------------
     node1:   Physical volume "/dev/vdb1" successfully created.
     node1:   Volume group "VolGroupU01" successfully created
@@ -2380,7 +2384,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Discarding blocks...
     node1: Done.
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:37:31: Install base packages
+    node1: [0;34mINFO: [0m2021-10-17 16:00:02: Install base packages
     node1: -----------------------------------------------------------------
     node1: Resolving Dependencies
     node1: --> Running transaction check
@@ -2636,7 +2640,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Downloading packages:
     node1: No Presto metadata available for ol7_latest
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              2.7 MB/s |  35 MB  00:12     
+    node1: Total                                              2.7 MB/s |  35 MB  00:13     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -2924,7 +2928,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1:   oracleasm-support.x86_64 0:2.1.11-2.el7                                       
     node1: Complete!
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:39:17: Add extra OS packages
+    node1: [0;34mINFO: [0m2021-10-17 16:01:46: Add extra OS packages
     node1: -----------------------------------------------------------------
     node1: Package bc-1.06.95-13.el7.x86_64 already installed and latest version
     node1: Nothing to do
@@ -3043,7 +3047,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Downloading packages:
     node1: No Presto metadata available for ol7_latest
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              2.4 MB/s | 5.4 MB  00:02     
+    node1: Total                                              2.3 MB/s | 5.4 MB  00:02     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -3377,7 +3381,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Installed size: 2.3 M
     node1: Downloading packages:
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              1.4 MB/s | 868 kB  00:00     
+    node1: Total                                              1.1 MB/s | 868 kB  00:00     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -3432,7 +3436,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Installed size: 151 k
     node1: Downloading packages:
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              154 kB/s |  78 kB  00:00     
+    node1: Total                                              217 kB/s |  78 kB  00:00     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -3635,7 +3639,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Installed size: 39 M
     node1: Downloading packages:
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              2.7 MB/s |  12 MB  00:04     
+    node1: Total                                              2.6 MB/s |  12 MB  00:04     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -3987,7 +3991,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Installed size: 3.6 M
     node1: Downloading packages:
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              1.1 MB/s | 847 kB  00:00     
+    node1: Total                                              1.2 MB/s | 847 kB  00:00     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -4044,7 +4048,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Installed size: 1.1 M
     node1: Downloading packages:
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              529 kB/s | 215 kB  00:00     
+    node1: Total                                              469 kB/s | 215 kB  00:00     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -4103,7 +4107,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Installed size: 684 k
     node1: Downloading packages:
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              514 kB/s | 229 kB  00:00     
+    node1: Total                                              462 kB/s | 229 kB  00:00     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -4152,7 +4156,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Installed size: 1.3 M
     node1: Downloading packages:
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              742 kB/s | 461 kB  00:00     
+    node1: Total                                              722 kB/s | 461 kB  00:00     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -4242,7 +4246,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Installed size: 23 M
     node1: Downloading packages:
     node1: --------------------------------------------------------------------------------
-    node1: Total                                              2.3 MB/s | 4.9 MB  00:02     
+    node1: Total                                              2.4 MB/s | 4.9 MB  00:02     
     node1: Running transaction check
     node1: Running transaction test
     node1: Transaction test succeeded
@@ -4369,41 +4373,41 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1:   nano.x86_64 0:2.3.1-10.el7                                                    
     node1: Complete!
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:13: Setup /etc/hosts
+    node1: [0;34mINFO: [0m2021-10-17 16:04:43: Setup /etc/hosts
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:13: Setup SCAN on /etc/hosts
+    node1: [0;34mINFO: [0m2021-10-17 16:04:43: Setup SCAN on /etc/hosts
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:13: Setup /etc/resolv.conf
+    node1: [0;34mINFO: [0m2021-10-17 16:04:43: Setup /etc/resolv.conf
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:13: Setup chronyd service
+    node1: [0;34mINFO: [0m2021-10-17 16:04:43: Setup chronyd service
     node1: -----------------------------------------------------------------
     node1: 200 OK
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:13: Setting-up shared disks partions
+    node1: [0;34mINFO: [0m2021-10-17 16:04:43: Setting-up shared disks partions
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:13: Setting-up shared disks udev rules
+    node1: [0;34mINFO: [0m2021-10-17 16:04:43: Setting-up shared disks udev rules
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:13: Shared partprobe
+    node1: [0;34mINFO: [0m2021-10-17 16:04:43: Shared partprobe
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:44: Setup oracle and grid user
+    node1: [0;34mINFO: [0m2021-10-17 16:05:13: Setup oracle and grid user
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:45: Set oracle and grid limits
+    node1: [0;34mINFO: [0m2021-10-17 16:05:14: Set oracle and grid limits
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:45: Create GI_HOME and DB_HOME directories
+    node1: [0;34mINFO: [0m2021-10-17 16:05:14: Create GI_HOME and DB_HOME directories
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:45: Set user env
+    node1: [0;34mINFO: [0m2021-10-17 16:05:14: Set user env
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:45: Installing bash-it
+    node1: [0;34mINFO: [0m2021-10-17 16:05:14: Installing bash-it
     node1: -----------------------------------------------------------------
     node1: Cloning into '/root/.bash_it'...
     node1: Installing bash-it
@@ -4416,16 +4420,17 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: base enabled with priority 250.
     node1: alias-completion enabled with priority 365.
     node1: general enabled with priority 150.
+    node1: 
     node1: [0;32mInstallation finished successfully! Enjoy bash-it![0m
     node1: [0;32mTo start using it, open a new tab or 'source ~/.bashrc'.[0m
+    node1: 
     node1: To show the available aliases/completions/plugins, type one of the following:
     node1:   bash-it show aliases
     node1:   bash-it show completions
     node1:   bash-it show plugins
+    node1: 
     node1: To avoid issues and to keep your shell lean, please enable only features you really want to use.
     node1: Enabling everything can lead to issues.
-    node1: 
-    node1: Current ORAENV =>
     node1: 
     node1: PMON processes running
     node1: Cloning into '/home/oracle/.bash_it'...
@@ -4445,11 +4450,8 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1:   bash-it show aliases
     node1:   bash-it show completions
     node1:   bash-it show plugins
-    node1: 
     node1: To avoid issues and to keep your shell lean, please enable only features you really want to use.
     node1: Enabling everything can lead to issues.
-    node1: 
-    node1: Current ORAENV =>
     node1: 
     node1: PMON processes running
     node1: Cloning into '/home/grid/.bash_it'...
@@ -4472,7 +4474,16 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: To avoid issues and to keep your shell lean, please enable only features you really want to use.
     node1: Enabling everything can lead to issues.
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:51: Set root, oracle and grid password
+    node1: [0;34mINFO: [0m2021-10-17 16:05:21: Installing Fred Denis oracle-scripts
+    node1: -----------------------------------------------------------------
+    node1: 
+    node1: PMON processes running
+    node1: Cloning into '/home/oracle/bin'...
+    node1: 
+    node1: PMON processes running
+    node1: Cloning into '/home/grid/bin'...
+    node1: -----------------------------------------------------------------
+    node1: [0;34mINFO: [0m2021-10-17 16:05:23: Set root, oracle and grid password
     node1: -----------------------------------------------------------------
     node1: Changing password for user root.
     node1: passwd: all authentication tokens updated successfully.
@@ -4481,37 +4492,37 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Changing password for user oracle.
     node1: passwd: all authentication tokens updated successfully.
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:42:51: Unzip grid software
+    node1: [0;34mINFO: [0m2021-10-17 16:05:24: Unzip grid software
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:43:43: Setup user equivalence
+    node1: [0;34mINFO: [0m2021-10-17 16:06:15: Setup user equivalence
     node1: -----------------------------------------------------------------
     node1: spawn /u01/app/21.3.0.0/grid/oui/prov/resources/scripts/sshUserSetup.sh -user grid -hosts rac1-node1 rac1-node2 -noPromptPassphrase -advanced
-    node1: The output of this script is also logged into /tmp/sshUserSetup_2021-10-17-12-43-43.log
+    node1: The output of this script is also logged into /tmp/sshUserSetup_2021-10-17-16-06-15.log
     node1: Hosts are rac1-node1 rac1-node2
     node1: user is grid
     node1: Platform:- Linux 
     node1: Checking if the remote hosts are reachable
     node1: PING rac1-node1.localdomain (192.168.125.111) 56(84) bytes of data.
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=1 ttl=64 time=0.064 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=2 ttl=64 time=0.027 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=3 ttl=64 time=0.052 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=4 ttl=64 time=0.057 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=1 ttl=64 time=0.068 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=2 ttl=64 time=0.036 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=3 ttl=64 time=0.027 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=4 ttl=64 time=0.027 ms
     node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=5 ttl=64 time=0.027 ms
     node1: 
     node1: --- rac1-node1.localdomain ping statistics ---
-    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4131ms
-    node1: rtt min/avg/max/mdev = 0.027/0.045/0.064/0.016 ms
+    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4080ms
+    node1: rtt min/avg/max/mdev = 0.027/0.037/0.068/0.015 ms
     node1: PING rac1-node2.localdomain (192.168.125.112) 56(84) bytes of data.
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=1 ttl=64 time=0.486 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=2 ttl=64 time=0.499 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=3 ttl=64 time=0.598 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=4 ttl=64 time=0.507 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=5 ttl=64 time=0.455 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=1 ttl=64 time=4.65 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=2 ttl=64 time=0.503 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=3 ttl=64 time=0.522 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=4 ttl=64 time=0.588 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=5 ttl=64 time=0.551 ms
     node1: 
     node1: --- rac1-node2.localdomain ping statistics ---
-    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4086ms
-    node1: rtt min/avg/max/mdev = 0.455/0.509/0.598/0.047 ms
+    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4087ms
+    node1: rtt min/avg/max/mdev = 0.503/1.364/4.657/1.646 ms
     node1: Remote host reachability check succeeded.
     node1: The following hosts are reachable: rac1-node1 rac1-node2.
     node1: The following hosts are not reachable: .
@@ -4548,18 +4559,18 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Your identification has been saved in /root/.ssh/id_rsa.
     node1: Your public key has been saved in /root/.ssh/id_rsa.pub.
     node1: The key fingerprint is:
-    node1: SHA256:HQKt52UDo4mqGkZ2K4qQCY+SyjEaS9Jd0QjCmM56HLM root@rac1-node1
+    node1: SHA256:uscdXOwkPCbxLNnOe4VriSN6pwAnnhj9tdLM79otS8A root@rac1-node1
     node1: The key's randomart image is:
     node1: +---[RSA 1024]----+
-    node1: | +. . ..         |
-    node1: |o .. . ++        |
-    node1: |o    .o+oo.      |
-    node1: | oo . +..o+.     |
-    node1: |o+ *  .oSo..     |
-    node1: |=BE...  .        |
-    node1: |@Oo..            |
-    node1: |&++              |
-    node1: |O.               |
+    node1: |                 |
+    node1: |        .        |
+    node1: |         B .     |
+    node1: |   .   .+ O +    |
+    node1: |  . + . EB * .   |
+    node1: |   + * * o= o .  |
+    node1: |  . o =.=..+ +   |
+    node1: |       +=+B.=    |
+    node1: |      o+o*=*.    |
     node1: +----[SHA256]-----+
     node1: Creating .ssh directory and setting permissions on remote host rac1-node1
     node1: THE SCRIPT WOULD ALSO BE REVOKING WRITE PERMISSIONS FOR group AND others ON THE HOME DIRECTORY FOR grid. THIS IS AN SSH REQUIREMENT.
@@ -4588,36 +4599,36 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Your identification has been saved in .ssh/id_rsa.
     node1: Your public key has been saved in .ssh/id_rsa.pub.
     node1: The key fingerprint is:
-    node1: SHA256:SU27mp/ffGXXfYlRTJz3h1qXOjFodhdwUFndCZQu7iA grid@rac1-node1
+    node1: SHA256:Gjqq/Q6Ce0H12kjVVXLz9bmZAqfdCaY92JiiQbieB8k grid@rac1-node1
     node1: The key's randomart image is:
     node1: +---[RSA 1024]----+
-    node1: |          . .=X+O|
-    node1: |         o . ..O+|
-    node1: |        . o o ..=|
-    node1: |       . . * *oo+|
-    node1: |        S = ooB.=|
-    node1: |       E + ..+ .B|
-    node1: |        + o   ..+|
-    node1: |         . o o  .|
-    node1: |          o.. o. |
+    node1: |       . .o.+   .|
+    node1: |    . o .  o o .o|
+    node1: |   . + .   . +...|
+    node1: |  . o =     & o =|
+    node1: | . . E..S. * * * |
+    node1: |. . +.+oo .   o  |
+    node1: |o ..oo.o         |
+    node1: | +.o ..          |
+    node1: |ooooo            |
     node1: +----[SHA256]-----+
     node1: Creating keys on remote host rac1-node2 if they do not exist already. This is required to setup SSH on host rac1-node2.
     node1: Generating public/private rsa key pair.
     node1: Your identification has been saved in .ssh/id_rsa.
     node1: Your public key has been saved in .ssh/id_rsa.pub.
     node1: The key fingerprint is:
-    node1: SHA256:1fZIcJBXciGtW+b97pkabINnn5ZZF2PnBRt4egcRuh4 grid@rac1-node2
+    node1: SHA256:pvKI2k1HxY5AxdWAlyxKb/vvAJcMf2cHJ7FAtXmBFTo grid@rac1-node2
     node1: The key's randomart image is:
     node1: +---[RSA 1024]----+
-    node1: |          oo++*+ |
-    node1: |          .+o=*  |
-    node1: |          ..=+ = |
-    node1: |         . oo+=++|
-    node1: |        S   E*o+=|
-    node1: |           .+.. =|
-    node1: |           ..B  *|
-    node1: |            + ++=|
-    node1: |             .oBo|
+    node1: |    .o.+o=o.oo+. |
+    node1: |   .. +.+ ...* . |
+    node1: |   ..o.oo   E o  |
+    node1: |    ..oB .   *   |
+    node1: |     .+.S . o .  |
+    node1: |     ..= . o .   |
+    node1: |    o o..        |
+    node1: | . + =  ..       |
+    node1: |..o o .  oo      |
     node1: +----[SHA256]-----+
     node1: Updating authorized_keys file on remote host rac1-node1
     node1: Updating known_hosts file on remote host rac1-node1
@@ -4648,51 +4659,51 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: --rac1-node1:--
     node1: Running /usr/bin/ssh -x -l grid rac1-node1 date to verify SSH connectivity has been setup from local host to rac1-node1.
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL. Please note that being prompted for a passphrase may be OK but being prompted for a password is ERROR.
-    node1: Sun Oct 17 12:43:57 +01 2021
+    node1: Sun Oct 17 16:06:28 +01 2021
     node1: ------------------------------------------------------------------------
     node1: --rac1-node2:--
     node1: Running /usr/bin/ssh -x -l grid rac1-node2 date to verify SSH connectivity has been setup from local host to rac1-node2.
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL. Please note that being prompted for a passphrase may be OK but being prompted for a password is ERROR.
-    node1: Sun Oct 17 12:43:57 +01 2021
+    node1: Sun Oct 17 16:06:29 +01 2021
     node1: ------------------------------------------------------------------------
     node1: ------------------------------------------------------------------------
     node1: Verifying SSH connectivity has been setup from rac1-node1 to rac1-node1
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL.
-    node1: Sun Oct 17 12:43:58 +01 2021
+    node1: Sun Oct 17 16:06:29 +01 2021
     node1: ------------------------------------------------------------------------
     node1: ------------------------------------------------------------------------
     node1: Verifying SSH connectivity has been setup from rac1-node1 to rac1-node2
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL.
-    node1: Sun Oct 17 12:43:58 +01 2021
+    node1: Sun Oct 17 16:06:30 +01 2021
     node1: ------------------------------------------------------------------------
     node1: -Verification from complete-
     node1: SSH verification complete.
     node1: spawn /u01/app/21.3.0.0/grid/oui/prov/resources/scripts/sshUserSetup.sh -user oracle -hosts rac1-node1 rac1-node2 -noPromptPassphrase -advanced
-    node1: The output of this script is also logged into /tmp/sshUserSetup_2021-10-17-12-43-58.log
+    node1: The output of this script is also logged into /tmp/sshUserSetup_2021-10-17-16-06-30.log
     node1: Hosts are rac1-node1 rac1-node2
     node1: user is oracle
     node1: Platform:- Linux 
     node1: Checking if the remote hosts are reachable
     node1: PING rac1-node1.localdomain (192.168.125.111) 56(84) bytes of data.
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=1 ttl=64 time=0.062 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=2 ttl=64 time=0.027 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=3 ttl=64 time=0.027 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=1 ttl=64 time=0.093 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=2 ttl=64 time=0.028 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=3 ttl=64 time=0.026 ms
     node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=4 ttl=64 time=0.027 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=5 ttl=64 time=0.042 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=5 ttl=64 time=0.032 ms
     node1: 
     node1: --- rac1-node1.localdomain ping statistics ---
-    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4097ms
-    node1: rtt min/avg/max/mdev = 0.027/0.037/0.062/0.013 ms
+    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4136ms
+    node1: rtt min/avg/max/mdev = 0.026/0.041/0.093/0.026 ms
     node1: PING rac1-node2.localdomain (192.168.125.112) 56(84) bytes of data.
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=1 ttl=64 time=0.450 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=2 ttl=64 time=0.550 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=3 ttl=64 time=0.491 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=4 ttl=64 time=0.516 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=5 ttl=64 time=0.664 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=1 ttl=64 time=0.556 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=2 ttl=64 time=0.498 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=3 ttl=64 time=0.564 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=4 ttl=64 time=0.626 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=5 ttl=64 time=0.521 ms
     node1: 
     node1: --- rac1-node2.localdomain ping statistics ---
-    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4083ms
-    node1: rtt min/avg/max/mdev = 0.450/0.534/0.664/0.074 ms
+    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4087ms
+    node1: rtt min/avg/max/mdev = 0.498/0.553/0.626/0.043 ms
     node1: Remote host reachability check succeeded.
     node1: The following hosts are reachable: rac1-node1 rac1-node2.
     node1: The following hosts are not reachable: .
@@ -4750,36 +4761,36 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Your identification has been saved in .ssh/id_rsa.
     node1: Your public key has been saved in .ssh/id_rsa.pub.
     node1: The key fingerprint is:
-    node1: SHA256:KXso93+9pIIt6+CtW1m7t/f45LVgBB2JSLDgQ+1eYsI oracle@rac1-node1
+    node1: SHA256:N0TPiOmKLYTeRdt07K5Rg3f7Y3mGgjc++LWo6/sCAlQ oracle@rac1-node1
     node1: The key's randomart image is:
     node1: +---[RSA 1024]----+
-    node1: |     o..o.. ...  |
-    node1: |    o .... ....  |
-    node1: |    .o..   . .   |
-    node1: |     E.+ o  .    |
-    node1: |      = S .  .   |
-    node1: |       = o ..    |
-    node1: |    . = +o.  +. o|
-    node1: |     + *o o.+o++o|
-    node1: |      ++=+o+ooo=+|
+    node1: |     .E   .      |
+    node1: |    .    = +     |
+    node1: |   .  . + = o    |
+    node1: |   ... = =       |
+    node1: |  . ..o S B .    |
+    node1: | . o +...= + .   |
+    node1: |  . + o....o. .o |
+    node1: |     .   o+ =+=.o|
+    node1: |        ..=X==o+ |
     node1: +----[SHA256]-----+
     node1: Creating keys on remote host rac1-node2 if they do not exist already. This is required to setup SSH on host rac1-node2.
     node1: Generating public/private rsa key pair.
     node1: Your identification has been saved in .ssh/id_rsa.
     node1: Your public key has been saved in .ssh/id_rsa.pub.
     node1: The key fingerprint is:
-    node1: SHA256:703CvTaXdapZZ/3l5XnIAI0rSDwKkOr/4V2OzwhF1qE oracle@rac1-node2
+    node1: SHA256:GAJ3R70iOpMC+Q9kgmMlPsdQM0RywRZ6FxtmIGcJKLw oracle@rac1-node2
     node1: The key's randomart image is:
     node1: +---[RSA 1024]----+
-    node1: | .       .       |
-    node1: |o       o .      |
-    node1: |..   . E . o     |
-    node1: |. .   *   o .    |
-    node1: |.  . o +S  o     |
-    node1: | .  . o .o...   +|
-    node1: |  .  o   o+ oo.=B|
-    node1: |   .. + *. +o+*=*|
-    node1: |    .o +.+..=+ .=|
+    node1: |o+B&*=..o.       |
+    node1: |o+BB=.+.  .      |
+    node1: |+oB..o.    .     |
+    node1: |*E+o...o. .      |
+    node1: |.Bo  o..S.       |
+    node1: |  + =            |
+    node1: |   + o           |
+    node1: |    .            |
+    node1: |                 |
     node1: +----[SHA256]-----+
     node1: Updating authorized_keys file on remote host rac1-node1
     node1: Updating known_hosts file on remote host rac1-node1
@@ -4810,27 +4821,27 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: --rac1-node1:--
     node1: Running /usr/bin/ssh -x -l oracle rac1-node1 date to verify SSH connectivity has been setup from local host to rac1-node1.
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL. Please note that being prompted for a passphrase may be OK but being prompted for a password is ERROR.
-    node1: Sun Oct 17 12:44:12 +01 2021
+    node1: Sun Oct 17 16:06:44 +01 2021
     node1: ------------------------------------------------------------------------
     node1: --rac1-node2:--
     node1: Running /usr/bin/ssh -x -l oracle rac1-node2 date to verify SSH connectivity has been setup from local host to rac1-node2.
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL. Please note that being prompted for a passphrase may be OK but being prompted for a password is ERROR.
-    node1: Sun Oct 17 12:44:12 +01 2021
+    node1: Sun Oct 17 16:06:44 +01 2021
     node1: ------------------------------------------------------------------------
     node1: ------------------------------------------------------------------------
     node1: Verifying SSH connectivity has been setup from rac1-node1 to rac1-node1
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL.
-    node1: Sun Oct 17 12:44:13 +01 2021
+    node1: Sun Oct 17 16:06:45 +01 2021
     node1: ------------------------------------------------------------------------
     node1: ------------------------------------------------------------------------
     node1: Verifying SSH connectivity has been setup from rac1-node1 to rac1-node2
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL.
-    node1: Sun Oct 17 12:44:13 +01 2021
+    node1: Sun Oct 17 16:06:45 +01 2021
     node1: ------------------------------------------------------------------------
     node1: -Verification from complete-
     node1: SSH verification complete.
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:44:13: Install cvuqdisk package
+    node1: [0;34mINFO: [0m2021-10-17 16:06:45: Install cvuqdisk package
     node1: -----------------------------------------------------------------
     node1: Examining /u01/app/21.3.0.0/grid/cv/rpm/cvuqdisk-1.0.10-1.rpm: cvuqdisk-1.0.10-1.x86_64
     node1: Marking /u01/app/21.3.0.0/grid/cv/rpm/cvuqdisk-1.0.10-1.rpm to be installed
@@ -4867,7 +4878,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1:   cvuqdisk.x86_64 0:1.0.10-1                                                    
     node1: Complete!
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:44:16: ASMLib disks label setup
+    node1: [0;34mINFO: [0m2021-10-17 16:06:47: ASMLib disks label setup
     node1: -----------------------------------------------------------------
     node1: Writing Oracle ASM library driver configuration: 
     node1: done
@@ -4916,26 +4927,25 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: ORCL_DISK6_P1
     node1: ORCL_DISK6_P2
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:44:18: Make GI install command
+    node1: [0;34mINFO: [0m2021-10-17 16:06:48: Make GI install command
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:44:18: Grid Infrastructure installation as 'RAC'
-    node1: [0;34mINFO: [0m2021-10-17 12:44:18: - ASM library   : ASMLIB
-    node1: [0;34mINFO: [0m2021-10-17 12:44:18: - without MGMTDB: true
+    node1: [0;34mINFO: [0m2021-10-17 16:06:48: Grid Infrastructure installation as 'RAC'
+    node1: [0;34mINFO: [0m2021-10-17 16:06:48: - ASM library   : ASMLIB
+    node1: [0;34mINFO: [0m2021-10-17 16:06:48: - without MGMTDB: true
     node1: -----------------------------------------------------------------
     node1: 
-    node1: Current ORAENV =>
     node1: PMON processes running
     node1: Launching Oracle Grid Infrastructure Setup Wizard...
     node1: [WARNING] [INS-06009] SSH performance is detected to be slow, which may impact performance during remote node operations like copying the software and executing prerequisite checks.
     node1:    ACTION: Consider optimizing the ssh configuration.
     node1: [WARNING] [INS-13013] Target environment does not meet some mandatory requirements.
-    node1:    CAUSE: Some of the mandatory prerequisites are not met. See logs for details. /tmp/GridSetupActions2021-10-17_12-44-18PM/gridSetupActions2021-10-17_12-44-18PM.log
-    node1:    ACTION: Identify the list of failed prerequisite checks from the log: /tmp/GridSetupActions2021-10-17_12-44-18PM/gridSetupActions2021-10-17_12-44-18PM.log. Then either from the log file or from installation manual find the appropriate configuration to meet the prerequisites and fix it manually.
+    node1:    CAUSE: Some of the mandatory prerequisites are not met. See logs for details. /tmp/GridSetupActions2021-10-17_04-06-49PM/gridSetupActions2021-10-17_04-06-49PM.log
+    node1:    ACTION: Identify the list of failed prerequisite checks from the log: /tmp/GridSetupActions2021-10-17_04-06-49PM/gridSetupActions2021-10-17_04-06-49PM.log. Then either from the log file or from installation manual find the appropriate configuration to meet the prerequisites and fix it manually.
     node1: The response file for this session can be found at:
-    node1:  /u01/app/21.3.0.0/grid/install/response/grid_2021-10-17_12-44-18PM.rsp
+    node1:  /u01/app/21.3.0.0/grid/install/response/grid_2021-10-17_04-06-49PM.rsp
     node1: You can find the log of this install session at:
-    node1:  /tmp/GridSetupActions2021-10-17_12-44-18PM/gridSetupActions2021-10-17_12-44-18PM.log
+    node1:  /tmp/GridSetupActions2021-10-17_04-06-49PM/gridSetupActions2021-10-17_04-06-49PM.log
     node1: 
     node1: As a root user, execute the following script(s):
     node1: 	1. /u01/app/oraInventory/orainstRoot.sh
@@ -4944,44 +4954,56 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: [rac1-node1, rac1-node2]
     node1: Execute /u01/app/21.3.0.0/grid/root.sh on the following nodes: 
     node1: [rac1-node1, rac1-node2]
-    node1: 
     node1: Run the script on the node rac1-node1 first. After successful completion, you can start the script in parallel on all other nodes.
     node1: Successfully Setup Software with warning(s).
     node1: As install user, execute the following command to complete the configuration.
     node1: 	/u01/app/21.3.0.0/grid/gridSetup.sh -executeConfigTools -responseFile /u01/app/21.3.0.0/grid/install/response/gridsetup.rsp [-silent]
     node1: 
     node1: Moved the install session logs to:
-    node1:  /u01/app/oraInventory/logs/GridSetupActions2021-10-17_12-44-18PM
+    node1:  /u01/app/oraInventory/logs/GridSetupActions2021-10-17_04-06-49PM
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:49:46: Set root user equivalence
+    node1: [0;34mINFO: [0m2021-10-17 16:12:21: Set root user equivalence
     node1: -----------------------------------------------------------------
-    node1: spawn /u01/app/21.3.0.0/grid/oui/prov/resources/scripts/sshUserSetup.sh -user root -hosts rac1-node1 rac1-node2 
-    node1: -noPromptPassphrase -advanced
-    node1: The output of this script is also logged into /tmp/sshUserSetup_2021-10-17-12-49-46.log
+    node1: spawn
+    node1:  
+    node1: /u01/app/21.3.0.0/grid/oui/prov/resources/scripts/sshUserSetup.sh
+    node1:  
+    node1: -user
+    node1:  
+    node1: root
+    node1:  
+    node1: -hosts
+    node1:  
+    node1: rac1-node1 rac1-node2
+    node1:  
+    node1: -noPromptPassphrase
+    node1:  
+    node1: -advanced
+    node1: The output of this script is also logged into /tmp/sshUserSetup_2021-10-17-16-12-21.log
     node1: Hosts are rac1-node1 rac1-node2
     node1: user is root
     node1: Platform:- Linux 
     node1: Checking if the remote hosts are reachable
     node1: PING rac1-node1.localdomain (192.168.125.111) 56(84) bytes of data.
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=1 ttl=64 time=0.088 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=2 ttl=64 time=0.036 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=1 ttl=64 time=0.096 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=2 ttl=64 time=0.029 ms
     node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=3 ttl=64 time=0.028 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=4 ttl=64 time=0.034 ms
-    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=5 ttl=64 time=0.029 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=4 ttl=64 time=0.028 ms
+    node1: 64 bytes from rac1-node1.localdomain (192.168.125.111): icmp_seq=5 ttl=64 time=0.043 ms
     node1: 
     node1: --- rac1-node1.localdomain ping statistics ---
-    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4126ms
-    node1: rtt min/avg/max/mdev = 0.028/0.043/0.088/0.022 ms
+    node1: 5 packets transmitted, 5 received, 0% packet loss, time 4110ms
+    node1: rtt min/avg/max/mdev = 0.028/0.044/0.096/0.027 ms
     node1: PING rac1-node2.localdomain (192.168.125.112) 56(84) bytes of data.
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=1 ttl=64 time=0.431 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=2 ttl=64 time=0.547 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=3 ttl=64 time=0.555 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=4 ttl=64 time=0.448 ms
-    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=5 ttl=64 time=0.491 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=1 ttl=64 time=0.264 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=2 ttl=64 time=0.590 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=3 ttl=64 time=0.544 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=4 ttl=64 time=0.530 ms
+    node1: 64 bytes from rac1-node2.localdomain (192.168.125.112): icmp_seq=5 ttl=64 time=0.543 ms
     node1: 
     node1: --- rac1-node2.localdomain ping statistics ---
     node1: 5 packets transmitted, 5 received, 0% packet loss, time 4087ms
-    node1: rtt min/avg/max/mdev = 0.431/0.494/0.555/0.054 ms
+    node1: rtt min/avg/max/mdev = 0.264/0.494/0.590/0.117 ms
     node1: Remote host reachability check succeeded.
     node1: The following hosts are reachable: rac1-node1 rac1-node2.
     node1: The following hosts are not reachable: .
@@ -5040,18 +5062,18 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Your identification has been saved in .ssh/id_rsa.
     node1: Your public key has been saved in .ssh/id_rsa.pub.
     node1: The key fingerprint is:
-    node1: SHA256:naz+lObBLv5UmecTcZtM2boieeN5aRy8ktJ8ejmIK1I root@rac1-node2
+    node1: SHA256:uyM8yOYWe8+t9HBitBYWWlBSSuBqERVX1auntxn1z+0 root@rac1-node2
     node1: The key's randomart image is:
     node1: +---[RSA 1024]----+
-    node1: |                 |
-    node1: |                o|
-    node1: |              .oo|
-    node1: |         o . oo+o|
-    node1: |        S + +.++ |
-    node1: |        Eo + ooo |
-    node1: |       .. X++++= |
-    node1: |      ..o*o=*+@. |
-    node1: |       oo=*o+B . |
+    node1: |  ..+o=++...     |
+    node1: |   o o +    .    |
+    node1: |  . . . o    .   |
+    node1: |   o   o .  .    |
+    node1: |  o   . S  .  .  |
+    node1: | .  .  o +. .. . |
+    node1: |   . =  O .o.   .|
+    node1: |    * ==.B. .o .o|
+    node1: |   +.. +=oo.o. .E|
     node1: +----[SHA256]-----+
     node1: Updating authorized_keys file on remote host rac1-node1
     node1: Updating known_hosts file on remote host rac1-node1
@@ -5059,8 +5081,7 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Updating known_hosts file on remote host rac1-node2
     node1: cat: /root/.ssh/known_hosts.tmp
     node1: : No such file or directory
-    node1: cat: /root/.ssh/authorized_keys.tmp
-    node1: : No such file or directory
+    node1: cat: /root/.ssh/authorized_keys.tmp: No such file or directory
     node1: SSH setup is complete.
     node1: ------------------------------------------------------------------------
     node1: Verifying SSH setup
@@ -5086,68 +5107,65 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: --rac1-node1:--
     node1: Running /usr/bin/ssh -x -l root rac1-node1 date to verify SSH connectivity has been setup from local host to rac1-node1.
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL. Please note that being prompted for a passphrase may be OK but being prompted for a password is ERROR.
-    node1: Sun Oct 17 12:49:59 +01 2021
+    node1: Sun Oct 17 16:12:34 +01 2021
     node1: ------------------------------------------------------------------------
     node1: --rac1-node2:--
     node1: Running /usr/bin/ssh -x -l root rac1-node2 date to verify SSH connectivity has been setup from local host to rac1-node2.
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL. Please note that being prompted for a passphrase may be OK but being prompted for a password is ERROR.
-    node1: Sun Oct 17 12:50:00 +01 2021
+    node1: Sun Oct 17 16:12:35 +01 2021
     node1: ------------------------------------------------------------------------
     node1: ------------------------------------------------------------------------
     node1: Verifying SSH connectivity has been setup from rac1-node1 to rac1-node1
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL.
-    node1: Sun Oct 17 12:50:00 +01 2021
+    node1: Sun Oct 17 16:12:35 +01 2021
     node1: ------------------------------------------------------------------------
     node1: ------------------------------------------------------------------------
     node1: Verifying SSH connectivity has been setup from rac1-node1 to rac1-node2
     node1: IF YOU SEE ANY OTHER OUTPUT BESIDES THE OUTPUT OF THE DATE COMMAND OR IF YOU ARE PROMPTED FOR A PASSWORD HERE, IT MEANS SSH SETUP HAS NOT BEEN SUCCESSFUL.
-    node1: Sun Oct 17 12:50:01 +01 2021
+    node1: Sun Oct 17 16:12:36 +01 2021
     node1: ------------------------------------------------------------------------
     node1: -Verification from complete-
     node1: SSH verification complete.
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 12:50:01: Grid Infrastructure setup
+    node1: [0;34mINFO: [0m2021-10-17 16:12:36: Grid Infrastructure setup
     node1: -----------------------------------------------------------------
     node1: Changing permissions of /u01/app/oraInventory.
     node1: Adding read,write permissions for group.
     node1: Removing read,write,execute permissions for world.
     node1: Changing groupname of /u01/app/oraInventory to oinstall.
     node1: The execution of the script is complete.
-    node1: Check /u01/app/21.3.0.0/grid/install/root_rac1-node1_2021-10-17_12-50-01-317354368.log for the output of root script
+    node1: Check /u01/app/21.3.0.0/grid/install/root_rac1-node1_2021-10-17_16-12-36-316895697.log for the output of root script
     node1: Changing permissions of /u01/app/oraInventory.
     node1: Adding read,write permissions for group.
     node1: Removing read,write,execute permissions for world.
     node1: Changing groupname of /u01/app/oraInventory to oinstall.
     node1: The execution of the script is complete.
-    node1: Check /u01/app/21.3.0.0/grid/install/root_rac1-node2_2021-10-17_13-00-04-743003667.log for the output of root script
+    node1: Check /u01/app/21.3.0.0/grid/install/root_rac1-node2_2021-10-17_16-22-33-408337527.log for the output of root script
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 13:03:37: Make GI config command
+    node1: [0;34mINFO: [0m2021-10-17 16:26:13: Make GI config command
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 13:03:37: Grid Infrastructure configuration as 'RAC'
-    node1: [0;34mINFO: [0m2021-10-17 13:03:37: - ASM library   : ASMLIB
-    node1: [0;34mINFO: [0m2021-10-17 13:03:37: - without MGMTDB: true
+    node1: [0;34mINFO: [0m2021-10-17 16:26:13: Grid Infrastructure configuration as 'RAC'
+    node1: [0;34mINFO: [0m2021-10-17 16:26:13: - ASM library   : ASMLIB
+    node1: [0;34mINFO: [0m2021-10-17 16:26:13: - without MGMTDB: true
     node1: -----------------------------------------------------------------
     node1: 
-    node1: Current ORAENV =>
     node1: PMON processes running
-    node1: grid     16014     1  0 12:57 ?        00:00:00 asm_pmon_+ASM1
+    node1: grid     15866     1  0 16:19 ?        00:00:00 asm_pmon_+ASM1
     node1: Launching Oracle Grid Infrastructure Setup Wizard...
     node1: You can find the logs of this session at:
-    node1: /u01/app/oraInventory/logs/GridSetupActions2021-10-17_01-03-37PM
+    node1: /u01/app/oraInventory/logs/GridSetupActions2021-10-17_04-26-14PM
     node1: Configuration failed.
     node1: [WARNING] [INS-43080] Some of the configuration assistants failed, were cancelled or skipped.
     node1:    ACTION: Refer to the logs or contact Oracle Support Services.
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 13:06:07: Make RECO DG using ASMLib
+    node1: [0;34mINFO: [0m2021-10-17 16:28:44: Make RECO DG using ASMLib
     node1: -----------------------------------------------------------------
     node1: 
-    node1: Current ORAENV =>
-    node1: 
     node1: PMON processes running
-    node1: grid     16014     1  0 12:57 ?        00:00:00 asm_pmon_+ASM1
+    node1: grid     15866     1  0 16:19 ?        00:00:00 asm_pmon_+ASM1
     node1: 
-    node1: SQL*Plus: Release 21.0.0.0.0 - Production on Sun Oct 17 13:06:07 2021
+    node1: SQL*Plus: Release 21.0.0.0.0 - Production on Sun Oct 17 16:28:44 2021
     node1: Version 21.3.0.0.0
     node1: 
     node1: Copyright (c) 1982, 2021, Oracle.  All rights reserved.
@@ -5156,87 +5174,85 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Oracle Database 21c Enterprise Edition Release 21.0.0.0.0 - Production
     node1: Version 21.3.0.0.0
     node1: SQL> 
-    node1:   2  
-    node1:   3    4  
-    node1:   5  
-    node1:   6  
-    node1:   7  
-    node1:   8  
+    node1:   2    3  
+    node1:   4  
+    node1:   5    6  
+    node1:   7    8  
     node1: 
     node1: Diskgroup created.
+    node1: 
     node1: SQL> SQL> 
     node1: Disconnected from Oracle Database 21c Enterprise Edition Release 21.0.0.0.0 - Production
     node1: Version 21.3.0.0.0
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 13:06:16: Unzip RDBMS software
+    node1: [0;34mINFO: [0m2021-10-17 16:28:54: Unzip RDBMS software
     node1: -----------------------------------------------------------------
     node1: Unziping DB1 Home
     node1: Unziping DB2 Home
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 13:10:53: Make RDBMS software install command
+    node1: [0;34mINFO: [0m2021-10-17 16:32:58: Make RDBMS software install command
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 13:10:53: RDBMS software installation
+    node1: [0;34mINFO: [0m2021-10-17 16:32:58: RDBMS software installation
     node1: -----------------------------------------------------------------
-    node1: Installing DB1 Software
-    node1: 
-    node1: Current ORAENV =>
+    node1: -----------------------------------------------------------------
+    node1: [0;34mINFO: [0m2021-10-17 16:32:58: Installing DB1 Software
+    node1: -----------------------------------------------------------------
     node1: 
     node1: PMON processes running
-    node1: grid     16014     1  0 12:57 ?        00:00:00 asm_pmon_+ASM1
+    node1: grid     15866     1  0 16:19 ?        00:00:00 asm_pmon_+ASM1
     node1: Launching Oracle Database Setup Wizard...
     node1: [WARNING] [INS-13013] Target environment does not meet some mandatory requirements.
-    node1:    CAUSE: Some of the mandatory prerequisites are not met. See logs for details. /u01/app/oraInventory/logs/InstallActions2021-10-17_01-10-54PM/installActions2021-10-17_01-10-54PM.log
-    node1:    ACTION: Identify the list of failed prerequisite checks from the log: /u01/app/oraInventory/logs/InstallActions2021-10-17_01-10-54PM/installActions2021-10-17_01-10-54PM.log. Then either from the log file or from installation manual find the appropriate configuration to meet the prerequisites and fix it manually.
+    node1:    CAUSE: Some of the mandatory prerequisites are not met. See logs for details. /u01/app/oraInventory/logs/InstallActions2021-10-17_04-32-58PM/installActions2021-10-17_04-32-58PM.log
+    node1:    ACTION: Identify the list of failed prerequisite checks from the log: /u01/app/oraInventory/logs/InstallActions2021-10-17_04-32-58PM/installActions2021-10-17_04-32-58PM.log. Then either from the log file or from installation manual find the appropriate configuration to meet the prerequisites and fix it manually.
     node1: The response file for this session can be found at:
-    node1:  /u01/app/oracle/product/21.3.0.0/dbhome_1/install/response/db_2021-10-17_01-10-54PM.rsp
-    node1: 
+    node1:  /u01/app/oracle/product/21.3.0.0/dbhome_1/install/response/db_2021-10-17_04-32-58PM.rsp
     node1: You can find the log of this install session at:
-    node1:  /u01/app/oraInventory/logs/InstallActions2021-10-17_01-10-54PM/installActions2021-10-17_01-10-54PM.log
+    node1:  /u01/app/oraInventory/logs/InstallActions2021-10-17_04-32-58PM/installActions2021-10-17_04-32-58PM.log
     node1: 
     node1: As a root user, execute the following script(s):
     node1: 	1. /u01/app/oracle/product/21.3.0.0/dbhome_1/root.sh
+    node1: 
+    node1: 
     node1: Execute /u01/app/oracle/product/21.3.0.0/dbhome_1/root.sh on the following nodes: 
     node1: [rac1-node1, rac1-node2]
     node1: 
-    node1: 
     node1: Successfully Setup Software with warning(s).
-    node1: Check /u01/app/oracle/product/21.3.0.0/dbhome_1/install/root_rac1-node1_2021-10-17_13-19-48-769728320.log for the output of root script
-    node1: Check /u01/app/oracle/product/21.3.0.0/dbhome_1/install/root_rac1-node2_2021-10-17_13-19-49-249373820.log for the output of root script
-    node1: Installing DB2 Software
+    node1: Check /u01/app/oracle/product/21.3.0.0/dbhome_1/install/root_rac1-node1_2021-10-17_16-40-09-688905020.log for the output of root script
+    node1: Check /u01/app/oracle/product/21.3.0.0/dbhome_1/install/root_rac1-node2_2021-10-17_16-40-10-196070117.log for the output of root script
+    node1: -----------------------------------------------------------------
+    node1: [0;34mINFO: [0m2021-10-17 16:40:10: Installing DB1 Software
+    node1: -----------------------------------------------------------------
     node1: 
-    node1: Current ORAENV =>
     node1: PMON processes running
-    node1: grid     16014     1  0 12:57 ?        00:00:00 asm_pmon_+ASM1
+    node1: grid     15866     1  0 16:19 ?        00:00:00 asm_pmon_+ASM1
     node1: Launching Oracle Database Setup Wizard...
     node1: [WARNING] [INS-13013] Target environment does not meet some mandatory requirements.
-    node1:    CAUSE: Some of the mandatory prerequisites are not met. See logs for details. /u01/app/oraInventory/logs/InstallActions2021-10-17_01-19-49PM/installActions2021-10-17_01-19-49PM.log
-    node1:    ACTION: Identify the list of failed prerequisite checks from the log: /u01/app/oraInventory/logs/InstallActions2021-10-17_01-19-49PM/installActions2021-10-17_01-19-49PM.log. Then either from the log file or from installation manual find the appropriate configuration to meet the prerequisites and fix it manually.
+    node1:    CAUSE: Some of the mandatory prerequisites are not met. See logs for details. /u01/app/oraInventory/logs/InstallActions2021-10-17_04-40-10PM/installActions2021-10-17_04-40-10PM.log
+    node1:    ACTION: Identify the list of failed prerequisite checks from the log: /u01/app/oraInventory/logs/InstallActions2021-10-17_04-40-10PM/installActions2021-10-17_04-40-10PM.log. Then either from the log file or from installation manual find the appropriate configuration to meet the prerequisites and fix it manually.
     node1: The response file for this session can be found at:
-    node1:  /u01/app/oracle/product/19.3.0.0/dbhome_1/install/response/db_2021-10-17_01-19-49PM.rsp
+    node1:  /u01/app/oracle/product/19.3.0.0/dbhome_1/install/response/db_2021-10-17_04-40-10PM.rsp
     node1: You can find the log of this install session at:
-    node1:  /u01/app/oraInventory/logs/InstallActions2021-10-17_01-19-49PM/installActions2021-10-17_01-19-49PM.log
+    node1:  /u01/app/oraInventory/logs/InstallActions2021-10-17_04-40-10PM/installActions2021-10-17_04-40-10PM.log
     node1: 
     node1: As a root user, execute the following script(s):
     node1: 	1. /u01/app/oracle/product/19.3.0.0/dbhome_1/root.sh
     node1: Execute /u01/app/oracle/product/19.3.0.0/dbhome_1/root.sh on the following nodes: 
     node1: [rac1-node1, rac1-node2]
     node1: 
-    node1: 
     node1: Successfully Setup Software with warning(s).
-    node1: Check /u01/app/oracle/product/19.3.0.0/dbhome_1/install/root_rac1-node1_2021-10-17_13-28-23-011998250.log for the output of root script
-    node1: Check /u01/app/oracle/product/19.3.0.0/dbhome_1/install/root_rac1-node2_2021-10-17_13-28-23-470188666.log for the output of root script
+    node1: Check /u01/app/oracle/product/19.3.0.0/dbhome_1/install/root_rac1-node1_2021-10-17_16-47-15-657908230.log for the output of root script
+    node1: Check /u01/app/oracle/product/19.3.0.0/dbhome_1/install/root_rac1-node2_2021-10-17_16-47-16-118469083.log for the output of root script
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 13:28:23: Make create database command
+    node1: [0;34mINFO: [0m2021-10-17 16:47:16: Make create database command
     node1: -----------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 13:28:23: Create database
+    node1: [0;34mINFO: [0m2021-10-17 16:47:16: Create database 1
     node1: -----------------------------------------------------------------
     node1: Creating Database1
     node1: 
-    node1: Current ORAENV =>
     node1: PMON processes running
-    node1: grid     16014     1  0 12:57 ?        00:00:00 asm_pmon_+ASM1
+    node1: grid     15866     1  0 16:19 ?        00:00:00 asm_pmon_+ASM1
     node1: [WARNING] [DBT-06801] Specified Fast Recovery Area size (2,048 MB) is less than the recommended value.
     node1:    CAUSE: Fast Recovery Area size should at least be three times the database size (2,482 MB).
     node1:    ACTION: Specify Fast Recovery Area Size to be at least three times the database size.
@@ -5271,12 +5287,14 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Global Database Name:CDB21
     node1: System Identifier(SID) Prefix:CDB21
     node1: Look at the log file "/u01/app/oracle/cfgtoollogs/dbca/CDB21/CDB21.log" for further details.
+    node1: -----------------------------------------------------------------
+    node1: [0;34mINFO: [0m2021-10-17 17:02:41: Create database 2
+    node1: -----------------------------------------------------------------
     node1: Creating Database2
-    node1: Current ORAENV => CDB211
     node1: 
     node1: PMON processes running
-    node1: oracle   11530     1  0 13:42 ?        00:00:00 ora_pmon_CDB211
-    node1: grid     16014     1  0 12:57 ?        00:00:00 asm_pmon_+ASM1
+    node1: grid     15866     1  0 16:19 ?        00:00:00 asm_pmon_+ASM1
+    node1: oracle   20574     1  0 17:01 ?        00:00:00 ora_pmon_CDB211
     node1: [WARNING] [DBT-10331] Specified SID Prefix (CDB19) may have a potential conflict with an already existing database on the system.
     node1:    CAUSE: The specified SID Prefix without the trailing numeric characters (CDB) may have a potential conflict with an already existing database on the system.
     node1:    ACTION: Specify a different SID Prefix that does not conflict with existing databases on the system.
@@ -5315,24 +5333,22 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: System Identifier(SID) Prefix:CDB19
     node1: Look at the log file "/u01/app/oracle/cfgtoollogs/dbca/CDB19/CDB19.log" for further details.
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 14:15:49: Check database
+    node1: [0;34mINFO: [0m2021-10-17 17:33:21: Check databases
     node1: -----------------------------------------------------------------
-    node1: 
-    node1: Current ORAENV => CDB211
     node1: 
     node1: PMON processes running
-    node1: oracle   11530     1  0 13:42 ?        00:00:00 ora_pmon_CDB211
-    node1: grid     16014     1  0 12:57 ?        00:00:00 asm_pmon_+ASM1
-    node1: oracle   22716     1  0 14:14 ?        00:00:00 ora_pmon_CDB191
+    node1: grid     15866     1  0 16:19 ?        00:00:00 asm_pmon_+ASM1
+    node1: oracle   18339     1  0 17:32 ?        00:00:00 ora_pmon_CDB191
+    node1: oracle   20574     1  0 17:01 ?        00:00:00 ora_pmon_CDB211
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 14:15:50: Config database
+    node1: [0;34mINFO: [0m2021-10-17 17:33:21: Config database
     node1: -----------------------------------------------------------------
     node1: Database unique name: CDB21
     node1: Database name: CDB21
     node1: Oracle home: /u01/app/oracle/product/21.3.0.0/dbhome_1
     node1: Oracle user: oracle
-    node1: Spfile: +DATA/CDB21/PARAMETERFILE/spfile.274.1086183619
-    node1: Password file: +DATA/CDB21/PASSWORD/pwdcdb21.258.1086182993
+    node1: Spfile: +DATA/CDB21/PARAMETERFILE/spfile.274.1086195533
+    node1: Password file: +DATA/CDB21/PASSWORD/pwdcdb21.258.1086194927
     node1: Domain: 
     node1: Start options: open
     node1: Stop options: immediate
@@ -5356,22 +5372,22 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Default network number for database services: 
     node1: Database is administrator managed
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 14:15:52: Database Status
+    node1: [0;34mINFO: [0m2021-10-17 17:33:24: Database Status
     node1: -----------------------------------------------------------------
     node1: Instance CDB211 is running on node rac1-node1
     node1: Instance CDB212 is running on node rac1-node2
     node1: -----------------------------------------------------------------------------------
-    node1: [1;32mSUCCESS: [0m2021-10-17 14:15:54: Oracle RAC on Vagrant has been created successfully!
+    node1: [1;32mSUCCESS: [0m2021-10-17 17:33:25: Oracle RAC on Vagrant has been created successfully!
     node1: -----------------------------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 14:15:54: Config database
+    node1: [0;34mINFO: [0m2021-10-17 17:33:25: Config database
     node1: -----------------------------------------------------------------
     node1: Database unique name: CDB19
     node1: Database name: CDB19
     node1: Oracle home: /u01/app/oracle/product/19.3.0.0/dbhome_1
     node1: Oracle user: oracle
-    node1: Spfile: +DATA/CDB19/PARAMETERFILE/spfile.297.1086185407
-    node1: Password file: +DATA/CDB19/PASSWORD/pwdcdb19.281.1086183969
+    node1: Spfile: +DATA/CDB19/PARAMETERFILE/spfile.297.1086197279
+    node1: Password file: +DATA/CDB19/PASSWORD/pwdcdb19.281.1086195875
     node1: Domain: 
     node1: Start options: open
     node1: Stop options: immediate
@@ -5395,18 +5411,18 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: Default network number for database services: 
     node1: Database is administrator managed
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 14:15:57: Database Status
+    node1: [0;34mINFO: [0m2021-10-17 17:33:27: Database Status
     node1: -----------------------------------------------------------------
     node1: Instance CDB191 is running on node rac1-node1
     node1: Instance CDB192 is running on node rac1-node2
     node1: -----------------------------------------------------------------------------------
-    node1: [1;32mSUCCESS: [0m2021-10-17 14:15:58: Oracle RAC on Vagrant has been created successfully!
+    node1: [1;32mSUCCESS: [0m2021-10-17 17:33:29: Oracle RAC on Vagrant has been created successfully!
     node1: -----------------------------------------------------------------------------------
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 14:15:58: Modify oratab file
+    node1: [0;34mINFO: [0m2021-10-17 17:33:29: Modify oratab file
     node1: -----------------------------------------------------------------
     node1: ssh: Could not resolve hostname : Name or service not known
     node1: -----------------------------------------------------------------
-    node1: [0;34mINFO: [0m2021-10-17 14:15:58: Running user-defined post-setup scripts
+    node1: [0;34mINFO: [0m2021-10-17 17:33:29: Running user-defined post-setup scripts
     node1: -----------------------------------------------------------------
 ==> node1: Configuring proxy for Git...

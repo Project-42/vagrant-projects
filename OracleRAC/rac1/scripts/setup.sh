@@ -821,6 +821,9 @@ sh /vagrant/scripts/05_setup_shared_disks.sh $BOX_DISK_NUM $PROVIDER
 # Setup users
 sh /vagrant/scripts/06_setup_users.sh
 
+
+
+
 # Setup users password
 echo "-----------------------------------------------------------------"
 echo -e "${INFO}`date +%F' '%T`: Set root, oracle and grid password"
@@ -975,12 +978,19 @@ then
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: RDBMS software installation"
   echo "-----------------------------------------------------------------"
-  echo "Installing DB1 Software"
+
+  echo "-----------------------------------------------------------------"
+  echo -e "${INFO}`date +%F' '%T`: Installing DB1 Software"
+  echo "-----------------------------------------------------------------"
+
   su - oracle -c 'sh /vagrant/scripts/13_RDBMS_software_installation.sh'
   sh ${DB_HOME}/root.sh
   ssh root@${NODE2_HOSTNAME} sh ${DB_HOME}/root.sh
 
-  echo "Installing DB2 Software"
+  echo "-----------------------------------------------------------------"
+  echo -e "${INFO}`date +%F' '%T`: Installing DB1 Software"
+  echo "-----------------------------------------------------------------"
+
   su - oracle -c 'sh /vagrant/scripts/13_RDBMS_software_installation2.sh'
   sh ${DB2_HOME}/root.sh
   ssh root@${NODE2_HOSTNAME} sh ${DB2_HOME}/root.sh  
@@ -1004,19 +1014,31 @@ then
 
   # create database 
   echo "-----------------------------------------------------------------"
-  echo -e "${INFO}`date +%F' '%T`: Create database"
+  echo -e "${INFO}`date +%F' '%T`: Create database 1"
   echo "-----------------------------------------------------------------"
   echo Creating Database1
   su - oracle -c 'sh /vagrant/scripts/14_create_database.sh'
+
+  echo "-----------------------------------------------------------------"
+  echo -e "${INFO}`date +%F' '%T`: Create database 2"
+  echo "-----------------------------------------------------------------"
   
   echo Creating Database2
   su - oracle -c 'sh /vagrant/scripts/14_create_database2.sh'
 
   # Check database 
   echo "-----------------------------------------------------------------"
-  echo -e "${INFO}`date +%F' '%T`: Check database"
+  echo -e "${INFO}`date +%F' '%T`: Check databases"
   echo "-----------------------------------------------------------------"
   su - oracle -c 'sh /vagrant/scripts/15_Check_database.sh'
+
+  # Modify oratab file
+  echo "-----------------------------------------------------------------"
+  echo -e "${INFO}`date +%F' '%T`: Modify oratab file"
+  echo "-----------------------------------------------------------------"
+  su - root -c 'sh /vagrant/scripts/16_modify_oratab.sh'
+  su - root -c 'ssh root@${NODE2_HOSTNAME} /vagrant/scripts/16_modify_oratab.sh'
+
 
 elif [ "${ORESTART}" == "true" ]
 then
@@ -1136,8 +1158,9 @@ then
   echo "-----------------------------------------------------------------"
   echo -e "${INFO}`date +%F' '%T`: Modify oratab file"
   echo "-----------------------------------------------------------------"
-  su - oracle -c 'sh /vagrant/scripts/16_modify_oratab.sh'
-  su - oracle -c 'ssh oracle@${NODE2_HOSTNAME} /vagrant/scripts/16_modify_oratab.sh'
+  su - root -c 'sh /vagrant/scripts/16_modify_oratab.sh'
+  ssh root@${NODE2_HOSTNAME} sh /vagrant/scripts/16_modify_oratab.sh'
+
 fi
 
 

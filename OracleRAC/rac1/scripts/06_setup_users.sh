@@ -150,7 +150,105 @@ EOF
 fi
 
 
+echo "-----------------------------------------------------------------"
+echo -e "${INFO}`date +%F' '%T`: Installing bash-it"
+echo "-----------------------------------------------------------------"
+
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it ; y | ~/.bash_it/install.sh
+
+cat > /root/.bash_it/lib/custom.bash <<EOF
+## History configuration ##
+export HISTFILESIZE=300000
+export HISTSIZE=300000
+export HISTTIMEFORMAT="%h/%d - %H:%M:%S "
+
+## Add to PATH ##
+PATH=~/bin:~/.local/bin:$PATH
+EOF
+
+cat > /root/.bash_it/completion/custom.completion.bash <<EOF
+### FUNCTIONS ###
+
+hi (){
+history |grep -i $1
+}
+
+
+ali (){
+alias |grep -i $1
+}
+EOF
+
+
+cat > /root/.bash_it/themes/bobby/bobby.theme.bash <<EOF
+#!/usr/bin/env bash
+
+SCM_THEME_PROMPT_DIRTY=" ${red}✗"
+SCM_THEME_PROMPT_CLEAN=" ${bold_green}✓"
+SCM_THEME_PROMPT_PREFIX=" ${green}|"
+SCM_THEME_PROMPT_SUFFIX="${green}|"
+
+GIT_THEME_PROMPT_DIRTY=" ${red}✗"
+GIT_THEME_PROMPT_CLEAN=" ${bold_green}✓"
+GIT_THEME_PROMPT_PREFIX=" ${green}|"
+GIT_THEME_PROMPT_SUFFIX="${green}|"
+
+RVM_THEME_PROMPT_PREFIX="|"
+RVM_THEME_PROMPT_SUFFIX="|"
+
+__bobby_clock() {
+  printf "$(clock_prompt) "
+
+  if [ "${THEME_SHOW_CLOCK_CHAR}" == "true" ]; then
+    printf "$(clock_char) "
+  fi
+}
+
+function prompt_command() {
+    PS1="\n$(ruby_version_prompt)${green}|=| ${white}\u${white}@${white}\h ${cyan}[\$ORACLE_SID] ${reset_color}in ${green}\w ${bold_blue}$(scm_prompt_char_info) ${green}→${reset_color} "
+}
+
+THEME_SHOW_CLOCK_CHAR=${THEME_SHOW_CLOCK_CHAR:-"false"}
+THEME_CLOCK_CHAR_COLOR=${THEME_CLOCK_CHAR_COLOR:-"$red"}
+THEME_CLOCK_COLOR=${THEME_CLOCK_COLOR:-"$back"}
+THEME_CLOCK_FORMAT=${THEME_CLOCK_FORMAT:-"%H:%M:%S"}
+
+safe_append_prompt_command prompt_command
+EOF
+
+
+cat > /root/.bash_it/aliases/custom.aliases.bash <<EOF
+alias ll="ls -lrth"
+alias duf='sudo du -schx .[!.]* * 2>/dev/null |sort -h'
+alias dua='ncdu --color dark -rr -x /'
+alias cat='highlight -O ansi --force'
+alias cath='highlight -O ansi --force'
+alias cats='highlight -O ansi --force'
+alias rac1-node1="ssh oracle@rac1-node1"
+alias rac2-node1="ssh oracle@rac2-node1"
+alias shut="sudo shutdown -h now"
+#alias glances="glances --theme-white -2"
+alias glances="glances -2"
+alias pmon="ps -ef |grep pmon |grep -v grep"
+EOF
+
+
+
+
+su -l oracle -c "git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it ; y | ~/.bash_it/install.sh"
+su -l grid -c "git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it ; y | ~/.bash_it/install.sh"
+
+
+
+for i in {oracle,grid} ; do
+cp -pr /root/.bash_it/lib/custom.bash /home/$i/.bash_it/lib/custom.bash
+cp -pr /root/.bash_it/completion/custom.completion.bash /home/$i/.bash_it/completion/custom.completion.bash
+cp -pr /root/.bash_it/themes/bobby/bobby.theme.bash /home/$i/.bash_it/themes/bobby/bobby.theme.bash
+cp -pr /root/.bash_it/aliases/custom.aliases.bash /home/$i/.bash_it/aliases/custom.aliases.bash
+chown $i:oinstall /home/$i/.bash_it/lib/custom.bash /home/$i/.bash_it/completion/custom.completion.bash /home/$i/.bash_it/themes/bobby/bobby.theme.bash /home/$i/.bash_it/aliases/custom.aliases.bash
+done
+
+
 #----------------------------------------------------------
 # EndOfFile
 #----------------------------------------------------------
-

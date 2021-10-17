@@ -1131,9 +1131,15 @@ then
   echo -e "${INFO}`date +%F' '%T`: Check database"
   echo "-----------------------------------------------------------------"
   su - oracle -c 'sh /vagrant/scripts/15_Check_database.sh'
+
+  # Modify oratab file
+  echo "-----------------------------------------------------------------"
+  echo -e "${INFO}`date +%F' '%T`: Modify oratab file"
+  echo "-----------------------------------------------------------------"
+  su - oracle -c 'sh /vagrant/scripts/16_modify_oratab.sh'
+  su - oracle -c 'ssh oracle@${NODE2_HOSTNAME} /vagrant/scripts/16_modify_oratab.sh'
 fi
 
-su - oracle -c 'sh /vagrant/scripts/16_modify_oratab.sh'
 
 # run user-defined post-setup scripts
 run_user_scripts;

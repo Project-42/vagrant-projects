@@ -103,7 +103,7 @@ if [ `hostname` == ${NODE1_HOSTNAME} ]
 then
   cat >> /home/grid/.bash_profile << EOF
 export ORACLE_HOME=${GI_HOME}
-export PATH=\$ORACLE_HOME/bin:$PATH
+export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
 export ORACLE_SID=+ASM1
 echo ""
 echo "Current ORAENV => ${ORACLE_SID}"
@@ -114,7 +114,7 @@ EOF
 
   cat >> /home/oracle/.bash_profile << EOF
 export ORACLE_HOME=${DB_HOME}
-export PATH=\$ORACLE_HOME/bin:$PATH
+export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
 export ORACLE_SID=${DB_NAME}1
 echo ""
 echo "Current ORAENV => ${ORACLE_SID}"
@@ -128,7 +128,7 @@ if [ `hostname` == ${NODE2_HOSTNAME} ]
 then
   cat >> /home/grid/.bash_profile << EOF
 export ORACLE_HOME=${GI_HOME}
-export PATH=\$ORACLE_HOME/bin:$PATH
+export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
 export ORACLE_SID=+ASM2
 echo ""
 echo "Current ORAENV => ${ORACLE_SID}"
@@ -139,7 +139,7 @@ EOF
 
   cat >> /home/oracle/.bash_profile << EOF
 export ORACLE_HOME=${DB_HOME}
-export PATH=\$ORACLE_HOME/bin:$PATH
+export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
 export ORACLE_SID=${DB_NAME}2
 echo ""
 echo "Current ORAENV => ${ORACLE_SID}"
@@ -179,7 +179,6 @@ echo "-----------------------------------------------------------------"
 su -l oracle -c "mkdir /home/oracle/bin ; git clone https://github.com/freddenis/oracle-scripts.git /home/oracle/bin"
 su -l grid -c "mkdir /home/grid/bin ; git clone https://github.com/freddenis/oracle-scripts.git /home/grid/bin"
 chmod +x -R /home/oracle/bin/* /home/grid/bin/* 
-
 
 
 #----------------------------------------------------------

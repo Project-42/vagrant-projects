@@ -1,0 +1,12 @@
+alias ll="ls -lrth"
+alias duf='sudo du -schx .[!.]* * 2>/dev/null |sort -h'
+alias dua='ncdu --color dark -rr -x /'
+alias cat='highlight -O ansi --force'
+alias cath='highlight -O ansi --force'
+alias cats='highlight -O ansi --force'
+alias rac1-node1="ssh oracle@rac1-node1"
+alias rac2-node1="ssh oracle@rac2-node1"
+alias shut="sudo shutdown -h now"
+#alias glances="glances --theme-white -2"
+alias glances="glances -2"
+alias pmon="ps -ef |grep pmon |grep -v grep"

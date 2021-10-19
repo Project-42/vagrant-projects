@@ -988,7 +988,7 @@ then
   ssh root@${NODE2_HOSTNAME} sh ${DB_HOME}/root.sh
 
   echo "-----------------------------------------------------------------"
-  echo -e "${INFO}`date +%F' '%T`: Installing DB1 Software"
+  echo -e "${INFO}`date +%F' '%T`: Installing DB2 Software"
   echo "-----------------------------------------------------------------"
 
   su - oracle -c 'sh /vagrant/scripts/13_RDBMS_software_installation2.sh'

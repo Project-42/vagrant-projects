@@ -122,6 +122,9 @@ var_gi_software_ver = (var_gi_software.split("_"))[1].to_i
 var_db_software     = params['env']['db_software']
 var_db_software_ver = (var_db_software.split("_"))[1].to_i
 #
+var_db2_software     = params['env']['db2_software']
+var_db2_software_ver = (var_db2_software.split("_"))[1].to_i
+#
 var_ora_languages   = params['env']['ora_languages']
 #
 var_root_password   = params['env']['root_password']
@@ -129,6 +132,7 @@ var_grid_password   = params['env']['grid_password']
 var_oracle_password = params['env']['oracle_password']
 var_sys_password    = params['env']['sys_password']
 var_pdb_password    = params['env']['pdb_password']
+var_pdb2_password    = params['env']['pdb2_password']
 #
 var_nomgmtdb        = params['env']['nomgmtdb']
 var_orestart        = params['env']['orestart']
@@ -137,7 +141,11 @@ var_db_name         = params['env']['db_name']
 var_pdb_name        = params['env']['pdb_name']
 var_db_type         = params['env']['db_type']
 var_cdb             = params['env']['cdb']
-
+#
+var_db2_name         = params['env']['db2_name']
+var_pdb2_name        = params['env']['pdb2_name']
+var_db2_type         = params['env']['db2_type']
+var_cdb             = params['env']['cdb']
 
 # -----------------------------------------------------------------
 # Provider specific checks
@@ -228,10 +236,10 @@ if ( (var_orestart != true) and (var_orestart != false) )
   puts 'ERROR: orestart option can be true or false'
   exit
 end
-if ( (var_cdb != true) and (var_cdb != false) )
-  puts 'ERROR: cdb option can be true or false'
-  exit
-end
+#if ( (var_cdb != true) and (var_cdb != false) )
+#  puts 'ERROR: cdb option can be true or false'
+#  exit
+#end
 
 if ( (var_orestart == true) and (var_db_type != 'SI'))
   puts 'ERROR: orestart option supports ony Single Instance database'
@@ -242,6 +250,17 @@ if ( (var_db_type != 'RAC') and (var_db_type != 'RACONE') and (var_db_type != 'S
   puts 'ERROR: db_type option can be RAC, RACONE or SI'
   exit
 end
+
+if ( (var_orestart == true) and (var_db2_type != 'SI'))
+  puts 'ERROR: orestart option supports ony Single Instance database'
+  exit
+end
+
+if ( (var_db2_type != 'RAC') and (var_db2_type != 'RACONE') and (var_db2_type != 'SI'))
+  puts 'ERROR: db2_type option can be RAC, RACONE or SI'
+  exit
+end
+
 if ( (var_asm_lib_type != 'ASMLIB') and (var_asm_lib_type != 'ASMFD') )
   puts 'ERROR: asm_lib_type option can be ASMLIB or ASMFD'
   exit
@@ -307,10 +326,16 @@ if ! var_scan_ip3.is_ip?
   exit
 end
 
-if var_db_name.to_s.empty?
- puts "ERROR: db_name is not defined"
- exit
-end
+#if var_db_name.to_s.empty?
+# puts "ERROR: db_name is not defined"
+# exit
+#end
+
+#if var_db2_name.to_s.empty?
+# puts "ERROR: db2_name is not defined"
+# exit
+#end
+
 
 if var_root_password.to_s.empty?
  puts "ERROR: root_password is not defined"
@@ -340,23 +365,35 @@ if (var_cdb == true)
   end
 end
 
-path = "./ORCL_software/" + var_gi_software
+
+if (var_cdb == true)
+  if var_pdb2_name.to_s.empty?
+   puts "ERROR: pdb2_name is not defined"
+   exit
+  end
+  if var_pdb2_password.to_s.empty?
+   puts "ERROR: pdb2_password is not defined"
+   exit
+  end
+end
+
+
+path = "../ORCL_software/" + var_gi_software
 if ! File.exist?(path)
   puts "ERROR: gi_software does not exist"
   exit
 end
-path = "./ORCL_software/" + var_db_software
+path = "../ORCL_software/" + var_db_software
 if ! File.exist?(path)
   puts "ERROR: db_software does not exist"
   exit
 end
 
-path = "./ORCL_software/" + var_db2_software
+path = "../ORCL_software/" + var_db2_software
 if ! File.exist?(path)
   puts "ERROR: db2_software does not exist"
   exit
 end
-
 
 
 
@@ -398,7 +435,8 @@ end
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = var_box
   #config.vm.box_url = var_url
-
+  config.vm.synced_folder "../ORCL_software/", "/vagrant/ORCL_software/",
+    type: 'nfs', mount_options: ["vers=4,tcp"]
   #if var_provider_name == 'virtualbox'
   #  config.vm.box_version = ">= 7.8.142"
   #end
@@ -644,6 +682,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       "GI_SOFTWARE_VER"    => var_gi_software_ver,
       "DB_SOFTWARE"        => var_db_software,
       "DB_SOFTWARE_VER"    => var_db_software_ver,
+      "DB2_SOFTWARE"        => var_db2_software,
+      "DB2_SOFTWARE_VER"    => var_db2_software_ver,      
       "ORA_LANGUAGES"      => var_ora_languages,
       "VM1_NAME"           => var_vm1_name,
       "VM2_NAME"           => var_vm2_name,
@@ -662,13 +702,17 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       "ORACLE_PASSWORD"    => var_oracle_password,
       "SYS_PASSWORD"       => var_sys_password,
       "PDB_PASSWORD"       => var_pdb_password,
+      "PDB2_PASSWORD"       => var_pdb2_password,      
       "P1_RATIO"           => var_p1_ratio,
       "ASM_LIB_TYPE"       => var_asm_lib_type,
       "NOMGMTDB"           => var_nomgmtdb,
       "ORESTART"           => var_orestart,
       "DB_NAME"            => var_db_name,
+      "DB2_NAME"            => var_db2_name,
       "PDB_NAME"           => var_pdb_name,
+      "PDB2_NAME"           => var_pdb2_name,
       "DB_TYPE"            => var_db_type,
+      "DB2_TYPE"            => var_db2_type,
       "CDB"                => var_cdb
   }
 end

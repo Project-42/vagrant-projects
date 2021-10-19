@@ -1,12 +1,12 @@
 . /vagrant/config/setup.env
-/u01/app/oracle/product/21.3.0.0/dbhome_1/runInstaller -ignorePrereq -waitforcompletion -silent \
-        -responseFile /u01/app/oracle/product/21.3.0.0/dbhome_1/install/response/db_install.rsp \
+/u01/app/oracle/product/19.3.0.0/dbhome_1/runInstaller -ignorePrereq -waitforcompletion -silent \
+        -responseFile /u01/app/oracle/product/19.3.0.0/dbhome_1/install/response/db_install.rsp \
         oracle.install.option=INSTALL_DB_SWONLY \
         ORACLE_HOSTNAME= \
         UNIX_GROUP_NAME=oinstall \
         INVENTORY_LOCATION=/u01/app/oraInventory \
         SELECTED_LANGUAGES=en,en_GB \
-        ORACLE_HOME=/u01/app/oracle/product/21.3.0.0/dbhome_1 \
+        ORACLE_HOME=/u01/app/oracle/product/19.3.0.0/dbhome_1 \
         ORACLE_BASE=/u01/app/oracle \
         oracle.install.db.InstallEdition=EE \
         oracle.install.db.OSDBA_GROUP=dba \

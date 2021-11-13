@@ -5238,3 +5238,77 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node1: [0;34mINFO: [0m2021-10-19 18:12:36: Running user-defined post-setup scripts
     node1: -----------------------------------------------------------------
 ==> node1: Configuring proxy for Git...
+
+│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+ Oracle RAC (Real Application Cluster) Vagrant box for KVM/libVirt or VirtualBox  
+ Copyright (c) 1982-2020 Oracle and/or its affiliates                             
+----------------------------------------------------------------------------------
+ Author: Ruggero Citton <ruggero.citton@oracle.com>                               
+         RAC Pack, Cloud Innovation and Solution Engineering Team                 
+│▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒│
+
+
+--------------------
+Detected libvirt
+--------------------
+getting Proxy Configuration from Host...
+Bringing machine 'node2' up with 'libvirt' provider...
+Bringing machine 'node1' up with 'libvirt' provider...
+==> node2: Creating image (snapshot of base box volume).
+==> node2: Creating domain with the following settings...
+==> node2:  -- Name:              rac2node2
+==> node2:  -- Domain type:       kvm
+==> node2:  -- Cpus:              24
+==> node2:  -- Feature:           apic
+==> node2:  -- Feature:           acpi
+==> node2:  -- Memory:            16384M
+==> node2:  -- Management MAC:    
+==> node2:  -- Loader:            
+==> node2:  -- Nvram:             
+==> node2:  -- Base box:          oraclelinux/7
+==> node2:  -- Storage pool:      Vagrant_RAC_Storage
+==> node2:  -- Image:             /kvm/SDD/Vagrant/RAC_DISKS/rac2node2.img (37G)
+==> node2:  -- Volume Cache:      default
+==> node2:  -- Kernel:            
+==> node2:  -- Initrd:            
+==> node2:  -- Graphics Type:     vnc
+==> node2:  -- Graphics Port:     -1
+==> node2:  -- Graphics IP:       127.0.0.1
+==> node2:  -- Graphics Password: Not defined
+==> node2:  -- Video Type:        cirrus
+==> node2:  -- Video VRAM:        16384
+==> node2:  -- Sound Type:	
+==> node2:  -- Keymap:            en-us
+==> node2:  -- TPM Path:          
+==> node2:  -- Disks:         vdb(qcow2,100G), vdc(raw,20G), vdd(raw,20G), vde(raw,20G), vdf(raw,20G), vdg(raw,20G), vdh(raw,20G)
+==> node2:  -- Disk(vdb):     /kvm/SDD/Vagrant/RAC_DISKS/rac2node2-vdb.qcow2
+==> node2:  -- Disk(vdc):     /kvm/SDD/Vagrant/RAC_DISKS/rac2_asm_0 Shared
+==> node2:  -- Disk(vdd):     /kvm/SDD/Vagrant/RAC_DISKS/rac2_asm_1 Shared
+==> node2:  -- Disk(vde):     /kvm/SDD/Vagrant/RAC_DISKS/rac2_asm_2 Shared
+==> node2:  -- Disk(vdf):     /kvm/SDD/Vagrant/RAC_DISKS/rac2_asm_3 Shared
+==> node2:  -- Disk(vdg):     /kvm/SDD/Vagrant/RAC_DISKS/rac2_asm_4 Shared
+==> node2:  -- Disk(vdh):     /kvm/SDD/Vagrant/RAC_DISKS/rac2_asm_5 Shared
+==> node2:  -- INPUT:             type=mouse, bus=ps2
+==> node2: Creating shared folders metadata...
+==> node2: Starting domain.
+==> node2: Waiting for domain to get an IP address...
+==> node2: Waiting for SSH to become available...
+    node2: 
+    node2: Vagrant insecure key detected. Vagrant will automatically replace
+    node2: this with a newly generated keypair for better security.
+    node2: 
+    node2: Inserting generated public key within guest...
+    node2: Removing insecure key from the guest if it's present...
+    node2: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> node2: Setting hostname...
+==> node2: Configuring and enabling network interfaces...
+    node2: SSH address: 192.168.121.80:22
+    node2: SSH username: vagrant
+    node2: SSH auth method: private key
+==> node2: Configuring proxy environment variables...
+==> node2: Configuring proxy for Yum...
+==> node2: Exporting NFS shared folders...
+==> node2: Preparing to edit /etc/exports. Administrator privileges will be required...
+==> node2: Mounting NFS shared folders...
+==> node2: Running provisioner: shell...
+    node2: Running: inline script

@@ -88,6 +88,9 @@ yum install -y mlocate
 yum install -y bash-completion
 yum install -y nano
 
+## 11g additional packages ##
+sudo yum install elfutils-libelf-devel-0* gcc-4*x86_64* gcc-c++-4*x86_64* numactl-devel-2*x86_64* -y
+
 #echo "-----------------------------------------------------------------"
 #echo -e "${INFO}`date +%F' '%T`: Perform yum update"
 #echo "-----------------------------------------------------------------"

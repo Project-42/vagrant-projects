@@ -4,6 +4,7 @@
 CVS
 .vagrant
 .zip
+*.iso
 *.swp
 rac1/config/setup.env
 rac2/config/setup.env

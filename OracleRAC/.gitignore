@@ -6,7 +6,8 @@ CVS
 .zip
 *.iso
 *.swp
-nohup.out
+rac1/nohup.out
+rac2/nohup.out
 rac1/config/setup.env
 rac2/config/setup.env
 

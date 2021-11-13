@@ -2,3 +2,5 @@
 database/
 *.zip
 .DS_Store
+OracleRAC/rac1/nohup.out
+OracleRAC/rac2/nohup.out

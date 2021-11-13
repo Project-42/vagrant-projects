@@ -6174,3 +6174,1475 @@ Bringing machine 'node1' up with 'libvirt' provider...
     node2:   Installing : dejavu-sans-fonts-2.33-6.el7.noarch                         6/10
     node2:  
     node2:   Installing : fontconfig-2.13.0-4.3.el7.x86_64                            7/10
+    node2:  
+    node2:   Installing : libuuid-devel-2.23.2-65.0.1.el7_9.1.x86_64                  8/10
+    node2:  
+    node2:   Installing : expat-devel-2.1.0-12.el7.x86_64                             9/10
+    node2:  
+    node2:   Installing : fontconfig-devel-2.13.0-4.3.el7.x86_64                     10/10
+    node2:  
+    node2:   Verifying  : expat-devel-2.1.0-12.el7.x86_64                             1/10
+    node2:  
+    node2:   Verifying  : fontconfig-devel-2.13.0-4.3.el7.x86_64                      2/10
+    node2:  
+    node2:   Verifying  : fontconfig-2.13.0-4.3.el7.x86_64                            3/10
+    node2:  
+    node2:   Verifying  : libuuid-devel-2.23.2-65.0.1.el7_9.1.x86_64                  4/10
+    node2:  
+    node2:   Verifying  : dejavu-fonts-common-2.33-6.el7.noarch                       5/10
+    node2:  
+    node2:   Verifying  : dejavu-sans-fonts-2.33-6.el7.noarch                         6/10
+    node2:  
+    node2:   Verifying  : zlib-devel-1.2.7-19.el7_9.x86_64                            7/10
+    node2:  
+    node2:   Verifying  : 2:libpng-devel-1.5.13-8.el7.x86_64                          8/10
+    node2:  
+    node2:   Verifying  : freetype-devel-2.8-14.el7_9.1.x86_64                        9/10
+    node2:  
+    node2:   Verifying  : fontpackages-filesystem-1.44-8.el7.noarch                  10/10
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   fontconfig-devel.x86_64 0:2.13.0-4.3.el7                                      
+    node2: 
+    node2: Dependency Installed:
+    node2:   dejavu-fonts-common.noarch 0:2.33-6.el7                                       
+    node2:   dejavu-sans-fonts.noarch 0:2.33-6.el7                                         
+    node2:   expat-devel.x86_64 0:2.1.0-12.el7                                             
+    node2:   fontconfig.x86_64 0:2.13.0-4.3.el7                                            
+    node2:   fontpackages-filesystem.noarch 0:1.44-8.el7                                   
+    node2:   freetype-devel.x86_64 0:2.8-14.el7_9.1                                        
+    node2:   libpng-devel.x86_64 2:1.5.13-8.el7                                            
+    node2:   libuuid-devel.x86_64 0:2.23.2-65.0.1.el7_9.1                                  
+    node2:   zlib-devel.x86_64 0:1.2.7-19.el7_9                                            
+    node2: Complete!
+    node2: Package glibc-2.17-325.0.1.el7_9.i686 already installed and latest version
+    node2: Nothing to do
+    node2: Package glibc-2.17-325.0.1.el7_9.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package glibc-devel.i686 0:2.17-325.0.1.el7_9 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package           Arch       Version                    Repository        Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  glibc-devel       i686       2.17-325.0.1.el7_9         ol7_latest       1.1 M
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 1.1 M
+    node2: Installed size: 1.0 M
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : glibc-devel-2.17-325.0.1.el7_9.i686                          1/1
+    node2:  
+    node2:   Verifying  : glibc-devel-2.17-325.0.1.el7_9.i686                          1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   glibc-devel.i686 0:2.17-325.0.1.el7_9                                         
+    node2: Complete!
+    node2: Package glibc-devel-2.17-325.0.1.el7_9.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Package ksh-20120801-142.0.1.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libaio.i686 0:0.3.109-13.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package        Arch         Version                   Repository          Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libaio         i686         0.3.109-13.el7            ol7_latest          24 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 24 k
+    node2: Installed size: 37 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libaio-0.3.109-13.el7.i686                                   1/1
+    node2:  
+    node2:   Verifying  : libaio-0.3.109-13.el7.i686                                   1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libaio.i686 0:0.3.109-13.el7                                                  
+    node2: Complete!
+    node2: Package libaio-0.3.109-13.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libaio-devel.i686 0:0.3.109-13.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package             Arch        Version                Repository         Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libaio-devel        i686        0.3.109-13.el7         ol7_latest         12 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 12 k
+    node2: Installed size: 7.8 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libaio-devel-0.3.109-13.el7.i686                             1/1
+    node2:  
+    node2:   Verifying  : libaio-devel-0.3.109-13.el7.i686                             1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libaio-devel.i686 0:0.3.109-13.el7                                            
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libaio-devel.x86_64 0:0.3.109-13.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package            Arch         Version                 Repository        Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libaio-devel       x86_64       0.3.109-13.el7          ol7_latest        12 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 12 k
+    node2: Installed size: 7.8 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libaio-devel-0.3.109-13.el7.x86_64                           1/1
+    node2:  
+    node2:   Verifying  : libaio-devel-0.3.109-13.el7.x86_64                           1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libaio-devel.x86_64 0:0.3.109-13.el7                                          
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libX11.i686 0:1.6.7-4.el7_9 will be installed
+    node2: --> Processing Dependency: libxcb.so.1 for package: libX11-1.6.7-4.el7_9.i686
+    node2: --> Running transaction check
+    node2: ---> Package libxcb.i686 0:1.13-1.el7 will be installed
+    node2: --> Processing Dependency: libXau.so.6 for package: libxcb-1.13-1.el7.i686
+    node2: --> Running transaction check
+    node2: ---> Package libXau.i686 0:1.0.8-2.1.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package         Arch          Version                Repository           Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libX11          i686          1.6.7-4.el7_9          ol7_latest          611 k
+    node2: Installing for dependencies:
+    node2:  libXau          i686          1.0.8-2.1.el7          ol7_latest           28 k
+    node2:  libxcb          i686          1.13-1.el7             ol7_latest          229 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+2 Dependent packages)
+    node2: Total download size: 868 k
+    node2: Installed size: 2.3 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              1.4 MB/s | 868 kB  00:00     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libXau-1.0.8-2.1.el7.i686                                    1/3
+    node2:  
+    node2:   Installing : libxcb-1.13-1.el7.i686                                       2/3
+    node2:  
+    node2:   Installing : libX11-1.6.7-4.el7_9.i686                                    3/3
+    node2:  
+    node2:   Verifying  : libxcb-1.13-1.el7.i686                                       1/3
+    node2:  
+    node2:   Verifying  : libXau-1.0.8-2.1.el7.i686                                    2/3
+    node2:  
+    node2:   Verifying  : libX11-1.6.7-4.el7_9.i686                                    3/3
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libX11.i686 0:1.6.7-4.el7_9                                                   
+    node2: 
+    node2: Dependency Installed:
+    node2:   libXau.i686 0:1.0.8-2.1.el7              libxcb.i686 0:1.13-1.el7             
+    node2: Complete!
+    node2: Package libX11-1.6.7-4.el7_9.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Package libXau-1.0.8-2.1.el7.i686 already installed and latest version
+    node2: Nothing to do
+    node2: Package libXau-1.0.8-2.1.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libXi.i686 0:1.7.9-1.el7 will be installed
+    node2: --> Processing Dependency: libXext.so.6 for package: libXi-1.7.9-1.el7.i686
+    node2: --> Running transaction check
+    node2: ---> Package libXext.i686 0:1.3.3-3.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package          Arch          Version               Repository           Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libXi            i686          1.7.9-1.el7           ol7_latest           40 k
+    node2: Installing for dependencies:
+    node2:  libXext          i686          1.3.3-3.el7           ol7_latest           38 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+1 Dependent package)
+    node2: Total download size: 78 k
+    node2: Installed size: 151 k
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              208 kB/s |  78 kB  00:00     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libXext-1.3.3-3.el7.i686                                     1/2
+    node2:  
+    node2:   Installing : libXi-1.7.9-1.el7.i686                                       2/2
+    node2:  
+    node2:   Verifying  : libXi-1.7.9-1.el7.i686                                       1/2
+    node2:  
+    node2:   Verifying  : libXext-1.3.3-3.el7.i686                                     2/2
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libXi.i686 0:1.7.9-1.el7                                                      
+    node2: 
+    node2: Dependency Installed:
+    node2:   libXext.i686 0:1.3.3-3.el7                                                    
+    node2: Complete!
+    node2: Package libXi-1.7.9-1.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libXtst.i686 0:1.2.3-1.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package          Arch          Version               Repository           Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libXtst          i686          1.2.3-1.el7           ol7_latest           20 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 20 k
+    node2: Installed size: 28 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libXtst-1.2.3-1.el7.i686                                     1/1
+    node2:  
+    node2:   Verifying  : libXtst-1.2.3-1.el7.i686                                     1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libXtst.i686 0:1.2.3-1.el7                                                    
+    node2: Complete!
+    node2: Package libXtst-1.2.3-1.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Package libgcc-4.8.5-44.0.3.el7.i686 already installed and latest version
+    node2: Nothing to do
+    node2: Package libgcc-4.8.5-44.0.3.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package rdma-core-devel.x86_64 0:22.4-6.el7_9 will be installed
+    node2: --> Processing Dependency: ibacm = 22.4-6.el7_9 for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libibumad = 22.4-6.el7_9 for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libibverbs = 22.4-6.el7_9 for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: librdmacm = 22.4-6.el7_9 for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: rdma-core(x86-64) = 22.4-6.el7_9 for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libibumad.so.3()(64bit) for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libibverbs.so.1()(64bit) for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libmlx4.so.1()(64bit) for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libmlx5.so.1()(64bit) for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: librdmacm.so.1()(64bit) for package: rdma-core-devel-22.4-6.el7_9.x86_64
+    node2: --> Running transaction check
+    node2: ---> Package ibacm.x86_64 0:22.4-6.el7_9 will be installed
+    node2: ---> Package libibumad.x86_64 0:22.4-6.el7_9 will be installed
+    node2: ---> Package libibverbs.x86_64 0:22.4-6.el7_9 will be installed
+    node2: --> Processing Dependency: /usr/bin/perl for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libnl-3.so.200(libnl_3)(64bit) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libnl-route-3.so.200(libnl_3)(64bit) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: perl(File::Basename) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: perl(File::Path) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Getopt::Long) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: perl(strict) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: perl(warnings) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libnl-3.so.200()(64bit) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: --> Processing Dependency: libnl-route-3.so.200()(64bit) for package: libibverbs-22.4-6.el7_9.x86_64
+    node2: ---> Package librdmacm.x86_64 0:22.4-6.el7_9 will be installed
+    node2: ---> Package rdma-core.x86_64 0:22.4-6.el7_9 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package libnl3.x86_64 0:3.2.28-4.el7 will be installed
+    node2: ---> Package perl.x86_64 4:5.16.3-299.el7_9 will be installed
+    node2: --> Processing Dependency: perl-libs = 4:5.16.3-299.el7_9 for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Cwd) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Exporter) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(File::Spec) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(File::Spec::Functions) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(File::Spec::Unix) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(File::Temp) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl-libs for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: perl-macros for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: --> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-299.el7_9.x86_64
+    node2: ---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed
+    node2: ---> Package perl-Getopt-Long.noarch 0:2.40-3.el7 will be installed
+    node2: --> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-3.el7.noarch
+    node2: --> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-3.el7.noarch
+    node2: --> Running transaction check
+    node2: ---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed
+    node2: ---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed
+    node2: ---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed
+    node2: ---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed
+    node2: ---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed
+    node2: ---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed
+    node2: --> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+    node2: --> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch
+    node2: ---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed
+    node2: --> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch
+    node2: --> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch
+    node2: ---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed
+    node2: ---> Package perl-Socket.x86_64 0:2.010-5.el7 will be installed
+    node2: ---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed
+    node2: ---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed
+    node2: ---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed
+    node2: ---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed
+    node2: ---> Package perl-constant.noarch 0:1.27-2.el7 will be installed
+    node2: ---> Package perl-libs.x86_64 4:5.16.3-299.el7_9 will be installed
+    node2: ---> Package perl-macros.x86_64 4:5.16.3-299.el7_9 will be installed
+    node2: ---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed
+    node2: ---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed
+    node2: ---> Package perl-Pod-Escapes.noarch 1:1.04-299.el7_9 will be installed
+    node2: ---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed
+    node2: --> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+    node2: --> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch
+    node2: ---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed
+    node2: ---> Package perl-parent.noarch 1:0.225-244.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package                   Arch      Version                Repository     Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  rdma-core-devel           x86_64    22.4-6.el7_9           ol7_latest    254 k
+    node2: Installing for dependencies:
+    node2:  ibacm                     x86_64    22.4-6.el7_9           ol7_latest     82 k
+    node2:  libibumad                 x86_64    22.4-6.el7_9           ol7_latest     24 k
+    node2:  libibverbs                x86_64    22.4-6.el7_9           ol7_latest    268 k
+    node2:  libnl3                    x86_64    3.2.28-4.el7           ol7_latest    277 k
+    node2:  librdmacm                 x86_64    22.4-6.el7_9           ol7_latest     63 k
+    node2:  perl                      x86_64    4:5.16.3-299.el7_9     ol7_latest    8.0 M
+    node2:  perl-Carp                 noarch    1.26-244.el7           ol7_latest     19 k
+    node2:  perl-Encode               x86_64    2.51-7.el7             ol7_latest    1.5 M
+    node2:  perl-Exporter             noarch    5.68-3.el7             ol7_latest     28 k
+    node2:  perl-File-Path            noarch    2.09-2.el7             ol7_latest     26 k
+    node2:  perl-File-Temp            noarch    0.23.01-3.el7          ol7_latest     56 k
+    node2:  perl-Filter               x86_64    1.49-3.el7             ol7_latest     76 k
+    node2:  perl-Getopt-Long          noarch    2.40-3.el7             ol7_latest     55 k
+    node2:  perl-HTTP-Tiny            noarch    0.033-3.el7            ol7_latest     38 k
+    node2:  perl-PathTools            x86_64    3.40-5.el7             ol7_latest     82 k
+    node2:  perl-Pod-Escapes          noarch    1:1.04-299.el7_9       ol7_latest     51 k
+    node2:  perl-Pod-Perldoc          noarch    3.20-4.el7             ol7_latest     86 k
+    node2:  perl-Pod-Simple           noarch    1:3.28-4.el7           ol7_latest    216 k
+    node2:  perl-Pod-Usage            noarch    1.63-3.el7             ol7_latest     26 k
+    node2:  perl-Scalar-List-Utils    x86_64    1.27-248.el7           ol7_latest     35 k
+    node2:  perl-Socket               x86_64    2.010-5.el7            ol7_latest     48 k
+    node2:  perl-Storable             x86_64    2.45-3.el7             ol7_latest     76 k
+    node2:  perl-Text-ParseWords      noarch    3.29-4.el7             ol7_latest     13 k
+    node2:  perl-Time-HiRes           x86_64    4:1.9725-3.el7         ol7_latest     44 k
+    node2:  perl-Time-Local           noarch    1.2300-2.el7           ol7_latest     24 k
+    node2:  perl-constant             noarch    1.27-2.el7             ol7_latest     18 k
+    node2:  perl-libs                 x86_64    4:5.16.3-299.el7_9     ol7_latest    689 k
+    node2:  perl-macros               x86_64    4:5.16.3-299.el7_9     ol7_latest     44 k
+    node2:  perl-parent               noarch    1:0.225-244.el7        ol7_latest     12 k
+    node2:  perl-podlators            noarch    2.5.1-3.el7            ol7_latest    111 k
+    node2:  perl-threads              x86_64    1.87-4.el7             ol7_latest     48 k
+    node2:  perl-threads-shared       x86_64    1.43-6.el7             ol7_latest     38 k
+    node2:  rdma-core                 x86_64    22.4-6.el7_9           ol7_latest     51 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+33 Dependent packages)
+    node2: Total download size: 12 M
+    node2: Installed size: 39 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              2.9 MB/s |  12 MB  00:04     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : rdma-core-22.4-6.el7_9.x86_64                               1/34
+    node2:  
+    node2:   Installing : libibumad-22.4-6.el7_9.x86_64                               2/34
+    node2:  
+    node2:   Installing : 1:perl-parent-0.225-244.el7.noarch                          3/34
+    node2:  
+    node2:   Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                           4/34
+    node2:  
+    node2:   Installing : perl-podlators-2.5.1-3.el7.noarch                           5/34
+    node2:  
+    node2:   Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                          6/34
+    node2:  
+    node2:   Installing : 1:perl-Pod-Escapes-1.04-299.el7_9.noarch                    7/34
+    node2:  
+    node2:   Installing : perl-Encode-2.51-7.el7.x86_64                               8/34
+    node2:  
+    node2:   Installing : perl-Text-ParseWords-3.29-4.el7.noarch                      9/34
+    node2:  
+    node2:   Installing : perl-Pod-Usage-1.63-3.el7.noarch                           10/34
+    node2:  
+    node2:   Installing : 4:perl-macros-5.16.3-299.el7_9.x86_64                      11/34
+    node2:  
+    node2:   Installing : perl-Storable-2.45-3.el7.x86_64                            12/34
+    node2:  
+    node2:   Installing : perl-Exporter-5.68-3.el7.noarch                            13/34
+    node2:  
+    node2:   Installing : perl-constant-1.27-2.el7.noarch                            14/34
+    node2:  
+    node2:   Installing : perl-Socket-2.010-5.el7.x86_64                             15/34
+    node2:  
+    node2:   Installing : perl-Time-Local-1.2300-2.el7.noarch                        16/34
+    node2:  
+    node2:   Installing : perl-Carp-1.26-244.el7.noarch                              17/34
+    node2:  
+    node2:   Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      18/34
+    node2:  
+    node2:   Installing : perl-PathTools-3.40-5.el7.x86_64                           19/34
+    node2:  
+    node2:   Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 20/34
+    node2:  
+    node2:   Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                        21/34
+    node2:  
+    node2:   Installing : perl-File-Temp-0.23.01-3.el7.noarch                        22/34
+    node2:  
+    node2:   Installing : perl-File-Path-2.09-2.el7.noarch                           23/34
+    node2:  
+    node2:   Installing : perl-threads-shared-1.43-6.el7.x86_64                      24/34
+    node2:  
+    node2:   Installing : perl-threads-1.87-4.el7.x86_64                             25/34
+    node2:  
+    node2:   Installing : perl-Filter-1.49-3.el7.x86_64                              26/34
+    node2:  
+    node2:   Installing : 4:perl-libs-5.16.3-299.el7_9.x86_64                        27/34
+    node2:  
+    node2:   Installing : perl-Getopt-Long-2.40-3.el7.noarch                         28/34
+    node2:  
+    node2:   Installing : 4:perl-5.16.3-299.el7_9.x86_64                             29/34
+    node2:  
+    node2:   Installing : libnl3-3.2.28-4.el7.x86_64                                 30/34
+    node2:  
+    node2:   Installing : libibverbs-22.4-6.el7_9.x86_64                             31/34
+    node2:  
+    node2:   Installing : librdmacm-22.4-6.el7_9.x86_64                              32/34
+    node2:  
+    node2:   Installing : ibacm-22.4-6.el7_9.x86_64                                  33/34
+    node2:  
+    node2:   Installing : rdma-core-devel-22.4-6.el7_9.x86_64                        34/34
+    node2:  
+    node2:   Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                           1/34
+    node2:  
+    node2:   Verifying  : perl-threads-shared-1.43-6.el7.x86_64                       2/34
+    node2:  
+    node2:   Verifying  : perl-Storable-2.45-3.el7.x86_64                             3/34
+    node2:  
+    node2:   Verifying  : perl-Exporter-5.68-3.el7.noarch                             4/34
+    node2:  
+    node2:   Verifying  : perl-constant-1.27-2.el7.noarch                             5/34
+    node2:  
+    node2:   Verifying  : perl-PathTools-3.40-5.el7.x86_64                            6/34
+    node2:  
+    node2:   Verifying  : libibverbs-22.4-6.el7_9.x86_64                              7/34
+    node2:  
+    node2:   Verifying  : rdma-core-22.4-6.el7_9.x86_64                               8/34
+    node2:  
+    node2:   Verifying  : perl-Socket-2.010-5.el7.x86_64                              9/34
+    node2:  
+    node2:   Verifying  : librdmacm-22.4-6.el7_9.x86_64                              10/34
+    node2:  
+    node2:   Verifying  : 1:perl-parent-0.225-244.el7.noarch                         11/34
+    node2:  
+    node2:   Verifying  : 4:perl-macros-5.16.3-299.el7_9.x86_64                      12/34
+    node2:  
+    node2:   Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                        13/34
+    node2:  
+    node2:   Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                        14/34
+    node2:  
+    node2:   Verifying  : perl-Time-Local-1.2300-2.el7.noarch                        15/34
+    node2:  
+    node2:   Verifying  : 1:perl-Pod-Escapes-1.04-299.el7_9.noarch                   16/34
+    node2:  
+    node2:   Verifying  : perl-Carp-1.26-244.el7.noarch                              17/34
+    node2:  
+    node2:   Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                      18/34
+    node2:  
+    node2:   Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                 19/34
+    node2:  
+    node2:   Verifying  : libibumad-22.4-6.el7_9.x86_64                              20/34
+    node2:  
+    node2:   Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                           21/34
+    node2:  
+    node2:   Verifying  : perl-Encode-2.51-7.el7.x86_64                              22/34
+    node2:  
+    node2:   Verifying  : rdma-core-devel-22.4-6.el7_9.x86_64                        23/34
+    node2:  
+    node2:   Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                         24/34
+    node2:  
+    node2:   Verifying  : perl-podlators-2.5.1-3.el7.noarch                          25/34
+    node2:  
+    node2:   Verifying  : 4:perl-5.16.3-299.el7_9.x86_64                             26/34
+    node2:  
+    node2:   Verifying  : perl-File-Path-2.09-2.el7.noarch                           27/34
+    node2:  
+    node2:   Verifying  : perl-threads-1.87-4.el7.x86_64                             28/34
+    node2:  
+    node2:   Verifying  : libnl3-3.2.28-4.el7.x86_64                                 29/34
+    node2:  
+    node2:   Verifying  : perl-Filter-1.49-3.el7.x86_64                              30/34
+    node2:  
+    node2:   Verifying  : perl-Getopt-Long-2.40-3.el7.noarch                         31/34
+    node2:  
+    node2:   Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                     32/34
+    node2:  
+    node2:   Verifying  : ibacm-22.4-6.el7_9.x86_64                                  33/34
+    node2:  
+    node2:   Verifying  : 4:perl-libs-5.16.3-299.el7_9.x86_64                        34/34
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   rdma-core-devel.x86_64 0:22.4-6.el7_9                                         
+    node2: 
+    node2: Dependency Installed:
+    node2:   ibacm.x86_64 0:22.4-6.el7_9                                                   
+    node2:   libibumad.x86_64 0:22.4-6.el7_9                                               
+    node2:   libibverbs.x86_64 0:22.4-6.el7_9                                              
+    node2:   libnl3.x86_64 0:3.2.28-4.el7                                                  
+    node2:   librdmacm.x86_64 0:22.4-6.el7_9                                               
+    node2:   perl.x86_64 4:5.16.3-299.el7_9                                                
+    node2:   perl-Carp.noarch 0:1.26-244.el7                                               
+    node2:   perl-Encode.x86_64 0:2.51-7.el7                                               
+    node2:   perl-Exporter.noarch 0:5.68-3.el7                                             
+    node2:   perl-File-Path.noarch 0:2.09-2.el7                                            
+    node2:   perl-File-Temp.noarch 0:0.23.01-3.el7                                         
+    node2:   perl-Filter.x86_64 0:1.49-3.el7                                               
+    node2:   perl-Getopt-Long.noarch 0:2.40-3.el7                                          
+    node2:   perl-HTTP-Tiny.noarch 0:0.033-3.el7                                           
+    node2:   perl-PathTools.x86_64 0:3.40-5.el7                                            
+    node2:   perl-Pod-Escapes.noarch 1:1.04-299.el7_9                                      
+    node2:   perl-Pod-Perldoc.noarch 0:3.20-4.el7                                          
+    node2:   perl-Pod-Simple.noarch 1:3.28-4.el7                                           
+    node2:   perl-Pod-Usage.noarch 0:1.63-3.el7                                            
+    node2:   perl-Scalar-List-Utils.x86_64 0:1.27-248.el7                                  
+    node2:   perl-Socket.x86_64 0:2.010-5.el7                                              
+    node2:   perl-Storable.x86_64 0:2.45-3.el7                                             
+    node2:   perl-Text-ParseWords.noarch 0:3.29-4.el7                                      
+    node2:   perl-Time-HiRes.x86_64 4:1.9725-3.el7                                         
+    node2:   perl-Time-Local.noarch 0:1.2300-2.el7                                         
+    node2:   perl-constant.noarch 0:1.27-2.el7                                             
+    node2:   perl-libs.x86_64 4:5.16.3-299.el7_9                                           
+    node2:   perl-macros.x86_64 4:5.16.3-299.el7_9                                         
+    node2:   perl-parent.noarch 1:0.225-244.el7                                            
+    node2:   perl-podlators.noarch 0:2.5.1-3.el7                                           
+    node2:   perl-threads.x86_64 0:1.87-4.el7                                              
+    node2:   perl-threads-shared.x86_64 0:1.43-6.el7                                       
+    node2:   rdma-core.x86_64 0:22.4-6.el7_9                                               
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libstdc++.i686 0:4.8.5-44.0.3.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package          Arch        Version                   Repository         Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libstdc++        i686        4.8.5-44.0.3.el7          ol7_latest        319 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 319 k
+    node2: Installed size: 997 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libstdc++-4.8.5-44.0.3.el7.i686                              1/1
+    node2:  
+    node2:   Verifying  : libstdc++-4.8.5-44.0.3.el7.i686                              1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libstdc++.i686 0:4.8.5-44.0.3.el7                                             
+    node2: Complete!
+    node2: Package libstdc++-4.8.5-44.0.3.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libstdc++-devel.i686 0:4.8.5-44.0.3.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package               Arch       Version                Repository        Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libstdc++-devel       i686       4.8.5-44.0.3.el7       ol7_latest       1.5 M
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 1.5 M
+    node2: Installed size: 7.8 M
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libstdc++-devel-4.8.5-44.0.3.el7.i686                        1/1
+    node2:  
+    node2:   Verifying  : libstdc++-devel-4.8.5-44.0.3.el7.i686                        1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libstdc++-devel.i686 0:4.8.5-44.0.3.el7                                       
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package libstdc++-devel.x86_64 0:4.8.5-44.0.3.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package              Arch        Version                 Repository       Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  libstdc++-devel      x86_64      4.8.5-44.0.3.el7        ol7_latest      1.5 M
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 1.5 M
+    node2: Installed size: 8.0 M
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libstdc++-devel-4.8.5-44.0.3.el7.x86_64                      1/1
+    node2:  
+    node2:   Verifying  : libstdc++-devel-4.8.5-44.0.3.el7.x86_64                      1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   libstdc++-devel.x86_64 0:4.8.5-44.0.3.el7                                     
+    node2: Complete!
+    node2: Package libxcb-1.13-1.el7.i686 already installed and latest version
+    node2: Nothing to do
+    node2: Package libxcb-1.13-1.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Package 1:make-3.82-24.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package nfs-utils.x86_64 1:1.3.0-0.68.0.1.el7.1 will be updated
+    node2: ---> Package nfs-utils.x86_64 1:1.3.0-0.68.0.1.el7.2 will be an update
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package        Arch        Version                       Repository       Size
+    node2: ================================================================================
+    node2: Updating:
+    node2:  nfs-utils      x86_64      1:1.3.0-0.68.0.1.el7.2        ol7_latest      413 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Upgrade  1 Package
+    node2: Total download size: 413 k
+    node2: Downloading packages:
+    node2: No Presto metadata available for ol7_latest
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Updating   : 1:nfs-utils-1.3.0-0.68.0.1.el7.2.x86_64                      1/2
+    node2:  
+    node2:   Cleanup    : 1:nfs-utils-1.3.0-0.68.0.1.el7.1.x86_64                      2/2
+    node2:  
+    node2:   Verifying  : 1:nfs-utils-1.3.0-0.68.0.1.el7.2.x86_64                      1/2
+    node2:  
+    node2:   Verifying  : 1:nfs-utils-1.3.0-0.68.0.1.el7.1.x86_64                      2/2
+    node2:  
+    node2: 
+    node2: Updated:
+    node2:   nfs-utils.x86_64 1:1.3.0-0.68.0.1.el7.2                                       
+    node2: Complete!
+    node2: Package net-tools-2.0-0.25.20131004git.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Package python-2.7.5-90.0.3.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package python-configshell.noarch 1:1.1.26-1.0.1.el7 will be installed
+    node2: --> Processing Dependency: pyparsing for package: 1:python-configshell-1.1.26-1.0.1.el7.noarch
+    node2: --> Processing Dependency: python-six for package: 1:python-configshell-1.1.26-1.0.1.el7.noarch
+    node2: --> Processing Dependency: python-urwid for package: 1:python-configshell-1.1.26-1.0.1.el7.noarch
+    node2: --> Running transaction check
+    node2: ---> Package pyparsing.noarch 0:2.0.3-1.el7 will be installed
+    node2: ---> Package python-six.noarch 0:1.9.0-2.el7 will be installed
+    node2: ---> Package python-urwid.x86_64 0:1.1.1-3.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package              Arch     Version               Repository            Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  python-configshell   noarch   1:1.1.26-1.0.1.el7    ol7_latest            68 k
+    node2: Installing for dependencies:
+    node2:  pyparsing            noarch   2.0.3-1.el7           ol7_developer_EPEL    98 k
+    node2:  python-six           noarch   1.9.0-2.el7           ol7_latest            28 k
+    node2:  python-urwid         x86_64   1.1.1-3.el7           ol7_latest           653 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+3 Dependent packages)
+    node2: Total download size: 847 k
+    node2: Installed size: 3.6 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              1.4 MB/s | 847 kB  00:00     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : python-urwid-1.1.1-3.el7.x86_64                              1/4
+    node2:  
+    node2:   Installing : python-six-1.9.0-2.el7.noarch                                2/4
+    node2:  
+    node2:   Installing : pyparsing-2.0.3-1.el7.noarch                                 3/4
+    node2:  
+    node2:   Installing : 1:python-configshell-1.1.26-1.0.1.el7.noarch                 4/4
+    node2:  
+    node2:   Verifying  : pyparsing-2.0.3-1.el7.noarch                                 1/4
+    node2:  
+    node2:   Verifying  : python-six-1.9.0-2.el7.noarch                                2/4
+    node2:  
+    node2:   Verifying  : python-urwid-1.1.1-3.el7.x86_64                              3/4
+    node2:  
+    node2:   Verifying  : 1:python-configshell-1.1.26-1.0.1.el7.noarch                 4/4
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   python-configshell.noarch 1:1.1.26-1.0.1.el7                                  
+    node2: 
+    node2: Dependency Installed:
+    node2:   pyparsing.noarch 0:2.0.3-1.el7          python-six.noarch 0:1.9.0-2.el7      
+    node2:   python-urwid.x86_64 0:1.1.1-3.el7      
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package python-rtslib.noarch 0:2.1.74-1.0.3.el7_9 will be installed
+    node2: --> Processing Dependency: python-kmod for package: python-rtslib-2.1.74-1.0.3.el7_9.noarch
+    node2: --> Processing Dependency: python-pyudev for package: python-rtslib-2.1.74-1.0.3.el7_9.noarch
+    node2: --> Running transaction check
+    node2: ---> Package python-kmod.x86_64 0:0.9-4.el7 will be installed
+    node2: ---> Package python-pyudev.noarch 0:0.15-9.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package            Arch        Version                   Repository       Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  python-rtslib      noarch      2.1.74-1.0.3.el7_9        ol7_latest      104 k
+    node2: Installing for dependencies:
+    node2:  python-kmod        x86_64      0.9-4.el7                 ol7_latest       56 k
+    node2:  python-pyudev      noarch      0.15-9.el7                ol7_latest       55 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+2 Dependent packages)
+    node2: Total download size: 215 k
+    node2: Installed size: 1.1 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              599 kB/s | 215 kB  00:00     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : python-pyudev-0.15-9.el7.noarch                              1/3
+    node2:  
+    node2:   Installing : python-kmod-0.9-4.el7.x86_64                                 2/3
+    node2:  
+    node2:   Installing : python-rtslib-2.1.74-1.0.3.el7_9.noarch                      3/3
+    node2:  
+    node2:   Verifying  : python-rtslib-2.1.74-1.0.3.el7_9.noarch                      1/3
+    node2:  
+    node2:   Verifying  : python-kmod-0.9-4.el7.x86_64                                 2/3
+    node2:  
+    node2:   Verifying  : python-pyudev-0.15-9.el7.noarch                              3/3
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   python-rtslib.noarch 0:2.1.74-1.0.3.el7_9                                     
+    node2: 
+    node2: Dependency Installed:
+    node2:   python-kmod.x86_64 0:0.9-4.el7        python-pyudev.noarch 0:0.15-9.el7       
+    node2: Complete!
+    node2: Package python-six-1.9.0-2.el7.noarch already installed and latest version
+    node2: Nothing to do
+    node2: Package 1:smartmontools-7.0-2.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Package sysstat-10.1.5-19.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package targetcli.noarch 0:2.1.53-1.0.1.el7_9 will be installed
+    node2: --> Processing Dependency: python-ethtool for package: targetcli-2.1.53-1.0.1.el7_9.noarch
+    node2: --> Running transaction check
+    node2: ---> Package python-ethtool.x86_64 0:0.8-8.el7 will be installed
+    node2: --> Processing Dependency: libnl.so.1()(64bit) for package: python-ethtool-0.8-8.el7.x86_64
+    node2: --> Running transaction check
+    node2: ---> Package libnl.x86_64 0:1.1.4-3.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package             Arch        Version                  Repository       Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  targetcli           noarch      2.1.53-1.0.1.el7_9       ol7_latest       74 k
+    node2: Installing for dependencies:
+    node2:  libnl               x86_64      1.1.4-3.el7              ol7_latest      122 k
+    node2:  python-ethtool      x86_64      0.8-8.el7                ol7_latest       33 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+2 Dependent packages)
+    node2: Total download size: 229 k
+    node2: Installed size: 684 k
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              517 kB/s | 229 kB  00:00     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libnl-1.1.4-3.el7.x86_64                                     1/3
+    node2:  
+    node2:   Installing : python-ethtool-0.8-8.el7.x86_64                              2/3
+    node2:  
+    node2:   Installing : targetcli-2.1.53-1.0.1.el7_9.noarch                          3/3
+    node2:  
+    node2:   Verifying  : libnl-1.1.4-3.el7.x86_64                                     1/3
+    node2:  
+    node2:   Verifying  : targetcli-2.1.53-1.0.1.el7_9.noarch                          2/3
+    node2:  
+    node2:   Verifying  : python-ethtool-0.8-8.el7.x86_64                              3/3
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   targetcli.noarch 0:2.1.53-1.0.1.el7_9                                         
+    node2: 
+    node2: Dependency Installed:
+    node2:   libnl.x86_64 0:1.1.4-3.el7          python-ethtool.x86_64 0:0.8-8.el7         
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package unixODBC.x86_64 0:2.3.1-14.0.1.el7 will be installed
+    node2: --> Processing Dependency: libltdl.so.7()(64bit) for package: unixODBC-2.3.1-14.0.1.el7.x86_64
+    node2: --> Running transaction check
+    node2: ---> Package libtool-ltdl.x86_64 0:2.4.2-22.el7_3 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package            Arch         Version                 Repository        Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  unixODBC           x86_64       2.3.1-14.0.1.el7        ol7_latest       413 k
+    node2: Installing for dependencies:
+    node2:  libtool-ltdl       x86_64       2.4.2-22.el7_3          ol7_latest        48 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+1 Dependent package)
+    node2: Total download size: 461 k
+    node2: Installed size: 1.3 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              790 kB/s | 461 kB  00:00     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libtool-ltdl-2.4.2-22.el7_3.x86_64                           1/2
+    node2:  
+    node2:   Installing : unixODBC-2.3.1-14.0.1.el7.x86_64                             2/2
+    node2:  
+    node2:   Verifying  : unixODBC-2.3.1-14.0.1.el7.x86_64                             1/2
+    node2:  
+    node2:   Verifying  : libtool-ltdl-2.4.2-22.el7_3.x86_64                           2/2
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   unixODBC.x86_64 0:2.3.1-14.0.1.el7                                            
+    node2: 
+    node2: Dependency Installed:
+    node2:   libtool-ltdl.x86_64 0:2.4.2-22.el7_3                                          
+    node2: Complete!
+    node2: Package chrony-3.4-1.0.1.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Package policycoreutils-python-2.5-34.0.1.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package highlight.x86_64 0:3.13-3.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package         Arch         Version           Repository                 Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  highlight       x86_64       3.13-3.el7        ol7_optional_latest       592 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 592 k
+    node2: Installed size: 2.0 M
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : highlight-3.13-3.el7.x86_64                                  1/1
+    node2:  
+    node2:   Verifying  : highlight-3.13-3.el7.x86_64                                  1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   highlight.x86_64 0:3.13-3.el7                                                 
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package git.x86_64 0:1.8.3.1-23.el7_8 will be installed
+    node2: --> Processing Dependency: perl-Git = 1.8.3.1-23.el7_8 for package: git-1.8.3.1-23.el7_8.x86_64
+    node2: --> Processing Dependency: perl(Error) for package: git-1.8.3.1-23.el7_8.x86_64
+    node2: --> Processing Dependency: perl(Git) for package: git-1.8.3.1-23.el7_8.x86_64
+    node2: --> Processing Dependency: perl(Term::ReadKey) for package: git-1.8.3.1-23.el7_8.x86_64
+    node2: --> Processing Dependency: rsync for package: git-1.8.3.1-23.el7_8.x86_64
+    node2: --> Running transaction check
+    node2: ---> Package perl-Error.noarch 1:0.17020-2.el7 will be installed
+    node2: ---> Package perl-Git.noarch 0:1.8.3.1-23.el7_8 will be installed
+    node2: ---> Package perl-TermReadKey.x86_64 0:2.30-20.el7 will be installed
+    node2: ---> Package rsync.x86_64 0:3.1.2-10.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package               Arch        Version                Repository       Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  git                   x86_64      1.8.3.1-23.el7_8       ol7_latest      4.4 M
+    node2: Installing for dependencies:
+    node2:  perl-Error            noarch      1:0.17020-2.el7        ol7_latest       31 k
+    node2:  perl-Git              noarch      1.8.3.1-23.el7_8       ol7_latest       55 k
+    node2:  perl-TermReadKey      x86_64      2.30-20.el7            ol7_latest       30 k
+    node2:  rsync                 x86_64      3.1.2-10.el7           ol7_latest      404 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+4 Dependent packages)
+    node2: Total download size: 4.9 M
+    node2: Installed size: 23 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              2.6 MB/s | 4.9 MB  00:01     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : 1:perl-Error-0.17020-2.el7.noarch                            1/5
+    node2:  
+    node2:   Installing : perl-TermReadKey-2.30-20.el7.x86_64                          2/5
+    node2:  
+    node2:   Installing : rsync-3.1.2-10.el7.x86_64                                    3/5
+    node2:  
+    node2:   Installing : perl-Git-1.8.3.1-23.el7_8.noarch                             4/5
+    node2:  
+    node2:   Installing : git-1.8.3.1-23.el7_8.x86_64                                  5/5
+    node2:  
+    node2:   Verifying  : git-1.8.3.1-23.el7_8.x86_64                                  1/5
+    node2:  
+    node2:   Verifying  : 1:perl-Error-0.17020-2.el7.noarch                            2/5
+    node2:  
+    node2:   Verifying  : rsync-3.1.2-10.el7.x86_64                                    3/5
+    node2:  
+    node2:   Verifying  : perl-Git-1.8.3.1-23.el7_8.noarch                             4/5
+    node2:  
+    node2:   Verifying  : perl-TermReadKey-2.30-20.el7.x86_64                          5/5
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   git.x86_64 0:1.8.3.1-23.el7_8                                                 
+    node2: 
+    node2: Dependency Installed:
+    node2:   perl-Error.noarch 1:0.17020-2.el7        perl-Git.noarch 0:1.8.3.1-23.el7_8   
+    node2:   perl-TermReadKey.x86_64 0:2.30-20.el7    rsync.x86_64 0:3.1.2-10.el7          
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package mlocate.x86_64 0:0.26-8.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package          Arch            Version             Repository           Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  mlocate          x86_64          0.26-8.el7          ol7_latest          112 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 112 k
+    node2: Installed size: 379 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : mlocate-0.26-8.el7.x86_64                                    1/1
+    node2:  
+    node2:   Verifying  : mlocate-0.26-8.el7.x86_64                                    1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   mlocate.x86_64 0:0.26-8.el7                                                   
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package bash-completion.noarch 1:2.1-8.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package               Arch         Version              Repository        Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  bash-completion       noarch       1:2.1-8.el7          ol7_latest        86 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 86 k
+    node2: Installed size: 263 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : 1:bash-completion-2.1-8.el7.noarch                           1/1
+    node2:  
+    node2:   Verifying  : 1:bash-completion-2.1-8.el7.noarch                           1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   bash-completion.noarch 1:2.1-8.el7                                            
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package nano.x86_64 0:2.3.1-10.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package       Arch            Version                Repository           Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  nano          x86_64          2.3.1-10.el7           ol7_latest          438 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 438 k
+    node2: Installed size: 1.6 M
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : nano-2.3.1-10.el7.x86_64                                     1/1
+    node2:  
+    node2:   Verifying  : nano-2.3.1-10.el7.x86_64                                     1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   nano.x86_64 0:2.3.1-10.el7                                                    
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package elfutils-libelf-devel.x86_64 0:0.176-5.el7 will be installed
+    node2: ---> Package gcc.x86_64 0:4.8.5-44.0.3.el7 will be installed
+    node2: --> Processing Dependency: cpp = 4.8.5-44.0.3.el7 for package: gcc-4.8.5-44.0.3.el7.x86_64
+    node2: --> Processing Dependency: libmpc.so.3()(64bit) for package: gcc-4.8.5-44.0.3.el7.x86_64
+    node2: --> Processing Dependency: libmpfr.so.4()(64bit) for package: gcc-4.8.5-44.0.3.el7.x86_64
+    node2: ---> Package gcc-c++.x86_64 0:4.8.5-44.0.3.el7 will be installed
+    node2: ---> Package numactl-devel.x86_64 0:2.0.12-5.0.3.el7 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package cpp.x86_64 0:4.8.5-44.0.3.el7 will be installed
+    node2: ---> Package libmpc.x86_64 0:1.0.1-3.el7 will be installed
+    node2: ---> Package mpfr.x86_64 0:3.1.1-4.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package                   Arch       Version              Repository      Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  elfutils-libelf-devel     x86_64     0.176-5.el7          ol7_latest      39 k
+    node2:  gcc                       x86_64     4.8.5-44.0.3.el7     ol7_latest      16 M
+    node2:  gcc-c++                   x86_64     4.8.5-44.0.3.el7     ol7_latest     7.2 M
+    node2:  numactl-devel             x86_64     2.0.12-5.0.3.el7     ol7_latest      23 k
+    node2: Installing for dependencies:
+    node2:  cpp                       x86_64     4.8.5-44.0.3.el7     ol7_latest     5.9 M
+    node2:  libmpc                    x86_64     1.0.1-3.el7          ol7_latest      49 k
+    node2:  mpfr                      x86_64     3.1.1-4.el7          ol7_latest     198 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  4 Packages (+3 Dependent packages)
+    node2: Total download size: 30 M
+    node2: Installed size: 69 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              3.0 MB/s |  30 MB  00:09     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : mpfr-3.1.1-4.el7.x86_64                                      1/7
+    node2:  
+    node2:   Installing : libmpc-1.0.1-3.el7.x86_64                                    2/7
+    node2:  
+    node2:   Installing : cpp-4.8.5-44.0.3.el7.x86_64                                  3/7
+    node2:  
+    node2:   Installing : gcc-4.8.5-44.0.3.el7.x86_64                                  4/7
+    node2:  
+    node2:   Installing : gcc-c++-4.8.5-44.0.3.el7.x86_64                              5/7
+    node2:  
+    node2:   Installing : elfutils-libelf-devel-0.176-5.el7.x86_64                     6/7
+    node2:  
+    node2:   Installing : numactl-devel-2.0.12-5.0.3.el7.x86_64                        7/7
+    node2:  
+    node2:   Verifying  : gcc-4.8.5-44.0.3.el7.x86_64                                  1/7
+    node2:  
+    node2:   Verifying  : numactl-devel-2.0.12-5.0.3.el7.x86_64                        2/7
+    node2:  
+    node2:   Verifying  : mpfr-3.1.1-4.el7.x86_64                                      3/7
+    node2:  
+    node2:   Verifying  : gcc-c++-4.8.5-44.0.3.el7.x86_64                              4/7
+    node2:  
+    node2:   Verifying  : libmpc-1.0.1-3.el7.x86_64                                    5/7
+    node2:  
+    node2:   Verifying  : cpp-4.8.5-44.0.3.el7.x86_64                                  6/7
+    node2:  
+    node2:   Verifying  : elfutils-libelf-devel-0.176-5.el7.x86_64                     7/7
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   elfutils-libelf-devel.x86_64 0:0.176-5.el7                                    
+    node2:   gcc.x86_64 0:4.8.5-44.0.3.el7                                                 
+    node2:   gcc-c++.x86_64 0:4.8.5-44.0.3.el7                                             
+    node2:   numactl-devel.x86_64 0:2.0.12-5.0.3.el7                                       
+    node2: 
+    node2: Dependency Installed:
+    node2:   cpp.x86_64 0:4.8.5-44.0.3.el7           libmpc.x86_64 0:1.0.1-3.el7          
+    node2:   mpfr.x86_64 0:3.1.1-4.el7              
+    node2: Complete!
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:05: Setup /etc/hosts
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:05: Setup SCAN on /etc/hosts
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:05: Setup /etc/resolv.conf
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:05: Setup chronyd service
+    node2: -----------------------------------------------------------------
+    node2: 200 OK
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:05: Setting-up shared disks partions
+    node2: -----------------------------------------------------------------
+    node2: Error: Partition(s) 1 on /dev/vdc have been written, but we have been unable to inform the kernel of the change, probably because it/they are in use.  As a result, the old partition(s) will remain in use.  You should reboot now before making further changes.
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:06: Setting-up shared disks udev rules
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:06: Shared partprobe
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:36: Setup oracle and grid user
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:37: Set oracle and grid limits
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:37: Create GI_HOME and DB_HOME directories
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:37: Set user env
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:37: Installing bash-it
+    node2: -----------------------------------------------------------------
+    node2: Cloning into '/root/.bash_it'...
+    node2: Installing bash-it
+    node2: [0;32mYour original .bashrc has been backed up to .bashrc.bak[0m
+    node2: [0;32mBash-it template has been added to your .bashrc[0m
+    node2: 
+    node2: [0;32mEnabling reasonable defaults[0m
+    node2: bash-it enabled with priority 350.
+    node2: system enabled with priority 350.
+    node2: base enabled with priority 250.
+    node2: alias-completion enabled with priority 365.
+    node2: general enabled with priority 150.
+    node2: [0;32mInstallation finished successfully! Enjoy bash-it![0m
+    node2: [0;32mTo start using it, open a new tab or 'source ~/.bashrc'.[0m
+    node2: To show the available aliases/completions/plugins, type one of the following:
+    node2:   bash-it show aliases
+    node2:   bash-it show completions
+    node2:   bash-it show plugins
+    node2: To avoid issues and to keep your shell lean, please enable only features you really want to use.
+    node2: Enabling everything can lead to issues.
+    node2: 
+    node2: PMON processes running
+    node2: Cloning into '/home/oracle/.bash_it'...
+    node2: Installing bash-it
+    node2: [0;32mYour original .bashrc has been backed up to .bashrc.bak[0m
+    node2: [0;32mBash-it template has been added to your .bashrc[0m
+    node2: 
+    node2: [0;32mEnabling reasonable defaults[0m
+    node2: bash-it enabled with priority 350.
+    node2: system enabled with priority 350.
+    node2: base enabled with priority 250.
+    node2: alias-completion enabled with priority 365.
+    node2: general enabled with priority 150.
+    node2: [0;32mInstallation finished successfully! Enjoy bash-it![0m
+    node2: [0;32mTo start using it, open a new tab or 'source ~/.bashrc'.[0m
+    node2: To show the available aliases/completions/plugins, type one of the following:
+    node2:   bash-it show aliases
+    node2:   bash-it show completions
+    node2:   bash-it show plugins
+    node2: To avoid issues and to keep your shell lean, please enable only features you really want to use.
+    node2: Enabling everything can lead to issues.
+    node2: 
+    node2: PMON processes running
+    node2: Cloning into '/home/grid/.bash_it'...
+    node2: Installing bash-it
+    node2: [0;32mYour original .bashrc has been backed up to .bashrc.bak[0m
+    node2: [0;32mBash-it template has been added to your .bashrc[0m
+    node2: 
+    node2: [0;32mEnabling reasonable defaults[0m
+    node2: bash-it enabled with priority 350.
+    node2: system enabled with priority 350.
+    node2: base enabled with priority 250.
+    node2: alias-completion enabled with priority 365.
+    node2: general enabled with priority 150.
+    node2: 
+    node2: [0;32mInstallation finished successfully! Enjoy bash-it![0m
+    node2: [0;32mTo start using it, open a new tab or 'source ~/.bashrc'.[0m
+    node2: To show the available aliases/completions/plugins, type one of the following:
+    node2:   bash-it show aliases
+    node2:   bash-it show completions
+    node2:   bash-it show plugins
+    node2: To avoid issues and to keep your shell lean, please enable only features you really want to use.
+    node2: Enabling everything can lead to issues.
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:43: Installing Fred Denis oracle-scripts
+    node2: -----------------------------------------------------------------
+    node2: 
+    node2: PMON processes running
+    node2: Cloning into '/home/oracle/bin'...
+    node2: 
+    node2: PMON processes running
+    node2: Cloning into '/home/grid/bin'...
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:46: Set root, oracle and grid password
+    node2: -----------------------------------------------------------------
+    node2: Changing password for user root.
+    node2: passwd: all authentication tokens updated successfully.
+    node2: Changing password for user grid.
+    node2: passwd: all authentication tokens updated successfully.
+    node2: Changing password for user oracle.
+    node2: passwd: all authentication tokens updated successfully.
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:46: ASMLib disks label setup
+    node2: -----------------------------------------------------------------
+    node2: Writing Oracle ASM library driver configuration: 
+    node2: done
+    node2: Creating /dev/oracleasm mount point: /dev/oracleasm
+    node2: Loading module "oracleasm": oracleasm
+    node2: Configuring "oracleasm" to use device logical block size
+    node2: Mounting ASMlib driver filesystem: /dev/oracleasm
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Writing disk header: 
+    node2: done
+    node2: Instantiating disk: 
+    node2: done
+    node2: Reloading disk partitions: 
+    node2: done
+    node2: Cleaning any stale ASM disks...
+    node2: Scanning system for ASM disks...
+    node2: ORCL_DISK1_P1
+    node2: ORCL_DISK1_P2
+    node2: ORCL_DISK2_P1
+    node2: ORCL_DISK2_P2
+    node2: ORCL_DISK3_P1
+    node2: ORCL_DISK3_P2
+    node2: ORCL_DISK4_P1
+    node2: ORCL_DISK4_P2
+    node2: ORCL_DISK5_P1
+    node2: ORCL_DISK5_P2
+    node2: ORCL_DISK6_P1
+    node2: ORCL_DISK6_P2
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:32:48: Running user-defined post-setup scripts
+    node2: -----------------------------------------------------------------
+==> node2: Configuring proxy for Git...

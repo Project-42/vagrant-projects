@@ -5312,3 +5312,865 @@ Bringing machine 'node1' up with 'libvirt' provider...
 ==> node2: Mounting NFS shared folders...
 ==> node2: Running provisioner: shell...
     node2: Running: inline script
+==> node2: Running provisioner: shell...
+    node2: Running: /tmp/vagrant-shell20211113-17661-1wcsf5h.sh
+    node2: -----------------------------------------------------------------
+    node2: 2021-11-13 15:27:01: Make the setup.env
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: 2021-11-13 15:27:01: Setup the environment variables
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:27:01: Checking parameters
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:27:01: Fix locale warnings
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:27:01: Set system time zone
+    node2: -----------------------------------------------------------------
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:27:01: Setting-up /u01 disk
+    node2: -----------------------------------------------------------------
+    node2:   Physical volume "/dev/vdb1" successfully created.
+    node2:   Volume group "VolGroupU01" successfully created
+    node2:   Logical volume "LogVolU01" created.
+    node2: meta-data=/dev/VolGroupU01/LogVolU01 isize=256    agcount=4, agsize=6553344 blks
+    node2:          =                       sectsz=512   attr=2, projid32bit=1
+    node2:          =                       crc=0        finobt=0, sparse=0, rmapbt=0
+    node2:          =                       reflink=0
+    node2: data     =                       bsize=4096   blocks=26213376, imaxpct=25
+    node2:          =                       sunit=0      swidth=0 blks
+    node2: naming   =version 2              bsize=4096   ascii-ci=0, ftype=1
+    node2: log      =internal log           bsize=4096   blocks=12799, version=2
+    node2:          =                       sectsz=512   sunit=0 blks, lazy-count=1
+    node2: realtime =none                   extsz=4096   blocks=0, rtextents=0
+    node2: Discarding blocks...
+    node2: Done.
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:27:01: Install base packages
+    node2: -----------------------------------------------------------------
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package deltarpm.x86_64 0:3.6-3.el7 will be installed
+    node2: ---> Package expect.x86_64 0:5.45-14.el7_1 will be installed
+    node2: --> Processing Dependency: libtcl8.5.so()(64bit) for package: expect-5.45-14.el7_1.x86_64
+    node2: ---> Package tree.x86_64 0:1.6.0-10.el7 will be installed
+    node2: ---> Package unzip.x86_64 0:6.0-22.el7_9 will be installed
+    node2: ---> Package zip.x86_64 0:3.0-11.el7 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package tcl.x86_64 1:8.5.13-8.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package         Arch          Version                  Repository         Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  deltarpm        x86_64        3.6-3.el7                ol7_latest         81 k
+    node2:  expect          x86_64        5.45-14.el7_1            ol7_latest        262 k
+    node2:  tree            x86_64        1.6.0-10.el7             ol7_latest         46 k
+    node2:  unzip           x86_64        6.0-22.el7_9             ol7_latest        171 k
+    node2:  zip             x86_64        3.0-11.el7               ol7_latest        259 k
+    node2: Installing for dependencies:
+    node2:  tcl             x86_64        1:8.5.13-8.el7           ol7_latest        1.9 M
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  5 Packages (+1 Dependent package)
+    node2: Total download size: 2.7 M
+    node2: Installed size: 6.4 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              2.1 MB/s | 2.7 MB  00:01     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : 1:tcl-8.5.13-8.el7.x86_64                                    1/6
+    node2:  
+    node2:   Installing : expect-5.45-14.el7_1.x86_64                                  2/6
+    node2:  
+    node2:   Installing : tree-1.6.0-10.el7.x86_64                                     3/6
+    node2:  
+    node2:   Installing : deltarpm-3.6-3.el7.x86_64                                    4/6
+    node2:  
+    node2:   Installing : zip-3.0-11.el7.x86_64                                        5/6
+    node2:  
+    node2:   Installing : unzip-6.0-22.el7_9.x86_64                                    6/6
+    node2:  
+    node2:   Verifying  : unzip-6.0-22.el7_9.x86_64                                    1/6
+    node2:  
+    node2:   Verifying  : 1:tcl-8.5.13-8.el7.x86_64                                    2/6
+    node2:  
+    node2:   Verifying  : zip-3.0-11.el7.x86_64                                        3/6
+    node2:  
+    node2:   Verifying  : deltarpm-3.6-3.el7.x86_64                                    4/6
+    node2:  
+    node2:   Verifying  : expect-5.45-14.el7_1.x86_64                                  5/6
+    node2:  
+    node2:   Verifying  : tree-1.6.0-10.el7.x86_64                                     6/6
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   deltarpm.x86_64 0:3.6-3.el7           expect.x86_64 0:5.45-14.el7_1          
+    node2:   tree.x86_64 0:1.6.0-10.el7            unzip.x86_64 0:6.0-22.el7_9            
+    node2:   zip.x86_64 0:3.0-11.el7              
+    node2: 
+    node2: Dependency Installed:
+    node2:   tcl.x86_64 1:8.5.13-8.el7                                                     
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package oracle-database-preinstall-21c.x86_64 0:1.0-1.el7 will be installed
+    node2: --> Processing Dependency: bind-utils for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: ethtool for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: glibc-devel for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: ksh for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: policycoreutils-python for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: psmisc for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: smartmontools for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: sysstat for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: xorg-x11-utils for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Processing Dependency: xorg-x11-xauth for package: oracle-database-preinstall-21c-1.0-1.el7.x86_64
+    node2: --> Running transaction check
+    node2: ---> Package bind-utils.x86_64 32:9.11.4-26.P2.el7_9.7 will be installed
+    node2: --> Processing Dependency: bind-libs(x86-64) = 32:9.11.4-26.P2.el7_9.7 for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: --> Processing Dependency: bind-libs-lite(x86-64) = 32:9.11.4-26.P2.el7_9.7 for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: --> Processing Dependency: libGeoIP.so.1()(64bit) for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: --> Processing Dependency: libbind9.so.160()(64bit) for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: --> Processing Dependency: libdns.so.1102()(64bit) for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: --> Processing Dependency: libirs.so.160()(64bit) for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: --> Processing Dependency: libisc.so.169()(64bit) for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: --> Processing Dependency: libisccfg.so.160()(64bit) for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: --> Processing Dependency: liblwres.so.160()(64bit) for package: 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64
+    node2: ---> Package ethtool.x86_64 2:4.8-10.el7 will be installed
+    node2: ---> Package glibc-devel.x86_64 0:2.17-325.0.1.el7_9 will be installed
+    node2: --> Processing Dependency: glibc = 2.17-325.0.1.el7_9 for package: glibc-devel-2.17-325.0.1.el7_9.x86_64
+    node2: --> Processing Dependency: glibc-headers = 2.17-325.0.1.el7_9 for package: glibc-devel-2.17-325.0.1.el7_9.x86_64
+    node2: --> Processing Dependency: glibc-headers for package: glibc-devel-2.17-325.0.1.el7_9.x86_64
+    node2: ---> Package ksh.x86_64 0:20120801-142.0.1.el7 will be installed
+    node2: ---> Package policycoreutils-python.x86_64 0:2.5-34.0.1.el7 will be installed
+    node2: --> Processing Dependency: audit-libs-python >= 2.1.3-4 for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: libsemanage-python >= 2.5-14 for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: setools-libs >= 3.3.8-4 for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: checkpolicy for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: libapol.so.4(VERS_4.0)(64bit) for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: libcgroup for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: libqpol.so.1(VERS_1.2)(64bit) for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: libqpol.so.1(VERS_1.4)(64bit) for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: python-IPy for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: libapol.so.4()(64bit) for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: --> Processing Dependency: libqpol.so.1()(64bit) for package: policycoreutils-python-2.5-34.0.1.el7.x86_64
+    node2: ---> Package psmisc.x86_64 0:22.20-17.el7 will be installed
+    node2: ---> Package smartmontools.x86_64 1:7.0-2.el7 will be installed
+    node2: --> Processing Dependency: mailx for package: 1:smartmontools-7.0-2.el7.x86_64
+    node2: ---> Package sysstat.x86_64 0:10.1.5-19.el7 will be installed
+    node2: --> Processing Dependency: libsensors.so.4()(64bit) for package: sysstat-10.1.5-19.el7.x86_64
+    node2: ---> Package xorg-x11-utils.x86_64 0:7.5-23.el7 will be installed
+    node2: --> Processing Dependency: libX11-xcb.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libX11.so.6()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXext.so.6()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXi.so.6()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXinerama.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXrandr.so.2()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXrender.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXtst.so.6()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXv.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXxf86dga.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXxf86misc.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libXxf86vm.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libdmx.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libxcb-shape.so.0()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: --> Processing Dependency: libxcb.so.1()(64bit) for package: xorg-x11-utils-7.5-23.el7.x86_64
+    node2: ---> Package xorg-x11-xauth.x86_64 1:1.0.9-1.el7 will be installed
+    node2: --> Processing Dependency: libXau.so.6()(64bit) for package: 1:xorg-x11-xauth-1.0.9-1.el7.x86_64
+    node2: --> Processing Dependency: libXmuu.so.1()(64bit) for package: 1:xorg-x11-xauth-1.0.9-1.el7.x86_64
+    node2: --> Running transaction check
+    node2: ---> Package GeoIP.x86_64 0:1.5.0-14.el7 will be installed
+    node2: --> Processing Dependency: geoipupdate for package: GeoIP-1.5.0-14.el7.x86_64
+    node2: ---> Package audit-libs-python.x86_64 0:2.8.5-4.el7 will be installed
+    node2: ---> Package bind-libs.x86_64 32:9.11.4-26.P2.el7_9.7 will be installed
+    node2: --> Processing Dependency: bind-license = 32:9.11.4-26.P2.el7_9.7 for package: 32:bind-libs-9.11.4-26.P2.el7_9.7.x86_64
+    node2: ---> Package bind-libs-lite.x86_64 32:9.11.4-26.P2.el7_9.7 will be installed
+    node2: ---> Package checkpolicy.x86_64 0:2.5-8.el7 will be installed
+    node2: ---> Package glibc.x86_64 0:2.17-324.0.1.el7_9 will be updated
+    node2: --> Processing Dependency: glibc = 2.17-324.0.1.el7_9 for package: glibc-common-2.17-324.0.1.el7_9.x86_64
+    node2: ---> Package glibc.x86_64 0:2.17-325.0.1.el7_9 will be an update
+    node2: ---> Package glibc-headers.x86_64 0:2.17-325.0.1.el7_9 will be installed
+    node2: --> Processing Dependency: kernel-headers >= 2.2.1 for package: glibc-headers-2.17-325.0.1.el7_9.x86_64
+    node2: --> Processing Dependency: kernel-headers for package: glibc-headers-2.17-325.0.1.el7_9.x86_64
+    node2: ---> Package libX11.x86_64 0:1.6.7-4.el7_9 will be installed
+    node2: --> Processing Dependency: libX11-common >= 1.6.7-4.el7_9 for package: libX11-1.6.7-4.el7_9.x86_64
+    node2: ---> Package libXau.x86_64 0:1.0.8-2.1.el7 will be installed
+    node2: ---> Package libXext.x86_64 0:1.3.3-3.el7 will be installed
+    node2: ---> Package libXi.x86_64 0:1.7.9-1.el7 will be installed
+    node2: ---> Package libXinerama.x86_64 0:1.1.3-2.1.el7 will be installed
+    node2: ---> Package libXmu.x86_64 0:1.1.2-2.el7 will be installed
+    node2: --> Processing Dependency: libXt.so.6()(64bit) for package: libXmu-1.1.2-2.el7.x86_64
+    node2: ---> Package libXrandr.x86_64 0:1.5.1-2.el7 will be installed
+    node2: ---> Package libXrender.x86_64 0:0.9.10-1.el7 will be installed
+    node2: ---> Package libXtst.x86_64 0:1.2.3-1.el7 will be installed
+    node2: ---> Package libXv.x86_64 0:1.0.11-1.el7 will be installed
+    node2: ---> Package libXxf86dga.x86_64 0:1.1.4-2.1.el7 will be installed
+    node2: ---> Package libXxf86misc.x86_64 0:1.0.3-7.1.el7 will be installed
+    node2: ---> Package libXxf86vm.x86_64 0:1.1.4-1.el7 will be installed
+    node2: ---> Package libcgroup.x86_64 0:0.41-21.el7 will be installed
+    node2: ---> Package libdmx.x86_64 0:1.1.3-3.el7 will be installed
+    node2: ---> Package libsemanage-python.x86_64 0:2.5-14.el7 will be installed
+    node2: ---> Package libxcb.x86_64 0:1.13-1.el7 will be installed
+    node2: ---> Package lm_sensors-libs.x86_64 0:3.4.0-8.20160601gitf9185e5.el7 will be installed
+    node2: ---> Package mailx.x86_64 0:12.5-19.el7 will be installed
+    node2: ---> Package python-IPy.noarch 0:0.75-6.el7 will be installed
+    node2: ---> Package setools-libs.x86_64 0:3.3.8-4.el7 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package bind-license.noarch 32:9.11.4-26.P2.el7_9.7 will be installed
+    node2: ---> Package geoipupdate.x86_64 0:2.5.0-1.el7 will be installed
+    node2: ---> Package glibc-common.x86_64 0:2.17-324.0.1.el7_9 will be updated
+    node2: ---> Package glibc-common.x86_64 0:2.17-325.0.1.el7_9 will be an update
+    node2: ---> Package kernel-headers.x86_64 0:3.10.0-1160.45.1.el7 will be installed
+    node2: ---> Package libX11-common.noarch 0:1.6.7-4.el7_9 will be installed
+    node2: ---> Package libXt.x86_64 0:1.1.5-3.el7 will be installed
+    node2: --> Processing Dependency: libICE.so.6()(64bit) for package: libXt-1.1.5-3.el7.x86_64
+    node2: --> Processing Dependency: libSM.so.6()(64bit) for package: libXt-1.1.5-3.el7.x86_64
+    node2: --> Running transaction check
+    node2: ---> Package libICE.x86_64 0:1.0.9-9.el7 will be installed
+    node2: ---> Package libSM.x86_64 0:1.2.2-2.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package                 Arch   Version                        Repository  Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  oracle-database-preinstall-21c
+    node2:                          x86_64 1.0-1.el7                      ol7_latest  26 k
+    node2: Installing for dependencies:
+    node2:  GeoIP                   x86_64 1.5.0-14.el7                   ol7_latest 1.5 M
+    node2:  audit-libs-python       x86_64 2.8.5-4.el7                    ol7_latest  76 k
+    node2:  bind-libs               x86_64 32:9.11.4-26.P2.el7_9.7        ol7_latest 157 k
+    node2:  bind-libs-lite          x86_64 32:9.11.4-26.P2.el7_9.7        ol7_latest 1.1 M
+    node2:  bind-license            noarch 32:9.11.4-26.P2.el7_9.7        ol7_latest  90 k
+    node2:  bind-utils              x86_64 32:9.11.4-26.P2.el7_9.7        ol7_latest 260 k
+    node2:  checkpolicy             x86_64 2.5-8.el7                      ol7_latest 294 k
+    node2:  ethtool                 x86_64 2:4.8-10.el7                   ol7_latest 126 k
+    node2:  geoipupdate             x86_64 2.5.0-1.el7                    ol7_latest  34 k
+    node2:  glibc-devel             x86_64 2.17-325.0.1.el7_9             ol7_latest 1.1 M
+    node2:  glibc-headers           x86_64 2.17-325.0.1.el7_9             ol7_latest 693 k
+    node2:  kernel-headers          x86_64 3.10.0-1160.45.1.el7           ol7_latest 9.0 M
+    node2:  ksh                     x86_64 20120801-142.0.1.el7           ol7_latest 882 k
+    node2:  libICE                  x86_64 1.0.9-9.el7                    ol7_latest  66 k
+    node2:  libSM                   x86_64 1.2.2-2.el7                    ol7_latest  39 k
+    node2:  libX11                  x86_64 1.6.7-4.el7_9                  ol7_latest 607 k
+    node2:  libX11-common           noarch 1.6.7-4.el7_9                  ol7_latest 164 k
+    node2:  libXau                  x86_64 1.0.8-2.1.el7                  ol7_latest  28 k
+    node2:  libXext                 x86_64 1.3.3-3.el7                    ol7_latest  38 k
+    node2:  libXi                   x86_64 1.7.9-1.el7                    ol7_latest  40 k
+    node2:  libXinerama             x86_64 1.1.3-2.1.el7                  ol7_latest  13 k
+    node2:  libXmu                  x86_64 1.1.2-2.el7                    ol7_latest  70 k
+    node2:  libXrandr               x86_64 1.5.1-2.el7                    ol7_latest  27 k
+    node2:  libXrender              x86_64 0.9.10-1.el7                   ol7_latest  25 k
+    node2:  libXt                   x86_64 1.1.5-3.el7                    ol7_latest 172 k
+    node2:  libXtst                 x86_64 1.2.3-1.el7                    ol7_latest  20 k
+    node2:  libXv                   x86_64 1.0.11-1.el7                   ol7_latest  18 k
+    node2:  libXxf86dga             x86_64 1.1.4-2.1.el7                  ol7_latest  18 k
+    node2:  libXxf86misc            x86_64 1.0.3-7.1.el7                  ol7_latest  19 k
+    node2:  libXxf86vm              x86_64 1.1.4-1.el7                    ol7_latest  17 k
+    node2:  libcgroup               x86_64 0.41-21.el7                    ol7_latest  66 k
+    node2:  libdmx                  x86_64 1.1.3-3.el7                    ol7_latest  15 k
+    node2:  libsemanage-python      x86_64 2.5-14.el7                     ol7_latest 112 k
+    node2:  libxcb                  x86_64 1.13-1.el7                     ol7_latest 213 k
+    node2:  lm_sensors-libs         x86_64 3.4.0-8.20160601gitf9185e5.el7 ol7_latest  41 k
+    node2:  mailx                   x86_64 12.5-19.el7                    ol7_latest 244 k
+    node2:  policycoreutils-python  x86_64 2.5-34.0.1.el7                 ol7_latest 457 k
+    node2:  psmisc                  x86_64 22.20-17.el7                   ol7_latest 141 k
+    node2:  python-IPy              noarch 0.75-6.el7                     ol7_latest  32 k
+    node2:  setools-libs            x86_64 3.3.8-4.el7                    ol7_latest 620 k
+    node2:  smartmontools           x86_64 1:7.0-2.el7                    ol7_latest 546 k
+    node2:  sysstat                 x86_64 10.1.5-19.el7                  ol7_latest 315 k
+    node2:  xorg-x11-utils          x86_64 7.5-23.el7                     ol7_latest 114 k
+    node2:  xorg-x11-xauth          x86_64 1:1.0.9-1.el7                  ol7_latest  29 k
+    node2: Updating for dependencies:
+    node2:  glibc                   x86_64 2.17-325.0.1.el7_9             ol7_latest 3.6 M
+    node2:  glibc-common            x86_64 2.17-325.0.1.el7_9             ol7_latest  12 M
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package  (+44 Dependent packages)
+    node2: Upgrade             (  2 Dependent packages)
+    node2: Total download size: 35 M
+    node2: Downloading packages:
+    node2: No Presto metadata available for ol7_latest
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              2.9 MB/s |  35 MB  00:11     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : 32:bind-license-9.11.4-26.P2.el7_9.7.noarch                 1/49
+    node2:  
+    node2:   Updating   : glibc-2.17-325.0.1.el7_9.x86_64                             2/49
+    node2:  
+    node2:   Updating   : glibc-common-2.17-325.0.1.el7_9.x86_64                      3/49
+    node2:  
+    node2:   Installing : libICE-1.0.9-9.el7.x86_64                                   4/49
+    node2:  
+    node2:   Installing : libXau-1.0.8-2.1.el7.x86_64                                 5/49
+    node2:  
+    node2:   Installing : libxcb-1.13-1.el7.x86_64                                    6/49
+    node2:  
+    node2:   Installing : libSM-1.2.2-2.el7.x86_64                                    7/49
+    node2:  
+    node2:   Installing : 2:ethtool-4.8-10.el7.x86_64                                 8/49
+    node2:  
+    node2:   Installing : checkpolicy-2.5-8.el7.x86_64                                9/49
+    node2:  
+    node2:   Installing : geoipupdate-2.5.0-1.el7.x86_64                             10/49
+    node2:  
+    node2:   Installing : GeoIP-1.5.0-14.el7.x86_64                                  11/49
+    node2:  
+    node2:   Installing : 32:bind-libs-lite-9.11.4-26.P2.el7_9.7.x86_64              12/49
+    node2:  
+    node2:   Installing : 32:bind-libs-9.11.4-26.P2.el7_9.7.x86_64                   13/49
+    node2:  
+    node2:   Installing : 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64                  14/49
+    node2:  
+    node2:   Installing : setools-libs-3.3.8-4.el7.x86_64                            15/49
+    node2:  
+    node2:   Installing : libsemanage-python-2.5-14.el7.x86_64                       16/49
+    node2:  
+    node2:   Installing : ksh-20120801-142.0.1.el7.x86_64                            17/49
+    node2:  
+    node2:   Installing : audit-libs-python-2.8.5-4.el7.x86_64                       18/49
+    node2:  
+    node2:   Installing : lm_sensors-libs-3.4.0-8.20160601gitf9185e5.el7.x86_64      19/49
+    node2:  
+    node2:   Installing : sysstat-10.1.5-19.el7.x86_64                               20/49
+    node2:  
+    node2:   Installing : mailx-12.5-19.el7.x86_64                                   21/49
+    node2:  
+    node2:   Installing : 1:smartmontools-7.0-2.el7.x86_64                           22/49
+    node2:  
+    node2:   Installing : psmisc-22.20-17.el7.x86_64                                 23/49
+    node2:  
+    node2:   Installing : libcgroup-0.41-21.el7.x86_64                               24/49
+    node2:  
+    node2:   Installing : libX11-common-1.6.7-4.el7_9.noarch                         25/49
+    node2:  
+    node2:   Installing : libX11-1.6.7-4.el7_9.x86_64                                26/49
+    node2:  
+    node2:   Installing : libXext-1.3.3-3.el7.x86_64                                 27/49
+    node2:  
+    node2:   Installing : libXi-1.7.9-1.el7.x86_64                                   28/49
+    node2:  
+    node2:   Installing : libXrender-0.9.10-1.el7.x86_64                             29/49
+    node2:  
+    node2:   Installing : libXrandr-1.5.1-2.el7.x86_64                               30/49
+    node2:  
+    node2:   Installing : libXtst-1.2.3-1.el7.x86_64                                 31/49
+    node2:  
+    node2:   Installing : libdmx-1.1.3-3.el7.x86_64                                  32/49
+    node2:  
+    node2:   Installing : libXinerama-1.1.3-2.1.el7.x86_64                           33/49
+    node2:  
+    node2:   Installing : libXxf86dga-1.1.4-2.1.el7.x86_64                           34/49
+    node2:  
+    node2:   Installing : libXv-1.0.11-1.el7.x86_64                                  35/49
+    node2:  
+    node2:   Installing : libXxf86vm-1.1.4-1.el7.x86_64                              36/49
+    node2:  
+    node2:   Installing : libXxf86misc-1.0.3-7.1.el7.x86_64                          37/49
+    node2:  
+    node2:   Installing : xorg-x11-utils-7.5-23.el7.x86_64                           38/49
+    node2:  
+    node2:   Installing : libXt-1.1.5-3.el7.x86_64                                   39/49
+    node2:  
+    node2:   Installing : libXmu-1.1.2-2.el7.x86_64                                  40/49
+    node2:  
+    node2:   Installing : 1:xorg-x11-xauth-1.0.9-1.el7.x86_64                        41/49
+    node2:  
+    node2:   Installing : python-IPy-0.75-6.el7.noarch                               42/49
+    node2:  
+    node2:   Installing : policycoreutils-python-2.5-34.0.1.el7.x86_64               43/49
+    node2:  
+    node2:   Installing : kernel-headers-3.10.0-1160.45.1.el7.x86_64                 44/49
+    node2:  
+    node2:   Installing : glibc-headers-2.17-325.0.1.el7_9.x86_64                    45/49
+    node2:  
+    node2:   Installing : glibc-devel-2.17-325.0.1.el7_9.x86_64                      46/49
+    node2:  
+    node2:   Installing : oracle-database-preinstall-21c-1.0-1.el7.x86_64            47/49
+    node2:  
+    node2:   Cleanup    : glibc-2.17-324.0.1.el7_9.x86_64                            48/49
+    node2:  
+    node2:   Cleanup    : glibc-common-2.17-324.0.1.el7_9.x86_64                     49/49
+    node2:  
+    node2:   Verifying  : libXext-1.3.3-3.el7.x86_64                                  1/49
+    node2:  
+    node2:   Verifying  : glibc-headers-2.17-325.0.1.el7_9.x86_64                     2/49
+    node2:  
+    node2:   Verifying  : libdmx-1.1.3-3.el7.x86_64                                   3/49
+    node2:  
+    node2:   Verifying  : libICE-1.0.9-9.el7.x86_64                                   4/49
+    node2:  
+    node2:   Verifying  : 2:ethtool-4.8-10.el7.x86_64                                 5/49
+    node2:  
+    node2:   Verifying  : libXinerama-1.1.3-2.1.el7.x86_64                            6/49
+    node2:  
+    node2:   Verifying  : libXxf86dga-1.1.4-2.1.el7.x86_64                            7/49
+    node2:  
+    node2:   Verifying  : libXrender-0.9.10-1.el7.x86_64                              8/49
+    node2:  
+    node2:   Verifying  : libXv-1.0.11-1.el7.x86_64                                   9/49
+    node2:  
+    node2:   Verifying  : libXi-1.7.9-1.el7.x86_64                                   10/49
+    node2:  
+    node2:   Verifying  : libXxf86vm-1.1.4-1.el7.x86_64                              11/49
+    node2:  
+    node2:   Verifying  : libXxf86misc-1.0.3-7.1.el7.x86_64                          12/49
+    node2:  
+    node2:   Verifying  : libXt-1.1.5-3.el7.x86_64                                   13/49
+    node2:  
+    node2:   Verifying  : 32:bind-utils-9.11.4-26.P2.el7_9.7.x86_64                  14/49
+    node2:  
+    node2:   Verifying  : glibc-devel-2.17-325.0.1.el7_9.x86_64                      15/49
+    node2:  
+    node2:   Verifying  : 32:bind-license-9.11.4-26.P2.el7_9.7.noarch                16/49
+    node2:  
+    node2:   Verifying  : GeoIP-1.5.0-14.el7.x86_64                                  17/49
+    node2:  
+    node2:   Verifying  : sysstat-10.1.5-19.el7.x86_64                               18/49
+    node2:  
+    node2:   Verifying  : checkpolicy-2.5-8.el7.x86_64                               19/49
+    node2:  
+    node2:   Verifying  : policycoreutils-python-2.5-34.0.1.el7.x86_64               20/49
+    node2:  
+    node2:   Verifying  : kernel-headers-3.10.0-1160.45.1.el7.x86_64                 21/49
+    node2:  
+    node2:   Verifying  : oracle-database-preinstall-21c-1.0-1.el7.x86_64            22/49
+    node2:  
+    node2:   Verifying  : geoipupdate-2.5.0-1.el7.x86_64                             23/49
+    node2:  
+    node2:   Verifying  : xorg-x11-utils-7.5-23.el7.x86_64                           24/49
+    node2:  
+    node2:   Verifying  : python-IPy-0.75-6.el7.noarch                               25/49
+    node2:  
+    node2:   Verifying  : libXtst-1.2.3-1.el7.x86_64                                 26/49
+    node2:  
+    node2:   Verifying  : 32:bind-libs-9.11.4-26.P2.el7_9.7.x86_64                   27/49
+    node2:  
+    node2:   Verifying  : libxcb-1.13-1.el7.x86_64                                   28/49
+    node2:  
+    node2:   Verifying  : 32:bind-libs-lite-9.11.4-26.P2.el7_9.7.x86_64              29/49
+    node2:  
+    node2:   Verifying  : setools-libs-3.3.8-4.el7.x86_64                            30/49
+    node2:  
+    node2:   Verifying  : 1:smartmontools-7.0-2.el7.x86_64                           31/49
+    node2:  
+    node2:   Verifying  : glibc-common-2.17-325.0.1.el7_9.x86_64                     32/49
+    node2:  
+    node2:   Verifying  : libsemanage-python-2.5-14.el7.x86_64                       33/49
+    node2:  
+    node2:   Verifying  : ksh-20120801-142.0.1.el7.x86_64                            34/49
+    node2:  
+    node2:   Verifying  : libXmu-1.1.2-2.el7.x86_64                                  35/49
+    node2:  
+    node2:   Verifying  : libXrandr-1.5.1-2.el7.x86_64                               36/49
+    node2:  
+    node2:   Verifying  : audit-libs-python-2.8.5-4.el7.x86_64                       37/49
+    node2:  
+    node2:   Verifying  : glibc-2.17-325.0.1.el7_9.x86_64                            38/49
+    node2:  
+    node2:   Verifying  : 1:xorg-x11-xauth-1.0.9-1.el7.x86_64                        39/49
+    node2:  
+    node2:   Verifying  : lm_sensors-libs-3.4.0-8.20160601gitf9185e5.el7.x86_64      40/49
+    node2:  
+    node2:   Verifying  : libXau-1.0.8-2.1.el7.x86_64                                41/49
+    node2:  
+    node2:   Verifying  : libSM-1.2.2-2.el7.x86_64                                   42/49
+    node2:  
+    node2:   Verifying  : libX11-1.6.7-4.el7_9.x86_64                                43/49
+    node2:  
+    node2:   Verifying  : mailx-12.5-19.el7.x86_64                                   44/49
+    node2:  
+    node2:   Verifying  : psmisc-22.20-17.el7.x86_64                                 45/49
+    node2:  
+    node2:   Verifying  : libX11-common-1.6.7-4.el7_9.noarch                         46/49
+    node2:  
+    node2:   Verifying  : libcgroup-0.41-21.el7.x86_64                               47/49
+    node2:  
+    node2:   Verifying  : glibc-2.17-324.0.1.el7_9.x86_64                            48/49
+    node2:  
+    node2:   Verifying  : glibc-common-2.17-324.0.1.el7_9.x86_64                     49/49
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   oracle-database-preinstall-21c.x86_64 0:1.0-1.el7                             
+    node2: 
+    node2: Dependency Installed:
+    node2:   GeoIP.x86_64 0:1.5.0-14.el7                                                   
+    node2:   audit-libs-python.x86_64 0:2.8.5-4.el7                                        
+    node2:   bind-libs.x86_64 32:9.11.4-26.P2.el7_9.7                                      
+    node2:   bind-libs-lite.x86_64 32:9.11.4-26.P2.el7_9.7                                 
+    node2:   bind-license.noarch 32:9.11.4-26.P2.el7_9.7                                   
+    node2:   bind-utils.x86_64 32:9.11.4-26.P2.el7_9.7                                     
+    node2:   checkpolicy.x86_64 0:2.5-8.el7                                                
+    node2:   ethtool.x86_64 2:4.8-10.el7                                                   
+    node2:   geoipupdate.x86_64 0:2.5.0-1.el7                                              
+    node2:   glibc-devel.x86_64 0:2.17-325.0.1.el7_9                                       
+    node2:   glibc-headers.x86_64 0:2.17-325.0.1.el7_9                                     
+    node2:   kernel-headers.x86_64 0:3.10.0-1160.45.1.el7                                  
+    node2:   ksh.x86_64 0:20120801-142.0.1.el7                                             
+    node2:   libICE.x86_64 0:1.0.9-9.el7                                                   
+    node2:   libSM.x86_64 0:1.2.2-2.el7                                                    
+    node2:   libX11.x86_64 0:1.6.7-4.el7_9                                                 
+    node2:   libX11-common.noarch 0:1.6.7-4.el7_9                                          
+    node2:   libXau.x86_64 0:1.0.8-2.1.el7                                                 
+    node2:   libXext.x86_64 0:1.3.3-3.el7                                                  
+    node2:   libXi.x86_64 0:1.7.9-1.el7                                                    
+    node2:   libXinerama.x86_64 0:1.1.3-2.1.el7                                            
+    node2:   libXmu.x86_64 0:1.1.2-2.el7                                                   
+    node2:   libXrandr.x86_64 0:1.5.1-2.el7                                                
+    node2:   libXrender.x86_64 0:0.9.10-1.el7                                              
+    node2:   libXt.x86_64 0:1.1.5-3.el7                                                    
+    node2:   libXtst.x86_64 0:1.2.3-1.el7                                                  
+    node2:   libXv.x86_64 0:1.0.11-1.el7                                                   
+    node2:   libXxf86dga.x86_64 0:1.1.4-2.1.el7                                            
+    node2:   libXxf86misc.x86_64 0:1.0.3-7.1.el7                                           
+    node2:   libXxf86vm.x86_64 0:1.1.4-1.el7                                               
+    node2:   libcgroup.x86_64 0:0.41-21.el7                                                
+    node2:   libdmx.x86_64 0:1.1.3-3.el7                                                   
+    node2:   libsemanage-python.x86_64 0:2.5-14.el7                                        
+    node2:   libxcb.x86_64 0:1.13-1.el7                                                    
+    node2:   lm_sensors-libs.x86_64 0:3.4.0-8.20160601gitf9185e5.el7                       
+    node2:   mailx.x86_64 0:12.5-19.el7                                                    
+    node2:   policycoreutils-python.x86_64 0:2.5-34.0.1.el7                                
+    node2:   psmisc.x86_64 0:22.20-17.el7                                                  
+    node2:   python-IPy.noarch 0:0.75-6.el7                                                
+    node2:   setools-libs.x86_64 0:3.3.8-4.el7                                             
+    node2:   smartmontools.x86_64 1:7.0-2.el7                                              
+    node2:   sysstat.x86_64 0:10.1.5-19.el7                                                
+    node2:   xorg-x11-utils.x86_64 0:7.5-23.el7                                            
+    node2:   xorg-x11-xauth.x86_64 1:1.0.9-1.el7                                           
+    node2: 
+    node2: Dependency Updated:
+    node2:   glibc.x86_64 0:2.17-325.0.1.el7_9   glibc-common.x86_64 0:2.17-325.0.1.el7_9  
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package oracleasm-support.x86_64 0:2.1.11-2.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package                 Arch         Version            Repository        Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  oracleasm-support       x86_64       2.1.11-2.el7       ol7_latest        85 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 85 k
+    node2: Installed size: 266 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : oracleasm-support-2.1.11-2.el7.x86_64                        1/1
+    node2:  
+    node2: Note: Forwarding request to 'systemctl enable oracleasm.service'.
+    node2: Created symlink from /etc/systemd/system/multi-user.target.wants/oracleasm.service to /usr/lib/systemd/system/oracleasm.service.
+    node2:   Verifying  : oracleasm-support-2.1.11-2.el7.x86_64                        1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   oracleasm-support.x86_64 0:2.1.11-2.el7                                       
+    node2: Complete!
+    node2: -----------------------------------------------------------------
+    node2: [0;34mINFO: [0m2021-11-13 15:28:46: Add extra OS packages
+    node2: -----------------------------------------------------------------
+    node2: Package bc-1.06.95-13.el7.x86_64 already installed and latest version
+    node2: Nothing to do
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package binutils.x86_64 0:2.27-44.base.0.3.el7 will be updated
+    node2: ---> Package binutils.x86_64 0:2.27-44.base.0.3.el7_9.1 will be an update
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package       Arch        Version                        Repository       Size
+    node2: ================================================================================
+    node2: Updating:
+    node2:  binutils      x86_64      2.27-44.base.0.3.el7_9.1       ol7_latest      5.4 M
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Upgrade  1 Package
+    node2: Total download size: 5.4 M
+    node2: Downloading packages:
+    node2: No Presto metadata available for ol7_latest
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Updating   : binutils-2.27-44.base.0.3.el7_9.1.x86_64                     1/2
+    node2:  
+    node2:   Cleanup    : binutils-2.27-44.base.0.3.el7.x86_64                         2/2
+    node2:  
+    node2:   Verifying  : binutils-2.27-44.base.0.3.el7_9.1.x86_64                     1/2
+    node2:  
+    node2:   Verifying  : binutils-2.27-44.base.0.3.el7.x86_64                         2/2
+    node2:  
+    node2: 
+    node2: Updated:
+    node2:   binutils.x86_64 0:2.27-44.base.0.3.el7_9.1                                    
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package compat-libcap1.x86_64 0:1.10-7.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package               Arch          Version            Repository         Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  compat-libcap1        x86_64        1.10-7.el7         ol7_latest         17 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 17 k
+    node2: Installed size: 29 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : compat-libcap1-1.10-7.el7.x86_64                             1/1
+    node2:  
+    node2:   Verifying  : compat-libcap1-1.10-7.el7.x86_64                             1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   compat-libcap1.x86_64 0:1.10-7.el7                                            
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package compat-libstdc++-33.x86_64 0:3.2.3-72.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package                  Arch        Version             Repository       Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  compat-libstdc++-33      x86_64      3.2.3-72.el7        ol7_latest      190 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package
+    node2: Total download size: 190 k
+    node2: Installed size: 811 k
+    node2: Downloading packages:
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : compat-libstdc++-33-3.2.3-72.el7.x86_64                      1/1
+    node2:  
+    node2:   Verifying  : compat-libstdc++-33-3.2.3-72.el7.x86_64                      1/1
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   compat-libstdc++-33.x86_64 0:3.2.3-72.el7                                     
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package compat-libstdc++-33.i686 0:3.2.3-72.el7 will be installed
+    node2: --> Processing Dependency: libgcc_s.so.1 for package: compat-libstdc++-33-3.2.3-72.el7.i686
+    node2: --> Processing Dependency: libgcc_s.so.1(GCC_3.0) for package: compat-libstdc++-33-3.2.3-72.el7.i686
+    node2: --> Processing Dependency: libgcc_s.so.1(GCC_3.3) for package: compat-libstdc++-33-3.2.3-72.el7.i686
+    node2: --> Processing Dependency: libgcc_s.so.1(GLIBC_2.0) for package: compat-libstdc++-33-3.2.3-72.el7.i686
+    node2: --> Processing Dependency: libm.so.6 for package: compat-libstdc++-33-3.2.3-72.el7.i686
+    node2: --> Processing Dependency: libc.so.6(GLIBC_2.3) for package: compat-libstdc++-33-3.2.3-72.el7.i686
+    node2: --> Running transaction check
+    node2: ---> Package glibc.i686 0:2.17-325.0.1.el7_9 will be installed
+    node2: --> Processing Dependency: libfreebl3.so for package: glibc-2.17-325.0.1.el7_9.i686
+    node2: --> Processing Dependency: libfreebl3.so(NSSRAWHASH_3.12.3) for package: glibc-2.17-325.0.1.el7_9.i686
+    node2: ---> Package libgcc.i686 0:4.8.5-44.0.3.el7 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package nss-softokn-freebl.x86_64 0:3.53.1-6.0.1.el7_9 will be updated
+    node2: ---> Package nss-softokn-freebl.i686 0:3.67.0-3.0.1.el7_9 will be installed
+    node2: --> Processing Dependency: nspr >= 4.30.0 for package: nss-softokn-freebl-3.67.0-3.0.1.el7_9.i686
+    node2: --> Processing Dependency: nss-util >= 3.67.0-1 for package: nss-softokn-freebl-3.67.0-3.0.1.el7_9.i686
+    node2: ---> Package nss-softokn-freebl.x86_64 0:3.67.0-3.0.1.el7_9 will be an update
+    node2: --> Running transaction check
+    node2: ---> Package nspr.x86_64 0:4.25.0-2.el7_9 will be updated
+    node2: ---> Package nspr.x86_64 0:4.32.0-1.el7_9 will be an update
+    node2: ---> Package nss-util.x86_64 0:3.53.1-1.el7_9 will be updated
+    node2: ---> Package nss-util.x86_64 0:3.67.0-1.el7_9 will be an update
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package                 Arch       Version                Repository      Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  compat-libstdc++-33     i686       3.2.3-72.el7           ol7_latest     196 k
+    node2: Installing for dependencies:
+    node2:  glibc                   i686       2.17-325.0.1.el7_9     ol7_latest     4.3 M
+    node2:  libgcc                  i686       4.8.5-44.0.3.el7       ol7_latest     111 k
+    node2:  nss-softokn-freebl      i686       3.67.0-3.0.1.el7_9     ol7_latest     325 k
+    node2: Updating for dependencies:
+    node2:  nspr                    x86_64     4.32.0-1.el7_9         ol7_latest     127 k
+    node2:  nss-softokn-freebl      x86_64     3.67.0-3.0.1.el7_9     ol7_latest     337 k
+    node2:  nss-util                x86_64     3.67.0-1.el7_9         ol7_latest      79 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package  (+3 Dependent packages)
+    node2: Upgrade             ( 3 Dependent packages)
+    node2: Total download size: 5.4 M
+    node2: Downloading packages:
+    node2: No Presto metadata available for ol7_latest
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              2.5 MB/s | 5.4 MB  00:02     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : libgcc-4.8.5-44.0.3.el7.i686                                1/10
+    node2:  
+    node2:   Installing : nss-softokn-freebl-3.67.0-3.0.1.el7_9.i686                  2/10
+    node2:  
+    node2:   Installing : glibc-2.17-325.0.1.el7_9.i686                               3/10
+    node2:  
+    node2:   Updating   : nspr-4.32.0-1.el7_9.x86_64                                  4/10
+    node2:  
+    node2:   Updating   : nss-util-3.67.0-1.el7_9.x86_64                              5/10
+    node2:  
+    node2:   Updating   : nss-softokn-freebl-3.67.0-3.0.1.el7_9.x86_64                6/10
+    node2:  
+    node2:   Installing : compat-libstdc++-33-3.2.3-72.el7.i686                       7/10
+    node2:  
+    node2:   Cleanup    : nss-softokn-freebl-3.53.1-6.0.1.el7_9.x86_64                8/10
+    node2:  
+    node2:   Cleanup    : nss-util-3.53.1-1.el7_9.x86_64                              9/10
+    node2:  
+    node2:   Cleanup    : nspr-4.25.0-2.el7_9.x86_64                                 10/10
+    node2:  
+    node2:   Verifying  : nss-softokn-freebl-3.67.0-3.0.1.el7_9.x86_64                1/10
+    node2:  
+    node2:   Verifying  : glibc-2.17-325.0.1.el7_9.i686                               2/10
+    node2:  
+    node2:   Verifying  : libgcc-4.8.5-44.0.3.el7.i686                                3/10
+    node2:  
+    node2:   Verifying  : compat-libstdc++-33-3.2.3-72.el7.i686                       4/10
+    node2:  
+    node2:   Verifying  : nss-util-3.67.0-1.el7_9.x86_64                              5/10
+    node2:  
+    node2:   Verifying  : nspr-4.32.0-1.el7_9.x86_64                                  6/10
+    node2:  
+    node2:   Verifying  : nss-softokn-freebl-3.67.0-3.0.1.el7_9.i686                  7/10
+    node2:  
+    node2:   Verifying  : nspr-4.25.0-2.el7_9.x86_64                                  8/10
+    node2:  
+    node2:   Verifying  : nss-util-3.53.1-1.el7_9.x86_64                              9/10
+    node2:  
+    node2:   Verifying  : nss-softokn-freebl-3.53.1-6.0.1.el7_9.x86_64               10/10
+    node2:  
+    node2: 
+    node2: Installed:
+    node2:   compat-libstdc++-33.i686 0:3.2.3-72.el7                                       
+    node2: 
+    node2: Dependency Installed:
+    node2:   glibc.i686 0:2.17-325.0.1.el7_9               libgcc.i686 0:4.8.5-44.0.3.el7 
+    node2:   nss-softokn-freebl.i686 0:3.67.0-3.0.1.el7_9 
+    node2: 
+    node2: Dependency Updated:
+    node2:   nspr.x86_64 0:4.32.0-1.el7_9                                                  
+    node2:   nss-softokn-freebl.x86_64 0:3.67.0-3.0.1.el7_9                                
+    node2:   nss-util.x86_64 0:3.67.0-1.el7_9                                              
+    node2: Complete!
+    node2: Resolving Dependencies
+    node2: --> Running transaction check
+    node2: ---> Package fontconfig-devel.x86_64 0:2.13.0-4.3.el7 will be installed
+    node2: --> Processing Dependency: fontconfig(x86-64) = 2.13.0-4.3.el7 for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+    node2: --> Processing Dependency: freetype-devel >= 2.8-7 for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+    node2: --> Processing Dependency: pkgconfig(freetype2) >= 20.0.14 for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+    node2: --> Processing Dependency: pkgconfig(expat) for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+    node2: --> Processing Dependency: pkgconfig(uuid) for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+    node2: --> Processing Dependency: libfontconfig.so.1()(64bit) for package: fontconfig-devel-2.13.0-4.3.el7.x86_64
+    node2: --> Running transaction check
+    node2: ---> Package expat-devel.x86_64 0:2.1.0-12.el7 will be installed
+    node2: ---> Package fontconfig.x86_64 0:2.13.0-4.3.el7 will be installed
+    node2: --> Processing Dependency: dejavu-sans-fonts for package: fontconfig-2.13.0-4.3.el7.x86_64
+    node2: --> Processing Dependency: fontpackages-filesystem for package: fontconfig-2.13.0-4.3.el7.x86_64
+    node2: ---> Package freetype-devel.x86_64 0:2.8-14.el7_9.1 will be installed
+    node2: --> Processing Dependency: pkgconfig(libpng) for package: freetype-devel-2.8-14.el7_9.1.x86_64
+    node2: --> Processing Dependency: pkgconfig(zlib) for package: freetype-devel-2.8-14.el7_9.1.x86_64
+    node2: ---> Package libuuid-devel.x86_64 0:2.23.2-65.0.1.el7_9.1 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package dejavu-sans-fonts.noarch 0:2.33-6.el7 will be installed
+    node2: --> Processing Dependency: dejavu-fonts-common = 2.33-6.el7 for package: dejavu-sans-fonts-2.33-6.el7.noarch
+    node2: ---> Package fontpackages-filesystem.noarch 0:1.44-8.el7 will be installed
+    node2: ---> Package libpng-devel.x86_64 2:1.5.13-8.el7 will be installed
+    node2: ---> Package zlib-devel.x86_64 0:1.2.7-19.el7_9 will be installed
+    node2: --> Running transaction check
+    node2: ---> Package dejavu-fonts-common.noarch 0:2.33-6.el7 will be installed
+    node2: --> Finished Dependency Resolution
+    node2: 
+    node2: Dependencies Resolved
+    node2: 
+    node2: ================================================================================
+    node2:  Package                   Arch     Version                  Repository    Size
+    node2: ================================================================================
+    node2: Installing:
+    node2:  fontconfig-devel          x86_64   2.13.0-4.3.el7           ol7_latest   137 k
+    node2: Installing for dependencies:
+    node2:  dejavu-fonts-common       noarch   2.33-6.el7               ol7_latest    64 k
+    node2:  dejavu-sans-fonts         noarch   2.33-6.el7               ol7_latest   1.4 M
+    node2:  expat-devel               x86_64   2.1.0-12.el7             ol7_latest    56 k
+    node2:  fontconfig                x86_64   2.13.0-4.3.el7           ol7_latest   254 k
+    node2:  fontpackages-filesystem   noarch   1.44-8.el7               ol7_latest   9.4 k
+    node2:  freetype-devel            x86_64   2.8-14.el7_9.1           ol7_latest   446 k
+    node2:  libpng-devel              x86_64   2:1.5.13-8.el7           ol7_latest   121 k
+    node2:  libuuid-devel             x86_64   2.23.2-65.0.1.el7_9.1    ol7_latest    93 k
+    node2:  zlib-devel                x86_64   1.2.7-19.el7_9           ol7_latest    50 k
+    node2: 
+    node2: Transaction Summary
+    node2: ================================================================================
+    node2: Install  1 Package (+9 Dependent packages)
+    node2: Total download size: 2.6 M
+    node2: Installed size: 9.4 M
+    node2: Downloading packages:
+    node2: --------------------------------------------------------------------------------
+    node2: Total                                              2.2 MB/s | 2.6 MB  00:01     
+    node2: Running transaction check
+    node2: Running transaction test
+    node2: Transaction test succeeded
+    node2: Running transaction
+    node2:   Installing : fontpackages-filesystem-1.44-8.el7.noarch                   1/10
+    node2:  
+    node2:   Installing : zlib-devel-1.2.7-19.el7_9.x86_64                            2/10
+    node2:  
+    node2:   Installing : 2:libpng-devel-1.5.13-8.el7.x86_64                          3/10
+    node2:  
+    node2:   Installing : freetype-devel-2.8-14.el7_9.1.x86_64                        4/10
+    node2:  
+    node2:   Installing : dejavu-fonts-common-2.33-6.el7.noarch                       5/10
+    node2:  
+    node2:   Installing : dejavu-sans-fonts-2.33-6.el7.noarch                         6/10
+    node2:  
+    node2:   Installing : fontconfig-2.13.0-4.3.el7.x86_64                            7/10

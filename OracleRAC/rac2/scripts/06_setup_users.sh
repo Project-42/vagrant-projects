@@ -175,9 +175,9 @@ chmod +x -R /home/oracle/bin/* /home/grid/bin/*
 echo "-----------------------------------------------------------------"
 echo -e "${INFO}`date +%F' '%T`: Installing sqlcl using Connor's Script "
 echo "-----------------------------------------------------------------"
-su -l oracle -c "git clone https://github.com/connormcd/misc-scripts.git /home/oracle/bin"
-su -l oracle -c "chmod +x -R /home/oracle/bin/*"
-su -l oracle -c "/home/oracle/bin/getsqlcl.sh"
+su -l oracle -c "mkdir -p /home/oracle/bin/connor/ ; git clone https://github.com/connormcd/misc-scripts.git /home/oracle/bin/connor"
+su -l oracle -c "chmod +x -R /home/oracle/bin/connor/*"
+su -l oracle -c "/home/oracle/bin/connor/getsqlcl.sh"
 
 
 #----------------------------------------------------------

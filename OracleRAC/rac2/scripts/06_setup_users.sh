@@ -103,7 +103,7 @@ if [ `hostname` == ${NODE1_HOSTNAME} ]
 then
   cat >> /home/grid/.bash_profile << EOF
 export ORACLE_HOME=${GI_HOME}
-export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
+export PATH=\$ORACLE_HOME/bin:~/bin:/u01/app/oracle/product/sqlcl/bin:~/.local/bin:$PATH
 export ORACLE_SID=+ASM1
 echo ""
 echo "PMON processes running"
@@ -112,7 +112,7 @@ EOF
 
   cat >> /home/oracle/.bash_profile << EOF
 export ORACLE_HOME=${DB_HOME}
-export PATH=\$ORACLE_HOME/bin:~/bin:~/.local/bin:$PATH
+export PATH=\$ORACLE_HOME/bin:~/bin:/u01/app/oracle/product/sqlcl/bin:~/.local/bin:$PATH
 export ORACLE_SID=${DB_NAME}1
 echo ""
 echo "PMON processes running"

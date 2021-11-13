@@ -36,5 +36,3 @@
     oracle.install.config.managementOption=NONE \
     oracle.install.config.omsPort=0 \
     oracle.install.crs.rootconfig.executeRootScript=false
-    oracle.install.crs.config.clusterNodes=rac2-node1.localdomain:rac2-node1-vip.localdomain:HUB,rac2-node2.localdomain:rac2-node2-vip.localdomain:HUB \
-    oracle.install.crs.config.networkInterfaceList=eth1:192.168.125.0:1,eth2:192.168.200.0:5 \

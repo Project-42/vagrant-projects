@@ -172,6 +172,13 @@ su -l oracle -c "mkdir /home/oracle/bin ; git clone https://github.com/freddenis
 su -l grid -c "mkdir /home/grid/bin ; git clone https://github.com/freddenis/oracle-scripts.git /home/grid/bin"
 chmod +x -R /home/oracle/bin/* /home/grid/bin/* 
 
+echo "-----------------------------------------------------------------"
+echo -e "${INFO}`date +%F' '%T`: Installing sqlcl using Connor's Script "
+echo "-----------------------------------------------------------------"
+su -l oracle -c "wget -o /home/oracle/bin/getsqlcl.sh https://github.com/connormcd/misc-scripts/blob/master/getsqlcl.sh"
+su -l oracle -c "chmod +x /home/oracle/bin/getsqlcl.sh"
+su -l oracle -c "/home/oracle/bin/getsqlcl.sh"
+
 
 #----------------------------------------------------------
 # EndOfFile

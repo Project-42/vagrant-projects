@@ -1,18 +1,33 @@
 # Oracle Real Application Cluster (RAC) Vagrant project on VirtualBox or KVM/libVirt provider
 
-###### Author: Ruggero Citton (<ruggero.citton@oracle.com>) - Orale RAC Pack, Cloud Innovation and Solution Engineering Team
+###### Original Author: Ruggero Citton (<ruggero.citton@oracle.com>) - Orale RAC Pack, Cloud Innovation and Solution Engineering Team
 
 This directory contains Vagrant build files to provision automatically
 two Oracle RAC nodes (12.2, 18c, 19c, 21c), using Vagrant, Oracle Linux 7 and shell scripts.
 ![](images/OracleRAC.png)
 
+
 ## PORJECT42 FORK MODIFICATIONS ##
 This is the list of modifications made to original project (https://github.com/oracle/vagrant-projects)
- - Second rac cluster added (but need to be deployed independely) WIP
- - ........
 
-
-
+- Second rac cluster added to be deployed independtly
+- Extra 19c Database created in cluster "rac1" 
+*See "db2_name:/db2_home/pdb2_name" etc.. under "config/vagrant.yml"
+- No databases are created in "rac2" 
+*The intention is to create more script to create Standby Databases there
+- Extra packages installed (nano highlight git mlocate bash-completion bash-it)
+- Extra packages to be able to install 11g databases (elfutils-libelf-devel-0* gcc-4*x86_64* gcc-c++-4*x86_64* numactl-devel-2*x86_64*)
+- Changed Diskgroups to have External Redundancy and RDBMS compatibility to 11.2 in RECO case
+*Seems like you still need to change "_asm_allow_older_clients" to TRUE to be able to install 11g
+- Bash profile modified (Current SID configured and pmon processes running)
+- oracle user added to sudoers with no password
+*I know, not very secure, but this is for a test after all :)
+- DNS 8.8.8.8 added to resolv.conf
+- ORCL_software moved to have a central place for both Clusters
+- Added extra script to modify oratab file
+*Not working for second node of the cluster though :(
+- Fred Denis [oracle-scripts](https://github.com/freddenis/oracle-scripts/) installation
+- sqlcl installed using [Connor Mcdonald "getsqlcl" script](https://connor-mcdonald.com/2021/10/29/keeping-my-sqlcl-toasty-fresh/) downloaded
 
 
 

@@ -113,136 +113,160 @@ The following can be customized:
 - `provider`:         It's defining the provider to be used: 'libvirt' or 'virtualbox'
 - `grid_software`:    Oracle Database XXc Grid Infrastructure for Linux x86-64 zip file
 - `db_software`:      Oracle Database XXc for Linux x86-64 zip file
+- `db2_software`:     Oracle Database XXc for Linux x86-64 zip file for Second Database
 - `root_password`:    VM Guest root password
 - `grid_password`:    VM Guest grid password
 - `oracle_password`:  VM Guest oracle password
 - `sys_password`:     Oracled RDBMS SYS password
 - `pdb_password`:     Oracled PDB SYS password
+- `pdb2_password`:    Oracled PDB2 SYS password 
 - `ora_languages`:    Oracle products languages
 - `nomgmtdb`:         Oracle GI Management database creation (true/false)
 - `orestart`:         Oracle GI configured as Oracle Restart (true/false)
 - `db_name`:          Oracle RDBMS database name
+- `db2_name`:         Oracle RDBMS database name for Second CDB
 - `pdb_name`:         Oracle RDBMS pluggable database name
+- `pdb2_name`:        Oracle RDBMS pluggable database name for Second CDB
 - `db_type`:          Oracle RDBMS type: RAC, RACONE, SI (single Instance)
 - `cdb`:              Oracle RDBMS database created as container (true/false)
 
-#### Virtualbox provider Example:
 
-    node1:
-      vm_name: node1
-      mem_size: 8192
-      cpus: 2
-      public_ip:  192.168.56.111
-      vip_ip:     192.168.56.112
-      private_ip: 192.168.200.111
-      u01_disk: ./node1_u01.vdi
 
-    node2:
-      vm_name: node2
-      mem_size: 8192
-      cpus: 2
-      public_ip:  192.168.56.121
-      vip_ip:     192.168.56.122
-      private_ip: 192.168.200.122
-      u01_disk: ./node2_u01.vdi
+#### RAC1 Example:
+-- vagrant-projects/OracleRAC/rac1/config/vagrant.yml
 
-    shared:
-      prefix_name:   vgt-ol7-rac
-      # ---------------------------------------------
-      domain:   localdomain
-      scan_ip1: 192.168.56.115
-      scan_ip2: 192.168.56.116
-      scan_ip3: 192.168.56.117
-      # ---------------------------------------------
-      non_rotational: 'on'
-      # ---------------------------------------------
-      asm_disk_path:
-      asm_disk_num:   4
-      asm_disk_size: 20
-      asm_lib_type: asmlib
-      p1_ratio:      80
-      # ---------------------------------------------
+```bash
+node1:
+  vm_name: rac1-node1
+  mem_size: 16384
+  cpus: 24
+  public_ip:  192.168.125.111
+  vip_ip:     192.168.125.151
+  private_ip: 192.168.200.101
+  storage_pool_name: Vagrant_RAC_Storage
 
-    env:
-      provider: virtualbox
-      # ---------------------------------------------
-      gi_software:     LINUX.X64_213000_grid_home.zip
-      db_software:     LINUX.X64_213000_db_home.zip
-      # ---------------------------------------------
-      root_password:   welcome1
-      grid_password:   welcome1
-      oracle_password: welcome1
-      sys_password:    welcome1
-      pdb_password:    welcome1
-      # ---------------------------------------------
-      ora_languages:   en,en_GB
-      # ---------------------------------------------
-      nomgmtdb:        true
-      orestart:        false
-      # ---------------------------------------------
-      db_name:         DB213H1
-      pdb_name:        PDB1
-      db_type:         RAC
-      cdb:             false
-      # ---------------------------------------------
+node2:
+  vm_name: rac1-node2
+  mem_size: 16384
+  cpus: 24
+  public_ip:  192.168.125.112
+  vip_ip:     192.168.125.152
+  private_ip: 192.168.200.102
+  storage_pool_name: Vagrant_RAC_Storage
 
-#### KVM/libVirt provider Example:
+shared:
+  prefix_name:   rac1
+  # ---------------------------------------------
+  domain  : localdomain
+  scan_ip1: 192.168.125.125
+  scan_ip2: 192.168.125.126
+  scan_ip3: 192.168.125.127
+  # ---------------------------------------------
+  asm_disk_num:   6
+  asm_disk_size: 20
+  p1_ratio:      80
+  asm_lib_type: 'ASMLIB'
+  storage_pool_name: Vagrant_RAC_Storage
+  # ---------------------------------------------
 
-    node1:
-      vm_name: node1
-      mem_size: 8192
-      cpus: 2
-      public_ip:  192.168.125.111
-      vip_ip:     192.168.125.112
-      private_ip: 192.168.200.111
-      storage_pool_name: Vagrant_KVM_Storage
+env:
+  provider: libvirt
+  # ---------------------------------------------
+  gi_software:     LINUX.X64_213000_grid_home.zip
+  db_software:     LINUX.X64_213000_db_home.zip
+  db2_software:    LINUX.X64_193000_db_home.zip
+  # ---------------------------------------------
+  root_password:   Welcome1
+  grid_password:   Welcome1
+  oracle_password: Welcome1
+  sys_password:    Welcome1
+  pdb_password:    Welcome1
+  pdb2_password:   Welcome1
+  # ---------------------------------------------
+  ora_languages:   en,en_GB
+  # ---------------------------------------------
+  nomgmtdb:        true
+  orestart:        false
+  # ---------------------------------------------
+  db_name:         CDB21
+  pdb_name:        PDB211
+  db_type:         RAC
+  cdb:             true
+  db2_name:        CDB19
+  pdb2_name:       PDB191
+  db2_type:        RAC
+  cdb:             true
+  # ---------------------------------------------
+```
 
-    node2:
-      vm_name: node2
-      mem_size: 8192
-      cpus: 2
-      public_ip:  192.168.125.121
-      vip_ip:     192.168.125.122
-      private_ip: 192.168.200.122
-      storage_pool_name: Vagrant_KVM_Storage
+#### RAC2 Example:
+-- vagrant-projects/OracleRAC/rac2/config/vagrant.yml
 
-    shared:
-      prefix_name:   vgt-ol7-rac
-      # ---------------------------------------------
-      domain:   localdomain
-      scan_ip1:      192.168.125.115
-      scan_ip2:      192.168.125.116
-      scan_ip3:      192.168.125.117
-      # ---------------------------------------------
-      asm_disk_num:   4
-      asm_disk_size: 20
-      asm_lib_type: asmlib
-      p1_ratio:      80
-      storage_pool_name: Vagrant_KVM_Storage
-      # ---------------------------------------------
+```bash
+node1:
+  vm_name: rac2-node1
+  mem_size: 16384
+  cpus: 24
+  public_ip:  192.168.125.121
+  vip_ip:     192.168.125.141
+  private_ip: 192.168.200.111
+  storage_pool_name: Vagrant_RAC_Storage
 
-    env:
-      provider: libvirt
-      # ---------------------------------------------
-      gi_software:     LINUX.X64_213000_grid_home.zip
-      db_software:     LINUX.X64_213000_db_home.zip
-      # ---------------------------------------------
-      root_password:   welcome1
-      grid_password:   welcome1
-      oracle_password: welcome1
-      sys_password:    welcome1
-      pdb_password:    welcome1
-      # ---------------------------------------------
-      ora_languages:   en,en_GB
-      # ---------------------------------------------
-      nomgmtdb:        true
-      orestart:        false
-      # ---------------------------------------------
-      db_name:         DB213H1
-      pdb_name:        PDB1
-      db_type:         RAC
-      cdb:             false
-      # ---------------------------------------------
+node2:
+  vm_name: rac2-node2
+  mem_size: 16384
+  cpus: 24
+  public_ip:  192.168.125.122
+  vip_ip:     192.168.125.142
+  private_ip: 192.168.200.112
+  storage_pool_name: Vagrant_RAC_Storage
+
+shared:
+  prefix_name:   rac2
+  # ---------------------------------------------
+  domain  : localdomain
+  scan_ip1: 192.168.125.145
+  scan_ip2: 192.168.125.146
+  scan_ip3: 192.168.125.147
+  # ---------------------------------------------
+  asm_disk_num:   6
+  asm_disk_size: 20
+  p1_ratio:      80
+  asm_lib_type: 'ASMLIB'
+  storage_pool_name: Vagrant_RAC_Storage
+  # ---------------------------------------------
+
+env:
+  provider: libvirt
+  # ---------------------------------------------
+  gi_software:     LINUX.X64_213000_grid_home.zip
+  db_software:     LINUX.X64_213000_db_home.zip
+  db2_software:    LINUX.X64_193000_db_home.zip
+  # ---------------------------------------------
+  root_password:   Welcome1
+  grid_password:   Welcome1
+  oracle_password: Welcome1
+  sys_password:    Welcome1
+  pdb_password:    Welcome1
+  # ---------------------------------------------
+  ora_languages:   en,en_GB
+  # ---------------------------------------------
+  nomgmtdb:        true
+  orestart:        false
+  # ---------------------------------------------
+  #  db_name:         CDB21
+  #  pdb_name:        PDB211
+  db_type:         RAC
+  #  cdb:             true
+  #  db2_name:        CDB19
+  #  pdb2_name:       PDB191
+  db2_type:        RAC
+  #  cdb:             true
+  # ---------------------------------------------
+
+```
+
+
 
 ## Running scripts after setup
 

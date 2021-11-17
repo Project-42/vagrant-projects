@@ -12,7 +12,7 @@ This is the list of modifications made to the amazing original project (https://
 
 - Second rac cluster added to be deployed independtly
 - Extra 19c Database created in cluster "rac1" *(See "db2_name:/db2_home/pdb2_name" etc.. under "config/vagrant.yml")*
-- No databases are created in "rac2" *(The intention is to create more script to create Standby Databases there)
+- No databases are created in "rac2" *(The intention is to create more script to create Standby Databases there)*
 - Extra packages installed *(nano highlight git mlocate bash-completion bash-it)*
 - Extra packages to be able to install 11g databases *(elfutils-libelf-devel-0* gcc-4*x86_64* gcc-c++-4*x86_64* numactl-devel-2*x86_64*)*
 - Changed Diskgroups to have External Redundancy and RDBMS compatibility to 11.2 in RECO case *(Seems like you still need to change "_asm_allow_older_clients" to TRUE to be able to install 11g)*

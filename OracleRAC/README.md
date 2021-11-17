@@ -4,7 +4,6 @@
 
 This directory contains Vagrant build files to provision automatically
 two Oracle RAC nodes (12.2, 18c, 19c, 21c), using Vagrant, Oracle Linux 7 and shell scripts.
-![](images/OracleRAC.png)
 
 
 ## PORJECT42 Modifications ##
@@ -23,6 +22,7 @@ This is the list of modifications made to the amazing original project (https://
 - Added extra script to modify oratab file *(Not working for second node of the cluster though :()*
 - Fred Denis [oracle-scripts](https://github.com/freddenis/oracle-scripts/) downloaded into */home/$USER/bin*
 - sqlcl installed using [Connor Mcdonald "getsqlcl" script](https://connor-mcdonald.com/2021/10/29/keeping-my-sqlcl-toasty-fresh/)
+
 
 
 

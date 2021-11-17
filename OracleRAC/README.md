@@ -23,6 +23,7 @@ This is the list of modifications made to the amazing original project (https://
 - Fred Denis [oracle-scripts](https://github.com/freddenis/oracle-scripts/) downloaded into */home/$USER/bin*
 - sqlcl installed using [Connor Mcdonald "getsqlcl" script](https://connor-mcdonald.com/2021/10/29/keeping-my-sqlcl-toasty-fresh/)
 
+![image](images/P42_Vagrant_RACs.png)
 
 
 

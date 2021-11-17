@@ -7,7 +7,7 @@ two Oracle RAC nodes (12.2, 18c, 19c, 21c), using Vagrant, Oracle Linux 7 and sh
 ![](images/OracleRAC.png)
 
 
-## PORJECT42 FORK MODIFICATIONS ##
+## PORJECT42 Modifications ##
 This is the list of modifications made to the amazing original project (https://github.com/oracle/vagrant-projects)
 
 - Second rac cluster added to be deployed independtly

@@ -7,7 +7,7 @@ two Oracle RAC nodes (12.2, 18c, 19c, 21c), using Vagrant, Oracle Linux 7 and sh
 
 
 ## PORJECT42 Modifications ##
-This is the list of modifications made to the amazing original project ([https://github.com/oracle/vagrant-projects](https://github.com/Project-42/vagrant-projects.git))
+This is the list of modifications made to the amazing original project [([[https://github.com/oracle/vagrant-projects]([https://github.com/Project-42/vagrant-projects.git](https://github.com/oracle/vagrant-projects))](https://github.com/oracle/vagrant-projects))](https://github.com/oracle/vagrant-projects)
 
 - Second rac cluster added to be deployed independtly
 - Extra 19c Database created in cluster "rac1" *(See "db2_name:/db2_home/pdb2_name" etc.. under "config/vagrant.yml")*
@@ -54,8 +54,8 @@ The guest VMs are using an "host-Only" network defined as 'vboxnet0'
 
 ## Getting started
 
-1. Clone this repository `git clone https://github.com/oracle/vagrant-projects.git`
-2. Change into OracleRAC folder (`/repo clone path/vagrant-projects/RACPack/OracleRAC`)
+1. Clone this repository `git clone https://github.com/Project-42/vagrant-projects.git`
+2. Change into OracleRAC folder (``)
 3. Download Grid Infrastructure and Database binary from OTN into `./ORCL_software` folder (*)
 4. Run `vagrant up`
 5. Connect to the database.

@@ -7,7 +7,7 @@ two Oracle RAC nodes (12.2, 18c, 19c, 21c), using Vagrant, Oracle Linux 7 and sh
 
 
 ## PORJECT42 Modifications ##
-This is the list of modifications made to the amazing original project [([[https://github.com/oracle/vagrant-projects]([https://github.com/Project-42/vagrant-projects.git](https://github.com/oracle/vagrant-projects))](https://github.com/oracle/vagrant-projects))](https://github.com/oracle/vagrant-projects)
+This is the list of modifications made to the amazing original project https://github.com/oracle/vagrant-projects
 
 - Second rac cluster added to be deployed independtly
 - Extra 19c Database created in cluster "rac1" *(See "db2_name:/db2_home/pdb2_name" etc.. under "config/vagrant.yml")*

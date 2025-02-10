@@ -55,7 +55,7 @@ The guest VMs are using an "host-Only" network defined as 'vboxnet0'
 ## Getting started
 
 1. Clone this repository `git clone https://github.com/Project-42/vagrant-projects.git`
-2. Change into OracleRAC folder (``)
+2. Change into OracleRAC folder (`./vagrant-projects/OracleRAC`)
 3. Download Grid Infrastructure and Database binary from OTN into `./ORCL_software` folder (*)
 4. Run `vagrant up`
 5. Connect to the database.
